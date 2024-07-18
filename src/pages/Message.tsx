@@ -114,7 +114,7 @@ export function MessagePage() {
             jsx: DEFAULT_TYPESCRIPT,
           }}
         >
-          <Mie.View bg="transparent" flex column>
+          <Mie.View flex column>
             <Mie.Message
               title="With description"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -156,7 +156,7 @@ export function MessagePage() {
             jsx: ACCENT_TYPESCRIPT,
           }}
         >
-          <Mie.View bg="transparent" flex column>
+          <Mie.View flex column>
             <Mie.Message
               title="With description"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -201,7 +201,7 @@ export function MessagePage() {
             jsx: SIZES_TYPESCRIPT,
           }}
         >
-          <Mie.View bg="transparent" flex column>
+          <Mie.View flex column>
             <Mie.Message
               icon={<Mie.Icon size="tiny" icon={<Mie.Icons.FolderNew />} />}
               description="Message description text..."

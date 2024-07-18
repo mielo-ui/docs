@@ -13,11 +13,7 @@ export function BasicDemoPage() {
           />
         }
       >
-        <Mie.Header title="Default" size="medium" />
-
-        <Mie.Segment placeholder="dev">
-          <div className="inline-flex"></div>
-        </Mie.Segment>
+        <Mie.Header title="Default" />
       </Mie.Clamp>
     </div>
   )
