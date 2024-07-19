@@ -1,1 +1,1 @@
-export * from "./ComponentGroup";
+export * from "./ComponentGroup"

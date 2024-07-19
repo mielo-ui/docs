@@ -236,7 +236,7 @@ export function RowPage() {
     {
       label: "Day",
       value: "day",
-    }
+    },
   ]
 
   return (

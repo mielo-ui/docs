@@ -1,6 +1,7 @@
 import { useState } from "react"
 
 import { ComponentGroup } from "../components"
+import { Slider, RangeSlider } from "mielo-react-slider"
 import * as Mie from "mielo-react"
 
 const DEFAULT_TYPESCRIPT = `
@@ -8,7 +9,7 @@ import * as Mie from "mielo-react"
 
 const [value, setValue] = useState(50)
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setValue(nextValue)}
   value={value}
   max={100}
@@ -22,7 +23,7 @@ const [value, setValue] = useState({
   min: 60,
 })
 
-<Mie.RangeSlider
+<RangeSlider
   onChange={nextValue => setValue(nextValue)}
   value={value}
   step={1}
@@ -38,7 +39,7 @@ const [second, setSecond] = useState({
   min: 60,
 })
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   orientation="vertical"
   value={first}
@@ -46,7 +47,7 @@ const [second, setSecond] = useState({
   min={0}
 />
 
-<Mie.RangeSlider
+<RangeSlider
   onChange={nextValue => setSecond(nextValue)}
   orientation="vertical"
   value={second}
@@ -57,7 +58,7 @@ const [second, setSecond] = useState({
 `
 
 const ACCENTS_TYPESCRIPT = `
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="warning"
   value={first}
@@ -65,7 +66,7 @@ const ACCENTS_TYPESCRIPT = `
   min={0}
 />
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="error"
   value={first}
@@ -73,7 +74,7 @@ const ACCENTS_TYPESCRIPT = `
   min={0}
 />
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="success"
   value={first}
@@ -83,7 +84,7 @@ const ACCENTS_TYPESCRIPT = `
 `.trim()
 
 const SIZES_TYPESCRIPT = `
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="warning"
   size="small"
@@ -92,7 +93,7 @@ const SIZES_TYPESCRIPT = `
   min={0}
 />
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="error"
   value={first}
@@ -100,7 +101,7 @@ const SIZES_TYPESCRIPT = `
   min={0}
 />
 
-<Mie.Slider
+<Slider
   onChange={nextValue => setFirst(nextValue)}
   accent="success"
   size="large"
@@ -142,7 +143,7 @@ export function SliderPage() {
             flex1
             flex
           >
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               value={first}
               max={100}
@@ -164,7 +165,7 @@ export function SliderPage() {
             flex1
             flex
           >
-            <Mie.RangeSlider
+            <RangeSlider
               onChange={nextValue => setSecond(nextValue)}
               value={second}
               step={1}
@@ -181,7 +182,7 @@ export function SliderPage() {
           }}
         >
           <Mie.View className="sample" justifyContent="center" flex1 flex>
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               orientation="vertical"
               value={first}
@@ -190,7 +191,7 @@ export function SliderPage() {
             />
           </Mie.View>
           <Mie.View className="sample" justifyContent="center" flex1 flex>
-            <Mie.RangeSlider
+            <RangeSlider
               onChange={nextValue => setSecond(nextValue)}
               orientation="vertical"
               value={second}
@@ -215,21 +216,21 @@ export function SliderPage() {
             flex1
             flex
           >
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="warning"
               value={first}
               max={100}
               min={0}
             />
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="error"
               value={first}
               max={100}
               min={0}
             />
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="success"
               value={first}
@@ -253,7 +254,7 @@ export function SliderPage() {
             flex1
             flex
           >
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="warning"
               size="small"
@@ -261,14 +262,14 @@ export function SliderPage() {
               max={100}
               min={0}
             />
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="error"
               value={first}
               max={100}
               min={0}
             />
-            <Mie.Slider
+            <Slider
               onChange={nextValue => setFirst(nextValue)}
               accent="success"
               size="large"

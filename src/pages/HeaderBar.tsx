@@ -163,7 +163,7 @@ export function HeaderBarPage() {
           >
             <Mie.Header size="small" title="Default" />
 
-            <Mie.View flex column padding>
+            <Mie.View flex column p>
               <Mie.HeaderBar
                 header={<Mie.Header title="Title" subtitle="Subtitle" />}
                 left={<Mie.Button icon={<Mie.Icons.UserHome />} />}
@@ -191,8 +191,8 @@ export function HeaderBarPage() {
             </Mie.View>
 
             <Mie.Header size="small" title="Transparent" />
-            
-            <Mie.View flex column padding>
+
+            <Mie.View flex column p>
               <Mie.HeaderBar
                 header={<Mie.Header title="Title" subtitle="Subtitle" />}
                 left={<Mie.Button icon={<Mie.Icons.UserHome />} />}

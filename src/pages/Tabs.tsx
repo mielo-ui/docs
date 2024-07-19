@@ -30,9 +30,7 @@ export function TabPage() {
             jsx: DEFAULT_TYPESCRIPT,
             html: DEFAULT_HTML,
           }}
-        >
-
-        </ComponentGroup>
+        ></ComponentGroup>
       </Mie.Clamp>
     </div>
   )

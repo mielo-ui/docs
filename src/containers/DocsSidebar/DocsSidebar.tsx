@@ -1,10 +1,9 @@
-import { Fragment } from "react/jsx-runtime"
+import { useCallback, useState } from "react"
 import { useSelector } from "react-redux"
 import * as Mie from "mielo-react"
 
 import * as selectors from "../../selectors"
 import { ListItemLink } from "./ListItemLink"
-import { useCallback, useState } from "react"
 
 interface PageItemOptions {
   title: string
@@ -93,7 +92,7 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
   const [opened, setOpened] = useState(false)
 
   const onToggle = useCallback(() => {
-    setOpened((prev) => !prev)
+    setOpened(prev => !prev)
   }, [])
 
   return (
@@ -106,14 +105,18 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
       />
 
       {opened && (
-        <Mie.View window rounded style={{ padding: "0.4rem 0", marginTop: "0.4rem", marginBottom: "0.8rem" }}>
+        <Mie.View
+          window
+          rounded
+          style={{
+            padding: "0.4rem 0",
+            marginTop: "0.4rem",
+            marginBottom: "0.8rem",
+          }}
+        >
           <Mie.List>
             {links.map(({ page, title }, linkIdx) => (
-              <ListItemLink
-                key={`menu-${linkIdx}`}
-                title={title}
-                link={page}
-              />
+              <ListItemLink key={`menu-${linkIdx}`} title={title} link={page} />
             ))}
           </Mie.List>
         </Mie.View>
@@ -125,13 +128,8 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
 export function DocsSidebar() {
   const sidebarOpen = useSelector(selectors.sidebarOpen)
 
-  const _menuMapper = (
-    options: PageItemOptions,
-    idx: number,
-  ) => {
-    return (
-      <SubMenu key={`submenu-${idx}`} {...options} />
-    )
+  const _menuMapper = (options: PageItemOptions, idx: number) => {
+    return <SubMenu key={`submenu-${idx}`} {...options} />
   }
 
   return (

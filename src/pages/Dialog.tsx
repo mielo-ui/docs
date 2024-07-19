@@ -219,7 +219,7 @@ function ConfirmExample() {
     fontSize: "1.6rem",
     lineHeight: "1",
     padding: "1.6rem 1.2rem",
-    width: "100%"
+    width: "100%",
   }
 
   const highlighterProps = {
@@ -278,7 +278,7 @@ function ConfirmExample() {
         </Mie.Rows>
 
         {lastAction && (
-          <Mie.View flex padding>
+          <Mie.View flex p>
             <SyntaxHighlighter {...highlighterProps}>
               {JSON.stringify(lastAction, null, 4)}
             </SyntaxHighlighter>

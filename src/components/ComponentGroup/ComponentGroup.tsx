@@ -80,7 +80,12 @@ export function ComponentGroup({
               {children}
             </Mie.View>
 
-            <Mie.View className="lang-switch" justifyContent="center" alignItems="center" flex>
+            <Mie.View
+              className="lang-switch"
+              justifyContent="center"
+              alignItems="center"
+              flex
+            >
               {["jsx", "html", "css"].map(
                 tab =>
                   code &&
