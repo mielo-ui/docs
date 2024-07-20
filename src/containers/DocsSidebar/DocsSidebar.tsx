@@ -99,22 +99,16 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
     <>
       <Mie.ListItem
         description={subtitle}
+        onClick={onToggle}
         title={title}
         activatable
-        onClick={onToggle}
+        ph
+        pv
       />
 
       {opened && (
-        <Mie.View
-          window
-          rounded
-          style={{
-            padding: "0.4rem 0",
-            marginTop: "0.4rem",
-            marginBottom: "0.8rem",
-          }}
-        >
-          <Mie.List>
+        <Mie.View window>
+          <Mie.List pv>
             {links.map(({ page, title }, linkIdx) => (
               <ListItemLink key={`menu-${linkIdx}`} title={title} link={page} />
             ))}
@@ -146,15 +140,9 @@ export function DocsSidebar() {
       <Mie.List>
         {components.map(_menuMapper)}
 
-        <div className="divider"></div>
-
-        <Mie.Header
-          title="Showcase"
-          subtitle="Complex demo examples"
-          attached="list"
-        />
-
-        <div className="divider"></div>
+        <Mie.View p>
+          <Mie.Header title="Showcase" subtitle="Complex demo examples" />
+        </Mie.View>
 
         {demo.map(_menuMapper)}
       </Mie.List>

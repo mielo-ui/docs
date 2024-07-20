@@ -3,11 +3,12 @@ import { useLocation, useRoute } from "wouter"
 import * as Mie from "mielo-react"
 
 export interface ListItemLinkProps {
+  size?: "small" | "large"
   title: string
   link: string
 }
 
-export function ListItemLink({ title, link }: ListItemLinkProps) {
+export function ListItemLink({ title, link, size }: ListItemLinkProps) {
   const [_, navigate] = useLocation()
   const [isActive] = useRoute(`/${link}`)
 
@@ -27,6 +28,10 @@ export function ListItemLink({ title, link }: ListItemLinkProps) {
       link={`/${link}`}
       title={title}
       activatable
+      size={size}
+      ph="large"
+      mh="small"
+      pv
     />
   )
 }
