@@ -1,4 +1,15 @@
-# Mielo UI Docs
+<p align="center">
+  <img src="https://raw.githubusercontent.com/mielo-ui/mielo.css/main/logo.png" />
+</p>
+
+<h1 align="center">
+  Documentation
+</h1>
+
+<p align="center">
+  Mielo UI Documentation site with examples.
+</p>
+
 Website & documentation for [mielo.css](https://github.com/friktor/mielo) framework & for react wrapper.
 
 ## Browser Support

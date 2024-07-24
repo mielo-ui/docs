@@ -1,0 +1,59 @@
+:root,
+[data-theme="light"] {
+  --mie-cvg-border: #{rgba(#000, 0.07)};
+}
+
+[data-theme="dark"] {
+  --mie-cvg-border: #{rgba(#000, 0.37)};
+}
+
+.mie.view.example-group {
+  margin-bottom: 2rem;
+  overflow: hidden;
+
+  .preview.view {
+    background-color: rgba(#000, 0.05);
+    padding: 1.2rem 2rem;
+    min-height: 16rem;
+
+    > .sample {
+      > .mie.entry,
+      > .mie.select,
+      > .mie.button,
+      > .mie.icon,
+      > .mie.radio,
+      > .mie.toggle,
+      > .mie.checkbox,
+      > .mie.slider,
+      > .mie.progress {
+        margin: 0.6rem 0.6rem;
+      }
+    }
+  }
+
+  .code.view {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    overflow: hidden;
+
+    pre {
+      border-radius: 0 !important;
+      line-height: 1 !important;
+      border: none !important;
+      margin: 0 !important;
+
+      border-top: 0.1rem solid var(--mie-cvg-border);
+
+      code {
+        font-size: 1.6rem;
+        line-height: 1;
+
+        * {
+          font-family: "JetBrains Mono" !important;
+          font-size: 1.6rem;
+          line-height: 1;
+        }
+      }
+    }
+  }
+}

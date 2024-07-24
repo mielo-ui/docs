@@ -22,7 +22,7 @@ export function ListItemLink({ title, link, size }: ListItemLinkProps) {
   )
 
   return (
-    <Mie.ListItem
+    <Mie.L.ListItem
       onClick={onClickLink}
       active={isActive}
       link={`/${link}`}
@@ -32,6 +32,7 @@ export function ListItemLink({ title, link, size }: ListItemLinkProps) {
       ph="large"
       mh="small"
       pv
+      r
     />
   )
 }

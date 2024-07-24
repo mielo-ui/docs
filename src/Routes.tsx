@@ -24,8 +24,8 @@ export function Routes() {
       <Route path="list" component={Components.ListPage} />
       <Route path="card" component={Components.CardPage} />
       <Route path="row" component={Components.RowPage} />
-      <Route path="tab" component={Components.TabPage} />
-      <Route path="icons" component={Components.IconsPage} />
+      <Route path="tabs" component={Components.TabsPage} />
+      <Route path="icons" component={Components.IconPage} />
 
       {/* Demo */}
       <Route path="basic" component={Demos.BasicDemoPage} />

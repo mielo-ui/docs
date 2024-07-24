@@ -27,7 +27,7 @@ export function DocsHeaderbar() {
       attached="splitview"
       transparent
       header={
-        <Mie.Header title="Mieaita Web" subtitle="List of all components" />
+        <Mie.Header title="Mielo Web" subtitle="List of all components" />
       }
       left={
         <Mie.Button

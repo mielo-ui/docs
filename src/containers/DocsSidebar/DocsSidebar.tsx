@@ -71,8 +71,8 @@ const components: PageItemOptions[] = [
     title: "Complex ",
     subtitle: "Popup content",
     links: [
-      { page: "tab", title: "Tab" },
-      { page: "card", title: "Card" },
+      { page: "tabs", title: "Tabs" },
+      { page: "cards", title: "Cards" },
     ],
   },
 ]
@@ -97,23 +97,23 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
 
   return (
     <>
-      <Mie.ListItem
+      <Mie.L.ListItem
         description={subtitle}
         onClick={onToggle}
         title={title}
         activatable
-        ph
+        ph="large"
         pv
       />
 
       {opened && (
-        <Mie.View window>
-          <Mie.List pv>
+        <Mie.L.View content mh mv="small" r>
+          <Mie.L.List pv>
             {links.map(({ page, title }, linkIdx) => (
               <ListItemLink key={`menu-${linkIdx}`} title={title} link={page} />
             ))}
-          </Mie.List>
-        </Mie.View>
+          </Mie.L.List>
+        </Mie.L.View>
       )}
     </>
   )
@@ -137,15 +137,15 @@ export function DocsSidebar() {
         />
       }
     >
-      <Mie.List>
+      <Mie.L.List m="none">
         {components.map(_menuMapper)}
 
-        <Mie.View p>
+        <Mie.L.View p>
           <Mie.Header title="Showcase" subtitle="Complex demo examples" />
-        </Mie.View>
+        </Mie.L.View>
 
         {demo.map(_menuMapper)}
-      </Mie.List>
+      </Mie.L.List>
     </Mie.SplitView.Sidebar>
   )
 }

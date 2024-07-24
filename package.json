@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "npm run clean && tsc -b && vite build",
     "preview": "vite preview",
-    "style": "prettier --config .prettierrc '{src,lib}/**/*.{ts,tsx,scss,css}' --write",
+    "style": "prettier --config .prettierrc 'src/**/*.{ts,tsx,scss,css}' --write",
     "lint": "eslint '*/**/*.{ts,tsx}' --quiet --fix",
     "clean": "rimraf dist",
     "fmt": "npm run style && npm run lint"

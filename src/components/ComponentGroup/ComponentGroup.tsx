@@ -63,24 +63,24 @@ export function ComponentGroup({
     <>
       <Mie.Header size="large" title={title} subtitle={description as any} />
 
-      <Mie.View
+      <Mie.L.View
         className="component-variant-group"
-        rounded="extra"
         shadow="outer"
+        r="large"
         content
         column
         flex
       >
         {code && (
           <>
-            <Mie.View
+            <Mie.L.View
               className={clsx("preview", { column: containerColumn })}
               flex
             >
               {children}
-            </Mie.View>
+            </Mie.L.View>
 
-            <Mie.View
+            <Mie.L.View
               className="lang-switch"
               justifyContent="center"
               alignItems="center"
@@ -99,14 +99,14 @@ export function ComponentGroup({
                     />
                   ),
               )}
-            </Mie.View>
+            </Mie.L.View>
 
-            <Mie.View className="code" rounded="extra" flex column>
+            <Mie.L.View className="code" r="large" flex column>
               {codeContainer}
-            </Mie.View>
+            </Mie.L.View>
           </>
         )}
-      </Mie.View>
+      </Mie.L.View>
     </>
   )
 }
