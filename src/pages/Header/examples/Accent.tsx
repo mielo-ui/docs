@@ -6,7 +6,7 @@ import * as Mie from "mielo-react"
 
 function Accent() {
   return (
-    <Mie.View flex flex1 column justifyContent="center" alignItems="center">
+    <Mie.View f f1 fc fjc="center" fai="center">
       <Mie.Text accent>Accent</Mie.Text>
       <Mie.Text accent="success">Success</Mie.Text>
       <Mie.Text accent="warning">Warning</Mie.Text>

@@ -7,7 +7,7 @@ import * as Mie from "mielo-react"
 function Indeterminate() {
   return (
     <>
-      <Mie.View justifyContent="center" column flex1 flex>
+      <Mie.View fjc="center" fc f1 f>
         <Mie.Header size="small" title="Default Bars" />
 
         <Mie.Progress accent>
@@ -41,7 +41,7 @@ function Indeterminate() {
 
       <Mie.Header size="small" title="Transparent Bars" />
 
-      <Mie.View justifyContent="center" column flex1 flex>
+      <Mie.View fjc="center" fc f1 f>
         <Mie.Progress accent>
           <Mie.Progress.Bar
             indeterminate="pulsating"
@@ -84,7 +84,7 @@ function Indeterminate() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie view sample flex flex-1 justify-content-center column">
+<div class="mie view sample f f-1 justify-content-center fc">
   <div class="mie header size small">
     <div class="heading">
       <div class="title">Default Bars</div>
@@ -134,7 +134,7 @@ const rawHtmlCode = `
   </div>
 </div>
 
-<div class="mie view sample flex flex-1 justify-content-center column">
+<div class="mie view sample f f-1 justify-content-center fc">
   <div class="mie progress accent">
     <div
     class="mie progress-bar indeterminate pulsating accent transparent"

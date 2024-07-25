@@ -2,6 +2,7 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Size.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Size() {
@@ -10,7 +11,7 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="tiny" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="tiny" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="tiny"
       />
@@ -18,7 +19,7 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="small" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="small" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="small"
       />
@@ -26,14 +27,14 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
         iconSided
       />
 
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="large" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="large" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="large"
       />
@@ -41,7 +42,7 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="big" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="big" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="big"
       />
@@ -49,7 +50,7 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="huge" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="huge" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="huge"
       />
@@ -57,7 +58,7 @@ function Size() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="massive" icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon size="massive" icon={<Icons.Places.UserHome />} />}
         iconSided
         size="massive"
       />

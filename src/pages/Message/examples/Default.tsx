@@ -6,7 +6,7 @@ import * as Mie from "mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View flex column>
+    <Mie.L.View f fc>
       <Mie.Message title="Basic" />
 
       <Mie.Message

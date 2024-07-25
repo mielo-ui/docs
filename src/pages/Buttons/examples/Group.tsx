@@ -2,23 +2,24 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Group.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Group() {
   return (
     <Mie.View>
       <Mie.Button.Group>
-        <Mie.Button icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />} />
-        <Mie.Button icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />} />
+        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
+        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
       </Mie.Button.Group>
 
       <Mie.Button.Group>
         <Mie.Button
-          icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
           label="Label"
         />
         <Mie.Button
-          icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
           label="Label"
         />
       </Mie.Button.Group>

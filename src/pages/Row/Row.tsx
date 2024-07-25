@@ -13,7 +13,7 @@ export function RowPage() {
           <Mie.Header
             subtitle="Styled list"
             title="Rows"
-            size="large"
+            size="massive"
             center
           />
         }

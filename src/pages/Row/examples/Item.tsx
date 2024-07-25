@@ -2,6 +2,7 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Item.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Item() {
@@ -10,7 +11,7 @@ function Item() {
       <Mie.L.Rows.Row rt title="Title" activatable />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
         title="Title"
         activatable
       />
@@ -22,7 +23,7 @@ function Item() {
       />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
@@ -35,7 +36,7 @@ function Item() {
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+              icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
               label="Label"
               size="small"
               accent
@@ -45,14 +46,14 @@ function Item() {
       />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon circular filled icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon circular filled icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Mie.Icons.UserTrash />} />}
+              icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />}
               accent="error"
               size="small"
               filled

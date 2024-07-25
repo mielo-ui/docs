@@ -2,13 +2,14 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Center.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Center() {
   return (
     <Mie.View>
       <Mie.Header
-        icon={<Mie.Icon icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
         subtitle="Subtitle of icon header"
         title="Icon Header"
         size="large"

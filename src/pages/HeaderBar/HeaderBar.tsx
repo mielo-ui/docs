@@ -13,7 +13,7 @@ export function HeaderBarPage() {
           <Mie.Header
             subtitle="Common app navigation menu"
             title="HeaderBar"
-            size="large"
+            size="massive"
             center
           />
         }

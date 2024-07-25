@@ -13,7 +13,7 @@ export function DialogPage() {
           <Mie.Header
             subtitle="Alert window"
             title="Dialog"
-            size="large"
+            size="massive"
             center
           />
         }

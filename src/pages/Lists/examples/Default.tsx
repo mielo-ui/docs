@@ -6,11 +6,11 @@ import * as Mie from "mielo-react"
 
 function Default() {
   return (
-    <Mie.List>
+    <Mie.L.List>
       <Mie.List.Item title="Some text..." activatable />
       <Mie.List.Item title="Some text..." activatable />
       <Mie.List.Item title="Some text..." activatable />
-    </Mie.List>
+    </Mie.L.List>
   )
 }
 

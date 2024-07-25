@@ -72,7 +72,7 @@ export function ExampleGroupCode({ code }: ExampleGroupCodeProps) {
         }}
       />
 
-      <Mie.View className="code" r="large" flex column>
+      <Mie.View className="code" r="large" f fc>
         {codeContainer}
       </Mie.View>
     </>

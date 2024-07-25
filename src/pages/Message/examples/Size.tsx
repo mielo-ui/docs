@@ -6,7 +6,7 @@ import * as Mie from "mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View flex column>
+    <Mie.L.View f fc>
       <Mie.Message
         title="Message Title"
         description="Message description text..."
@@ -35,13 +35,13 @@ function Size() {
         description="Message description text..."
         size="big"
       />
-      
+
       <Mie.Message
         title="Message Title"
         description="Message description text..."
         size="huge"
       />
-      
+
       <Mie.Message
         title="Message Title"
         description="Message description text..."

@@ -2,6 +2,7 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Variants.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Variants() {
@@ -9,7 +10,7 @@ function Variants() {
     <Mie.List>
       <Mie.List.Item title="Title" activatable />
       <Mie.List.Item
-        icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
         title="Title"
         activatable
       />
@@ -19,7 +20,7 @@ function Variants() {
         activatable
       />
       <Mie.List.Item
-        icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
@@ -31,7 +32,7 @@ function Variants() {
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+              icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
               label="Label"
               size="small"
               accent
@@ -40,14 +41,14 @@ function Variants() {
         }
       />
       <Mie.List.Item
-        icon={<Mie.Icon circular filled icon={<Mie.Icons.FolderNew />} />}
+        icon={<Mie.Icon circular filled icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Mie.Icons.UserTrash />} />}
+              icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />}
               accent="error"
               size="small"
               filled

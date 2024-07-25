@@ -2,13 +2,14 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Rounded.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Rounded() {
   return (
     <Mie.View>
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogInformation />}
+        icon={<Icons.Status.DialogInformation />}
         size="big"
         accent
         bg
@@ -18,7 +19,7 @@ function Rounded() {
       />
 
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogWarning />}
+        icon={<Icons.Status.DialogWarning />}
         accent="warning"
         size="huge"
         bg
@@ -28,7 +29,7 @@ function Rounded() {
       />
 
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogError />}
+        icon={<Icons.Status.DialogError />}
         accent="error"
         size="big"
         bg

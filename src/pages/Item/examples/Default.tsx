@@ -2,21 +2,22 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Default() {
   return (
     <Mie.L.View>
-      <Mie.L.View className="sample" justifyContent="center" column flex1 flex>
+      <Mie.L.View className="sample" fjc="center" fc f1 f>
         <Mie.Item title="Item Title" description="Description line" />
 
         <Mie.Item
-          icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
           title="Item Title"
         />
 
         <Mie.Item
-          icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
           title="Vertical Item Title"
           description="Description message"
           vertical
@@ -24,12 +25,12 @@ function Default() {
         />
 
         <Mie.Item
-          icon={<Mie.Icon icon={<Mie.Icons.FolderNew />} />}
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
           description="Some description text"
           title="Item Title"
           side={
             <Mie.Button
-              icon={<Mie.Icons.UserTrash />}
+              icon={<Icons.Places.UserTrash />}
               accent="error"
               size="small"
               circular

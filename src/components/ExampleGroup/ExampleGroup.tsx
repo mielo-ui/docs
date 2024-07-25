@@ -26,15 +26,15 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
         shadow="outer"
         r="large"
         content
-        column
-        flex
+        fc
+        f
       >
         <Mie.L.View
-          justifyContent="center"
-          alignItems="center"
+          fjc="center"
+          fai="center"
           className="preview"
           rt="large"
-          flex
+          f
         >
           <Component />
         </Mie.L.View>

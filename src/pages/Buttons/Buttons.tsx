@@ -20,12 +20,7 @@ export function ButtonPage() {
     <div className="page buttons">
       <Mie.Clamp
         header={
-          <Mie.Header
-            subtitle="Trigger elements"
-            title="Button"
-            size="large"
-            center
-          />
+          <Mie.Header subtitle="Tap" title="Button" size="massive" center />
         }
       >
         {examples.map(name => (

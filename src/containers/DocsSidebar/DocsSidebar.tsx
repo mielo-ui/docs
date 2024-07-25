@@ -106,15 +106,31 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
         pv
       />
 
-      {opened && (
-        <Mie.L.View content mh mv="small" r>
-          <Mie.L.List pv>
-            {links.map(({ page, title }, linkIdx) => (
-              <ListItemLink key={`menu-${linkIdx}`} title={title} link={page} />
-            ))}
-          </Mie.L.List>
+      <Mie.Collapsible open={opened}>
+        <Mie.L.View ph="large" pv>
+          <Mie.L.View content f fc r>
+            <Mie.L.List p="none" r>
+              {links.map(({ page, title }, linkIdx, array) => {
+                const isLast = linkIdx === array.length - 1
+                const isFirst = linkIdx === 0
+
+                return (
+                  <ListItemLink
+                    key={`menu-${linkIdx}`}
+                    link={`/${page}`}
+                    title={title}
+                    activatable
+                    pv="large"
+                    ph="large"
+                    rt={isFirst}
+                    rb={isLast}
+                  />
+                )
+              })}
+            </Mie.L.List>
+          </Mie.L.View>
         </Mie.L.View>
-      )}
+      </Mie.Collapsible>
     </>
   )
 }

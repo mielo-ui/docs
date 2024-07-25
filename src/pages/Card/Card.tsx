@@ -13,7 +13,7 @@ export function CardPage() {
           <Mie.Header
             subtitle="Univeral content container"
             title="Card"
-            size="large"
+            size="massive"
             center
           />
         }

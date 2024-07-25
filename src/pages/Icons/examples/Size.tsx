@@ -2,19 +2,20 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Size.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Size() {
   return (
     <Mie.View>
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="mini" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="tiny" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="small" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="large" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="big" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="huge" />
-      <Mie.Icon icon={<Mie.Icons.UserHome />} size="massive" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="mini" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="tiny" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="small" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="large" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="big" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="huge" />
+      <Mie.Icon icon={<Icons.Places.UserHome />} size="massive" />
     </Mie.View>
   )
 }

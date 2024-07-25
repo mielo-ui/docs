@@ -14,7 +14,7 @@ function Range() {
   })
 
   return (
-    <Mie.L.View flex column>
+    <Mie.L.View f fc>
       <Slider
         onChange={nextValue => setFirst(nextValue)}
         orientation="vertical"

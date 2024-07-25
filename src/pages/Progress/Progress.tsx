@@ -13,7 +13,7 @@ export function ProgressPage() {
           <Mie.Header
             subtitle="Component indicate processes progress"
             title="Progress"
-            size="large"
+            size="massive"
             center
           />
         }

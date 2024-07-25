@@ -2,37 +2,24 @@ import { useCallback, MouseEvent } from "react"
 import { useLocation, useRoute } from "wouter"
 import * as Mie from "mielo-react"
 
-export interface ListItemLinkProps {
-  size?: "small" | "large"
-  title: string
-  link: string
-}
-
-export function ListItemLink({ title, link, size }: ListItemLinkProps) {
+export function ListItemLink({ link, ...props }: any) {
   const [_, navigate] = useLocation()
-  const [isActive] = useRoute(`/${link}`)
+  const [isActive] = useRoute(link)
 
   const onClickLink = useCallback(
     (event: MouseEvent<any>) => {
       event.preventDefault()
       event.stopPropagation()
-      navigate(`/${link}`)
+      navigate(link)
     },
-    [link, title],
+    [link],
   )
 
   return (
     <Mie.L.ListItem
       onClick={onClickLink}
       active={isActive}
-      link={`/${link}`}
-      title={title}
-      activatable
-      size={size}
-      ph="large"
-      mh="small"
-      pv
-      r
+      {...props}
     />
   )
 }

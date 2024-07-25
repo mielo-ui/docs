@@ -13,7 +13,7 @@ export function TypographyPage() {
           <Mie.Header
             subtitle="Example of different tabs"
             title="Tabs"
-            size="large"
+            size="massive"
             center
           />
         }

@@ -13,7 +13,7 @@ export function ItemPage() {
           <Mie.Header
             subtitle="Univeral content component"
             title="Item"
-            size="large"
+            size="massive"
             center
           />
         }

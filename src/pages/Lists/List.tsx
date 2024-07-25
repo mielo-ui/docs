@@ -13,7 +13,7 @@ export function ListPage() {
           <Mie.Header
             subtitle="Universal list component"
             title="List"
-            size="large"
+            size="massive"
             center
           />
         }

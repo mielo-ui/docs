@@ -2,6 +2,7 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Transparent.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Transparent() {
@@ -9,10 +10,15 @@ function Transparent() {
     <Mie.View>
       <Mie.L.HeaderBar
         header={<Mie.Header title="Title" subtitle="Subtitle" />}
-        left={<Mie.Button icon={<Mie.Icons.UserHome />} />}
-        right={<Mie.Button icon={<Mie.Icons.UserTrash />} />}
         transparent
         r
+
+        left={
+          <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+        }
+        right={
+          <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+        }
       />
     </Mie.View>
   )

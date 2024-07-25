@@ -1,4 +1,5 @@
 import { useSelector, useDispatch } from "react-redux"
+import * as Icons from "adwaita-symbolic-icons-react"
 import { useCallback } from "react"
 import * as Mie from "mielo-react"
 
@@ -27,11 +28,11 @@ export function DocsHeaderbar() {
       attached="splitview"
       transparent
       header={
-        <Mie.Header title="Mielo Web" subtitle="List of all components" />
+        <Mie.Header title="Mielo Web" />
       }
       left={
         <Mie.Button
-          icon={<Mie.Icons.SidebarShow />}
+          icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
           onClick={onToggleSidebar}
         />
       }
@@ -40,13 +41,8 @@ export function DocsHeaderbar() {
           onChange={onToggleDarkTheme}
           checked={darkThemeEnable}
           label="Dark Theme"
+          accent="success"
           toggle
-          icon={{
-            indicator: {
-              unchecked: <Mie.Icons.WeatherClear />,
-              checked: <Mie.Icons.WeatherClearNight />,
-            },
-          }}
         />
       }
     />

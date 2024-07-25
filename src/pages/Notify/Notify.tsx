@@ -13,7 +13,7 @@ export function NotifyPage() {
           <Mie.Header
             subtitle="Notify toasts"
             title="Notify"
-            size="large"
+            size="massive"
             center
           />
         }

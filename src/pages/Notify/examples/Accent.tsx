@@ -5,10 +5,7 @@ import rawTsCode from "./Accent.tsx?raw"
 import * as Mie from "mielo-react"
 
 function Accent() {
-  return (
-    <Mie.View>
-    </Mie.View>
-  )
+  return <Mie.View></Mie.View>
 }
 
 //@chunk

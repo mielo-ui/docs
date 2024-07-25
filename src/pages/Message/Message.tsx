@@ -13,7 +13,7 @@ export function MessagePage() {
           <Mie.Header
             subtitle="Alert information component"
             title="Message"
-            size="large"
+            size="massive"
             center
           />
         }

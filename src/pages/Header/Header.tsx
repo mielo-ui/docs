@@ -13,7 +13,7 @@ export function HeaderPage() {
           <Mie.Header
             subtitle="A header provides a short summary of content"
             title="Header"
-            size="large"
+            size="massive"
             center
           />
         }

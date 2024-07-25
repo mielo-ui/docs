@@ -2,6 +2,7 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Icon.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Icon() {
@@ -10,13 +11,13 @@ function Icon() {
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
       />
 
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
-        icon={<Mie.Icon icon={<Mie.Icons.UserHome />} />}
+        icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
         iconSided
       />
     </Mie.View>

@@ -5,11 +5,7 @@ import rawTsCode from "./Size.tsx?raw"
 import * as Mie from "mielo-react"
 
 function Size() {
-  return (
-    <Mie.View>
-
-    </Mie.View>
-  )
+  return <Mie.View></Mie.View>
 }
 
 //@chunk

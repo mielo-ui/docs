@@ -2,13 +2,14 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Background.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Background() {
   return (
     <Mie.View>
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogInformation />}
+        icon={<Icons.Status.DialogInformation />}
         p="large"
         r="large"
         accent
@@ -16,7 +17,7 @@ function Background() {
       />
 
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogWarning />}
+        icon={<Icons.Status.DialogWarning />}
         p="large"
         r="large"
         accent="warning"
@@ -24,7 +25,7 @@ function Background() {
       />
 
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogError />}
+        icon={<Icons.Status.DialogError />}
         p="large"
         r="large"
         accent="error"
@@ -32,7 +33,7 @@ function Background() {
       />
 
       <Mie.L.Icon
-        icon={<Mie.Icons.EmblemOk />}
+        icon={<Icons.Emblems.EmblemOk />}
         p="large"
         r="large"
         accent="success"

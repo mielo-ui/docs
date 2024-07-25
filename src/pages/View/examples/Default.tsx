@@ -7,10 +7,10 @@ import * as Mie from "mielo-react"
 function Default() {
   return (
     <Mie.L.View>
-      <Mie.L.View className="sample" justifyContent="center" column flex1 flex>
-        <div className="mie view padding flex column rounded"></div>
-        <div className="mie view view-bg container-bg padding flex column rounded"></div>
-        <div className="mie view container-bg padding flex column rounded"></div>
+      <Mie.L.View className="sample" fjc="center" fc f1 f>
+        <div className="mie view padding f fc rounded"></div>
+        <div className="mie view view-bg container-bg padding f fc rounded"></div>
+        <div className="mie view container-bg padding f fc rounded"></div>
       </Mie.L.View>
     </Mie.L.View>
   )

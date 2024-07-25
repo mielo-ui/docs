@@ -9,7 +9,7 @@ function Default() {
   const [tab, setTab] = useState("tab-1")
 
   return (
-    <Mie.View flex flex1 justifyContent="center" alignItems="center">
+    <Mie.View f f1 fjc="center" fai="center">
       <Mie.Tabs
         onChange={setTab}
         selected={tab}

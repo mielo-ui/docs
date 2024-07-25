@@ -80,7 +80,7 @@ function Confirm() {
         subtitle={subtitle}
       />
 
-      <Mie.L.View flex flex1 column alignItems="center">
+      <Mie.L.View f f1 fc fai="center">
         <Mie.L.Rows r="large">
           <Mie.L.Rows.Entry
             onChange={setTitle}
@@ -125,7 +125,7 @@ function Confirm() {
         </Mie.L.Rows>
 
         {lastAction && (
-          <Mie.L.View flex r m>
+          <Mie.L.View f r m>
             <SyntaxHighlighter {...highlighterProps}>
               {JSON.stringify(lastAction, null, 4)}
             </SyntaxHighlighter>

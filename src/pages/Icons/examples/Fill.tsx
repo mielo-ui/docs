@@ -2,34 +2,35 @@ import { tsFormatSample } from "../../../utils"
 import rawTsCode from "./Fill.tsx?raw"
 
 //@chunk
+import * as Icons from "adwaita-symbolic-icons-react"
 import * as Mie from "mielo-react"
 
 function Fill() {
   return (
     <Mie.View>
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogInformation />}
+        icon={<Icons.Status.DialogInformation />}
         p="large"
         size="big"
         accent
         filled
       />
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogWarning />}
+        icon={<Icons.Status.DialogWarning />}
         accent="warning"
         p="large"
         size="big"
         filled
       />
       <Mie.L.Icon
-        icon={<Mie.Icons.DialogError />}
+        icon={<Icons.Status.DialogError />}
         accent="error"
         p="large"
         size="big"
         filled
       />
       <Mie.L.Icon
-        icon={<Mie.Icons.EmblemOk />}
+        icon={<Icons.Emblems.EmblemOk />}
         accent="success"
         p="large"
         size="big"

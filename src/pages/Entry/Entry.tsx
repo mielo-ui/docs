@@ -13,7 +13,7 @@ export function EntryPage() {
           <Mie.Header
             subtitle="Animated entry field element"
             title="Entry"
-            size="large"
+            size="massive"
             center
           />
         }

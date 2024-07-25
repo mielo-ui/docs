@@ -4,9 +4,7 @@ import { ExampleGroup } from "../../components"
 import * as Examples from "./examples"
 
 export function SliderPage() {
-  const examples = [
-    "Default", "Range", "Accent", "Vertical", "Size"
-  ]
+  const examples = ["Default", "Range", "Accent", "Vertical", "Size"]
 
   return (
     <div className="page radio">
@@ -15,7 +13,7 @@ export function SliderPage() {
           <Mie.Header
             subtitle="Draggable progress indicator"
             title="Slider"
-            size="large"
+            size="massive"
             center
           />
         }
