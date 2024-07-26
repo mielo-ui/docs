@@ -1,6 +1,7 @@
 import * as Mie from "mielo-react"
 
-import { ExampleCodeOptions, ExampleGroupCode } from "./Code"
+import { ExampleCodeOptions, ExampleGroupCode } from "./ExampleGroupCode"
+import { useState } from "react"
 
 export type ExampleComponent = {
   description?: string
@@ -16,6 +17,7 @@ export interface ExampleGroupProps {
 
 export function ExampleGroup({ component: Component }: ExampleGroupProps) {
   const { title, description, code } = Component as any
+  const [codeOpen, setCodeOpen] = useState(false)
 
   return (
     <>
@@ -29,17 +31,21 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
         fc
         f
       >
-        <Mie.L.View
-          fjc="center"
-          fai="center"
-          className="preview"
-          rt="large"
-          f
-        >
+        <Mie.L.View className="preview" fjc="center" fai="center" rt="large" f>
           <Component />
+
+          <Mie.L.Button
+            onClick={() => setCodeOpen(prev => !prev)}
+            className="show-code"
+            accent={codeOpen ? "warning" : "success"}
+            r="large"
+            ph="big"
+          >
+            {codeOpen ? "Hide Code" : "Show Code"}
+          </Mie.L.Button>
         </Mie.L.View>
 
-        <ExampleGroupCode code={code} />
+        <ExampleGroupCode open={codeOpen} code={code} />
       </Mie.L.View>
     </>
   )

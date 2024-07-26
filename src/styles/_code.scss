@@ -1,0 +1,17 @@
+pre.docs-code {
+  line-height: 1 !important;
+  border: none !important;
+  margin: 0 !important;
+  width: 100%;
+
+  code {
+    font-size: 1.6rem;
+    line-height: 1;
+
+    * {
+      font-family: "JetBrains Mono" !important;
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+  }
+}

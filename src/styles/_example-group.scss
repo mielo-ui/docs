@@ -8,13 +8,14 @@
 }
 
 .mie.view.example-group {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   overflow: hidden;
 
   .preview.view {
     background-color: rgba(#000, 0.05);
     padding: 1.2rem 2rem;
     min-height: 16rem;
+    position: relative;
 
     > .sample {
       > .mie.entry,
@@ -29,6 +30,14 @@
         margin: 0.6rem 0.6rem;
       }
     }
+
+    > .show-code {
+      position: absolute;
+      right: 0rem;
+      top: 0rem;
+
+      border-radius: 0 0 0 1.2rem;
+    }
   }
 
   .code.view {
@@ -37,23 +46,7 @@
     overflow: hidden;
 
     pre {
-      border-radius: 0 !important;
-      line-height: 1 !important;
-      border: none !important;
-      margin: 0 !important;
-
       border-top: 0.1rem solid var(--mie-cvg-border);
-
-      code {
-        font-size: 1.6rem;
-        line-height: 1;
-
-        * {
-          font-family: "JetBrains Mono" !important;
-          font-size: 1.6rem;
-          line-height: 1;
-        }
-      }
     }
   }
 }

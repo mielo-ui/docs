@@ -17,6 +17,7 @@
     "@fontsource/jetbrains-mono": "^5.0.20",
     "@reduxjs/toolkit": "^2.2.6",
     "adwaita-symbolic-icons-react": "../adwaita-symbolic-icons-react",
+    "change-case": "^5.4.4",
     "mielo": "../mielo",
     "mielo-react": "../mielo-react",
     "mielo-react-slider": "../mielo-react-slider",

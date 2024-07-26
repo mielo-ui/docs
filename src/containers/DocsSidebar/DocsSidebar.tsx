@@ -1,9 +1,12 @@
+import * as Icons from "adwaita-symbolic-icons-react"
 import { useCallback, useState } from "react"
 import { useSelector } from "react-redux"
 import * as Mie from "mielo-react"
 
-import * as selectors from "../../selectors"
 import { ListItemLink } from "./ListItemLink"
+import * as selectors from "../../selectors"
+
+import logo from "./logo.png"
 
 interface PageItemOptions {
   title: string
@@ -15,6 +18,16 @@ interface PageItemOptions {
 }
 
 const components: PageItemOptions[] = [
+  {
+    title: "Layout",
+    subtitle: "Position helpers",
+    links: [
+      { page: "corners", title: "Corners" },
+      { page: "shadow", title: "Shadow" },
+      { page: "indents", title: "Indents" },
+      { page: "flex", title: "Flex" },
+    ],
+  },
   {
     title: "Text",
     subtitle: "Basic text elements",
@@ -28,7 +41,7 @@ const components: PageItemOptions[] = [
     subtitle: "Common ui elements",
     links: [
       { page: "button", title: "Button" },
-      { page: "icons", title: "Icons" },
+      { page: "icon", title: "Icon" },
     ],
   },
   {
@@ -36,9 +49,9 @@ const components: PageItemOptions[] = [
     subtitle: "Related user input",
     links: [
       { page: "entry", title: "Entry" },
+      { page: "select", title: "Select" },
       { page: "checkbox", title: "Checkbox" },
       { page: "toggle", title: "Toggle" },
-      { page: "select", title: "Select" },
       { page: "radio", title: "Radio" },
       { page: "slider", title: "Slider" },
       { page: "progress", title: "Progress" },
@@ -47,15 +60,18 @@ const components: PageItemOptions[] = [
   {
     title: "Navigation",
     subtitle: "Route elements & containers",
-    links: [{ page: "headerbar", title: "HeaderBar" }],
+    links: [
+      { page: "headerbar", title: "HeaderBar" },
+      { page: "tabs", title: "Tabs" },
+    ],
   },
   {
     title: "Lists",
     subtitle: "Group related content",
     links: [
-      { page: "item", title: "Item" },
       { page: "list", title: "List" },
-      { page: "row", title: "Row" },
+      { page: "row", title: "Rows" },
+      { page: "item", title: "Item" },
     ],
   },
   {
@@ -70,21 +86,7 @@ const components: PageItemOptions[] = [
   {
     title: "Complex ",
     subtitle: "Popup content",
-    links: [
-      { page: "tabs", title: "Tabs" },
-      { page: "cards", title: "Cards" },
-    ],
-  },
-]
-
-const demo: PageItemOptions[] = [
-  {
-    title: "Basic",
-    subtitle: "Common examples",
-    links: [
-      { page: "headerbar_window_demo", title: "Window HeaderBar" },
-      { page: "stepper_form", title: "Stepper Form" },
-    ],
+    links: [{ page: "card", title: "Card" }],
   },
 ]
 
@@ -108,7 +110,7 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
 
       <Mie.Collapsible open={opened}>
         <Mie.L.View ph="large" pv>
-          <Mie.L.View content f fc r>
+          <Mie.L.View content f fc r shadow>
             <Mie.L.List p="none" r>
               {links.map(({ page, title }, linkIdx, array) => {
                 const isLast = linkIdx === array.length - 1
@@ -147,20 +149,41 @@ export function DocsSidebar() {
       opened={sidebarOpen}
       headerbar={
         <Mie.HeaderBar
-          header={<Mie.Header title="Components" />}
+          header={<Mie.Header title="Documentation" subtitle="UI Elements" />}
           attached="splitview"
           transparent
         />
       }
     >
+      <Mie.L.View mt="large" mb="massive" f fai="center" fjc="center">
+        {/* <Mie.Icon
+          icon={<Icons.Status.DialogInformation />}
+          accent="success"
+          size="massive"
+        /> */}
+
+        <img
+          className="mie shadow"
+          src={logo}
+          style={{
+            borderRadius: "1rem 1.5rem 1rem 1.5rem",
+            maxHeight: "6rem",
+            maxWidth: "6rem",
+          }}
+        />
+      </Mie.L.View>
+
       <Mie.L.List m="none">
+        <ListItemLink
+          description="Installatiion, setup, etc..."
+          title="Getting Started"
+          activatable
+          ph="large"
+          link="/"
+          pv
+        />
+        
         {components.map(_menuMapper)}
-
-        <Mie.L.View p>
-          <Mie.Header title="Showcase" subtitle="Complex demo examples" />
-        </Mie.L.View>
-
-        {demo.map(_menuMapper)}
       </Mie.L.List>
     </Mie.SplitView.Sidebar>
   )
