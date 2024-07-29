@@ -15,7 +15,6 @@ function Size() {
         size="small"
         type="text"
         r
-
         accent="error"
       />
 
@@ -26,7 +25,6 @@ function Size() {
         name="username-s-2"
         type="text"
         r
-
         accent="warning"
       />
 
@@ -38,7 +36,6 @@ function Size() {
         size="large"
         type="text"
         r
-        
         accent="success"
       />
     </Mie.L.View>

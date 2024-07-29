@@ -8,15 +8,7 @@ export function ShadowPage() {
 
   return (
     <div className="page toggle">
-      <Mie.Clamp
-        header={
-          <Mie.Header
-            title="Shadow"
-            size="massive"
-            center
-          />
-        }
-      >
+      <Mie.Clamp header={<Mie.Header title="Shadow" size="massive" center />}>
         {examples.map(name => (
           <ExampleGroup key={name} component={Examples[name]} />
         ))}

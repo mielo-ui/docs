@@ -12,9 +12,7 @@ export function DocsPage() {
             center
           />
         }
-      >
-
-      </Mie.Clamp>
+      ></Mie.Clamp>
     </div>
   )
 }

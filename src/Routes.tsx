@@ -10,9 +10,7 @@ export function Routes() {
     for (const [page, Component] of entries(components)) {
       const name = page.replace("Page", "").toLowerCase()
 
-      routes.push(
-        <Route path={name} component={Component} />
-      )
+      routes.push(<Route key={name} path={name} component={Component} />)
     }
 
     return routes

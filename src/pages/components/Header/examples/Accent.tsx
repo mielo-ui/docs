@@ -6,12 +6,12 @@ import * as Mie from "mielo-react"
 
 function Accent() {
   return (
-    <Mie.View f f1 fc fjc="center" fai="center">
+    <Mie.L.View f f1 fc fjc="center" fai="center">
       <Mie.Text accent>Accent</Mie.Text>
       <Mie.Text accent="success">Success</Mie.Text>
       <Mie.Text accent="warning">Warning</Mie.Text>
       <Mie.Text accent="error">Error</Mie.Text>
-    </Mie.View>
+    </Mie.L.View>
   )
 }
 

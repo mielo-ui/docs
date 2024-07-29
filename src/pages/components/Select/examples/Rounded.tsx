@@ -37,7 +37,6 @@ function Rounded() {
         value={time}
         label="Time"
         accent
-        
         r="none"
       />
 
@@ -49,7 +48,6 @@ function Rounded() {
         accent="warning"
         label="Time"
         value={time}
-
         r="small"
       />
 
@@ -61,7 +59,6 @@ function Rounded() {
         accent="error"
         label="Times"
         value={time}
-
         r
       />
 
@@ -73,7 +70,6 @@ function Rounded() {
         accent="success"
         label="Times"
         value={time}
-
         r="large"
       />
     </Mie.L.View>

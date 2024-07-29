@@ -64,7 +64,7 @@ export function Library() {
           f
         >
           {icons.map(([group, iconsMap]) => (
-            <Mie.L.View className="group" pb="massive" sidebar f fc>
+            <Mie.L.View className="group" pb="massive" bg="sidebar" f fc>
               <Mie.L.Header
                 title={group as any}
                 size="large"
@@ -99,7 +99,7 @@ export function Library() {
       ) : (
         <Mie.L.View
           scrollable
-          content
+          bg="content"
           shadow
           mt="massive"
           fjc="center"

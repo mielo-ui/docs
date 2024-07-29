@@ -46,21 +46,8 @@ function Fill() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon big accent space-large filled">
-  <svg>
-</div>
-
-<div class="mie icon big warning space-large filled">
-  <svg>
-</div>
-
-<div class="mie icon big error space-large filled">
-  <svg>
-</div>
-
-<div class="mie icon big success space-large filled">
-  <svg>
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Fill, {

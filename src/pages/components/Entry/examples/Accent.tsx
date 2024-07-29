@@ -14,7 +14,6 @@ function Accent() {
         name="accent-1"
         type="text"
         r
-
         accent
       />
 
@@ -25,7 +24,6 @@ function Accent() {
         name="accent-2"
         type="text"
         r
-
         accent="error"
       />
 
@@ -36,7 +34,6 @@ function Accent() {
         name="accent-3"
         type="text"
         r
-
         accent="warning"
       />
 
@@ -47,7 +44,6 @@ function Accent() {
         name="accent-4"
         type="text"
         r
-        
         accent="success"
       />
     </Mie.L.View>

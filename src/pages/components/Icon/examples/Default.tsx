@@ -15,9 +15,8 @@ function Default() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon big">
-  <svg />
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Default, {

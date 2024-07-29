@@ -9,7 +9,7 @@ import * as Mie from "mielo-react"
 function Entry() {
   const [username, setUsername] = useState("")
   return (
-    <Mie.L.Rows r>
+    <Mie.L.Rows shadow r>
       <Mie.L.Rows.Entry
         placeholder="Username"
         onChange={nextValue => setUsername(nextValue)}

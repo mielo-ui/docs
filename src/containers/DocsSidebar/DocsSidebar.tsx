@@ -1,11 +1,9 @@
 import * as Icons from "adwaita-symbolic-icons-react"
 import { useCallback, useState } from "react"
-import { useSelector } from "react-redux"
+import { useMediaQuery } from "usehooks-ts"
 import * as Mie from "mielo-react"
 
 import { ListItemLink } from "./ListItemLink"
-import * as selectors from "../../selectors"
-
 import logo from "./logo.png"
 
 interface PageItemOptions {
@@ -29,6 +27,16 @@ const components: PageItemOptions[] = [
     ],
   },
   {
+    title: "Abstract",
+    subtitle: "Common containers",
+    links: [
+      { page: "collapsible", title: "Collapsible" },
+      { page: "activatable", title: "Activatable" },
+      { page: "view", title: "View" },
+      { page: "item", title: "Item" },
+    ],
+  },
+  {
     title: "Text",
     subtitle: "Basic text elements",
     links: [
@@ -41,6 +49,8 @@ const components: PageItemOptions[] = [
     subtitle: "Common ui elements",
     links: [
       { page: "button", title: "Button" },
+      { page: "label", title: "Label" },
+      { page: "image", title: "Image" },
       { page: "icon", title: "Icon" },
     ],
   },
@@ -61,7 +71,10 @@ const components: PageItemOptions[] = [
     title: "Navigation",
     subtitle: "Route elements & containers",
     links: [
+      { page: "splitview", title: "SplitView" },
       { page: "headerbar", title: "HeaderBar" },
+      { page: "window", title: "Window" },
+      { page: "clamp", title: "Clamp" },
       { page: "tabs", title: "Tabs" },
     ],
   },
@@ -71,7 +84,6 @@ const components: PageItemOptions[] = [
     links: [
       { page: "list", title: "List" },
       { page: "row", title: "Rows" },
-      { page: "item", title: "Item" },
     ],
   },
   {
@@ -80,7 +92,6 @@ const components: PageItemOptions[] = [
     links: [
       { page: "dialog", title: "Dialog" },
       { page: "message", title: "Message" },
-      { page: "notification", title: "Notification" },
     ],
   },
   {
@@ -110,7 +121,7 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
 
       <Mie.Collapsible open={opened}>
         <Mie.L.View ph="large" pv>
-          <Mie.L.View content f fc r shadow>
+          <Mie.L.View bg="content" f fc r shadow>
             <Mie.L.List p="none" r>
               {links.map(({ page, title }, linkIdx, array) => {
                 const isLast = linkIdx === array.length - 1
@@ -137,8 +148,12 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
   )
 }
 
-export function DocsSidebar() {
-  const sidebarOpen = useSelector(selectors.sidebarOpen)
+export interface DocsSidebarProps {
+  open?: boolean
+}
+
+export function DocsSidebar({ open }: DocsSidebarProps) {
+  const isMobile = useMediaQuery("(max-width: 768px)")
 
   const _menuMapper = (options: PageItemOptions, idx: number) => {
     return <SubMenu key={`submenu-${idx}`} {...options} />
@@ -146,45 +161,42 @@ export function DocsSidebar() {
 
   return (
     <Mie.SplitView.Sidebar
-      opened={sidebarOpen}
+      animateStyle={isMobile ? "shift" : "width"}
+      className="blured"
+      opened={open}
       headerbar={
         <Mie.HeaderBar
           header={<Mie.Header title="Documentation" subtitle="UI Elements" />}
-          attached="splitview"
           transparent
         />
       }
     >
-      <Mie.L.View mt="large" mb="massive" f fai="center" fjc="center">
-        {/* <Mie.Icon
-          icon={<Icons.Status.DialogInformation />}
-          accent="success"
-          size="massive"
-        /> */}
+      <Mie.L.View f fc f1 scrollable>
+        <Mie.L.View mt="large" mb="massive" f fai="center" fjc="center">
+          <img
+            className="mie shadow"
+            src={logo}
+            style={{
+              borderRadius: "1rem 1.5rem 1rem 1.5rem",
+              maxHeight: "6rem",
+              maxWidth: "6rem",
+            }}
+          />
+        </Mie.L.View>
 
-        <img
-          className="mie shadow"
-          src={logo}
-          style={{
-            borderRadius: "1rem 1.5rem 1rem 1.5rem",
-            maxHeight: "6rem",
-            maxWidth: "6rem",
-          }}
-        />
+        <Mie.L.List m="none">
+          <ListItemLink
+            description="Installatiion, setup, etc..."
+            title="Getting Started"
+            activatable
+            ph="large"
+            link="/"
+            pv
+          />
+
+          {components.map(_menuMapper)}
+        </Mie.L.List>
       </Mie.L.View>
-
-      <Mie.L.List m="none">
-        <ListItemLink
-          description="Installatiion, setup, etc..."
-          title="Getting Started"
-          activatable
-          ph="large"
-          link="/"
-          pv
-        />
-        
-        {components.map(_menuMapper)}
-      </Mie.L.List>
     </Mie.SplitView.Sidebar>
   )
 }

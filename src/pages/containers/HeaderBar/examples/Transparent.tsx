@@ -7,12 +7,11 @@ import * as Mie from "mielo-react"
 
 function Transparent() {
   return (
-    <Mie.View>
+    <Mie.L.View f f1>
       <Mie.L.HeaderBar
         header={<Mie.Header title="Title" subtitle="Subtitle" />}
         transparent
         r
-
         left={
           <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
         }
@@ -20,7 +19,7 @@ function Transparent() {
           <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
         }
       />
-    </Mie.View>
+    </Mie.L.View>
   )
 }
 

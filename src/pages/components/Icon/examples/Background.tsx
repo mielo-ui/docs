@@ -45,21 +45,8 @@ function Background() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon big accent space-large bg">
-  <svg>
-</div>
-
-<div class="mie icon big warning space-large bg">
-  <svg>
-</div>
-
-<div class="mie icon big error space-large bg">
-  <svg>
-</div>
-
-<div class="mie icon big success space-large bg">
-  <svg>
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Background, {

@@ -6,7 +6,7 @@ import * as Mie from "mielo-react"
 
 function Default() {
   return (
-    <Mie.L.Rows r>
+    <Mie.L.Rows shadow r>
       <Mie.L.Rows.Row rt />
       <Mie.L.Rows.Row />
       <Mie.L.Rows.Row rb />

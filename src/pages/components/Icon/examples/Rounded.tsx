@@ -14,7 +14,6 @@ function Rounded() {
         p="large"
         accent
         bg
-        
         r="tiny"
       />
 
@@ -24,7 +23,6 @@ function Rounded() {
         size="huge"
         p="large"
         bg
-
         r="small"
       />
 
@@ -34,7 +32,6 @@ function Rounded() {
         size="big"
         p="large"
         bg
-        
         r
       />
 
@@ -44,7 +41,6 @@ function Rounded() {
         size="big"
         p="large"
         bg
-        
         r="large"
       />
     </Mie.L.View>
@@ -53,21 +49,8 @@ function Rounded() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon big accent bg p-large m r-tiny">
-  <svg />
-</div>
-
-<div class="mie icon huge warning bg p-large m r-small">
-  <svg />
-</div>
-
-<div class="mie icon big error bg p-large m r">
-  <svg />
-</div>
-
-<div class="mie icon big success bg p-large m r-large">
-  <svg />
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Rounded, {

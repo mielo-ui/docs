@@ -7,14 +7,18 @@ import * as Mie from "mielo-react"
 
 function Accent() {
   return (
-    <Mie.View>
+    <Mie.L.View f fc f1>
       <Mie.Header size="small" title="Default" />
 
-      <Mie.L.View f fc p>
+      <Mie.L.View f fc f1 p>
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           accent
           mv
           r
@@ -22,8 +26,12 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           accent="warning"
           mv
           r
@@ -31,8 +39,12 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           accent="error"
           mv
           r
@@ -40,8 +52,12 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           accent="success"
           mv
           r
@@ -53,8 +69,12 @@ function Accent() {
       <Mie.L.View f fc p>
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           transparent
           accent
           mv
@@ -63,8 +83,12 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           transparent
           accent="warning"
           mv
@@ -73,8 +97,12 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           transparent
           accent="error"
           mv
@@ -83,15 +111,19 @@ function Accent() {
 
         <Mie.L.HeaderBar
           header={<Mie.Header title="Title" subtitle="Subtitle" />}
-          left={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />}
-          right={<Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />}
+          left={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          }
+          right={
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
+          }
           transparent
           accent="success"
           mv
           r
         />
       </Mie.L.View>
-    </Mie.View>
+    </Mie.L.View>
   )
 }
 

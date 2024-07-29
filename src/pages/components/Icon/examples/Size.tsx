@@ -22,37 +22,8 @@ function Size() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon mini">
-  <svg>
-</div>
-
-<div class="mie icon tiny">
-  <svg>
-</div>
-
-<div class="mie icon small">
-  <svg>
-</div>
-
-<div class="mie icon">
-  <svg>
-</div>
-
-<div class="mie icon large">
-  <svg>
-</div>
-
-<div class="mie icon big">
-  <svg>
-</div>
-
-<div class="mie icon huge">
-  <svg>
-</div>
-
-<div class="mie icon massive">
-  <svg>
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Size, {

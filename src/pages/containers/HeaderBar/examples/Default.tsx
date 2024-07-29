@@ -7,11 +7,10 @@ import * as Mie from "mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View>
+    <Mie.L.View f f1>
       <Mie.L.HeaderBar
         header={<Mie.Header title="Title" subtitle="Subtitle" />}
         r
-
         left={
           <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
         }

@@ -38,21 +38,8 @@ function Accent() {
 
 //@chunk
 const rawHtmlCode = `
-<div class="mie icon big accent">
-  <svg>
-</div>
-
-<div class="mie icon big warning">
-  <svg>
-</div>
-
-<div class="mie icon big error">
-  <svg>
-</div>
-
-<div class="mie icon big success">
-  <svg>
-</div>
+// Without HTML
+// Only React component
 `.trim()
 
 export default Object.assign(Accent, {

@@ -13,7 +13,6 @@ function Size() {
         accent="warning"
         size="small"
         activatable
-
         pv="small"
         ph
         r
@@ -24,7 +23,6 @@ function Size() {
         title="Default Title"
         accent="error"
         activatable
-
         ph="large"
         pv
         r

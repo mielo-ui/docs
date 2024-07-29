@@ -6,7 +6,7 @@ import * as Mie from "mielo-react"
 
 function Accent() {
   return (
-    <Mie.L.Rows r>
+    <Mie.L.Rows shadow r>
       <Mie.L.Rows.Row rt accent="warning" />
       <Mie.L.Rows.Row accent="error" />
       <Mie.L.Rows.Row rb accent="success" />

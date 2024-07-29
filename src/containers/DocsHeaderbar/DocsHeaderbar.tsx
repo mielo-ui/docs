@@ -7,7 +7,11 @@ import { toggleSidebar, toggleDarkTheme } from "../../states"
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
 
-export function DocsHeaderbar() {
+export interface DocsHeaderbarProps {
+  shadow?: boolean | "outer" | "inner"
+}
+
+export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
   const darkThemeEnable = useSelector(selectors.darkThemeEnable)
   const sidebarOpen = useSelector(selectors.sidebarOpen)
   const dispatch = useDispatch<AppDispatch>()
@@ -24,12 +28,11 @@ export function DocsHeaderbar() {
   )
 
   return (
-    <Mie.HeaderBar
-      attached="splitview"
+    <Mie.L.HeaderBar
+      controls={<Mie.Window.Controls controls={["minimize", "close"]} />}
+      header={<Mie.Header title="Mielo Web" />}
+      shadow={shadow}
       transparent
-      header={
-        <Mie.Header title="Mielo Web" />
-      }
       left={
         <Mie.Button
           icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
@@ -37,11 +40,12 @@ export function DocsHeaderbar() {
         />
       }
       right={
-        <Mie.Checkbox
+        <Mie.L.Checkbox
           onChange={onToggleDarkTheme}
           checked={darkThemeEnable}
           label="Dark Theme"
           accent="success"
+          mr="massive"
           toggle
         />
       }

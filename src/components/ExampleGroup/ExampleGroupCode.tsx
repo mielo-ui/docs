@@ -19,7 +19,11 @@ export function ExampleGroupCode({ code, open }: ExampleGroupCodeProps) {
   let codeContainer
   if (code && Object.keys(code).length > 0) {
     codeContainer = tab && code && (
-      <Code className="mie rt-none" lang={tab === "ts" ? "tsx" : tab} code={code?.[tab]} />
+      <Code
+        className="mie rt-none"
+        lang={tab === "ts" ? "tsx" : tab}
+        code={code?.[tab]}
+      />
     )
   }
 

@@ -13,7 +13,6 @@ function Rounded() {
         message="Message"
         name="username-s-1"
         type="text"
-
         accent
       />
 
@@ -24,7 +23,6 @@ function Rounded() {
         name="username-s-3"
         type="text"
         r="small"
-        
         accent="warning"
       />
 
@@ -35,7 +33,6 @@ function Rounded() {
         name="username-s-2"
         type="text"
         r
-
         accent="error"
       />
 
@@ -46,7 +43,6 @@ function Rounded() {
         name="username-s-3"
         type="text"
         r="large"
-        
         accent="success"
       />
     </Mie.L.View>

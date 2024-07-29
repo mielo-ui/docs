@@ -26,8 +26,8 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
       <Mie.L.View
         className="example-group"
         shadow="outer"
+        bg="content"
         r="large"
-        content
         fc
         f
       >

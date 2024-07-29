@@ -28,7 +28,7 @@ function Select() {
   ]
 
   return (
-    <Mie.Rows>
+    <Mie.L.Rows shadow>
       <Mie.Rows.Select
         onChange={option => setTime(option)}
         label="Time"
@@ -36,7 +36,7 @@ function Select() {
         value={time}
         name="time"
       />
-    </Mie.Rows>
+    </Mie.L.Rows>
   )
 }
 

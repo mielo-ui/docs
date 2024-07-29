@@ -7,7 +7,7 @@ import * as Mie from "mielo-react"
 
 function Item() {
   return (
-    <Mie.L.Rows>
+    <Mie.L.Rows r shadow>
       <Mie.L.Rows.Row rt title="Title" activatable />
 
       <Mie.L.Rows.Row
