@@ -7,6 +7,7 @@ import { toggleSidebar, toggleDarkTheme, setUiFont } from "../../states"
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
 import { useRoute } from "wouter"
+import { GithubIcon } from "./GithubIcon"
 
 export interface DocsHeaderbarProps {
   shadow?: boolean | "outer" | "inner"
@@ -44,6 +45,16 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
           <Mie.Button
             icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
             onClick={onToggleSidebar}
+            transparent
+          />
+
+          <Mie.L.Item
+            icon={<Mie.Icon icon={<GithubIcon />} />}
+            title="GitHub"
+            activatable
+            mh
+            p
+            r
           />
 
           <Mie.L.Select
@@ -52,7 +63,6 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
             size="small"
             label="Font"
             name="font"
-            ml="large"
             options={[
               { label: "Roboto", value: "Roboto" },
               { label: "Inter", value: "Inter" },
