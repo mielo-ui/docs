@@ -49,6 +49,7 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
           />
 
           <Mie.L.Item
+            link="https://github.com/mielo-ui/mielo.css"
             icon={<Mie.Icon icon={<GithubIcon />} />}
             title="GitHub"
             activatable

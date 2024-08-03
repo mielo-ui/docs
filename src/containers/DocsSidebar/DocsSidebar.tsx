@@ -16,24 +16,13 @@ interface PageItemOptions {
 
 const components: PageItemOptions[] = [
   {
-    title: "Layout",
-    subtitle: "Position helpers",
+    title: "Basic",
+    subtitle: "Common ui elements",
     links: [
-      { page: "abstract", title: "Abstract" },
-      { page: "corners", title: "Corners" },
-      { page: "shadow", title: "Shadow" },
-      { page: "indents", title: "Indents" },
-      { page: "flex", title: "Flex" },
-    ],
-  },
-  {
-    title: "Abstract",
-    subtitle: "Common containers",
-    links: [
-      { page: "collapsible", title: "Collapsible" },
-      { page: "activatable", title: "Activatable" },
-      { page: "view", title: "View" },
-      { page: "item", title: "Item" },
+      { page: "button", title: "Button" },
+      { page: "label", title: "Label" },
+      { page: "image", title: "Image" },
+      { page: "icon", title: "Icon" },
     ],
   },
   {
@@ -42,16 +31,6 @@ const components: PageItemOptions[] = [
     links: [
       { page: "typography", title: "Typography" },
       { page: "header", title: "Header" },
-    ],
-  },
-  {
-    title: "Basic",
-    subtitle: "Common ui elements",
-    links: [
-      { page: "button", title: "Button" },
-      { page: "label", title: "Label" },
-      { page: "image", title: "Image" },
-      { page: "icon", title: "Icon" },
     ],
   },
   {
@@ -93,7 +72,28 @@ const components: PageItemOptions[] = [
       { page: "dialog", title: "Dialog" },
       { page: "message", title: "Message" },
     ],
-  }
+  },
+  {
+    title: "Layout",
+    subtitle: "Position helpers",
+    links: [
+      { page: "abstract", title: "Abstract" },
+      { page: "corners", title: "Corners" },
+      { page: "shadow", title: "Shadow" },
+      { page: "indents", title: "Indents" },
+      { page: "flex", title: "Flex" },
+    ],
+  },
+  {
+    title: "Abstract",
+    subtitle: "Common containers",
+    links: [
+      { page: "collapsible", title: "Collapsible" },
+      { page: "activatable", title: "Activatable" },
+      { page: "view", title: "View" },
+      { page: "item", title: "Item" },
+    ],
+  },
 ]
 
 export function SubMenu({ title, subtitle, links }: PageItemOptions) {
