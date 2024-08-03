@@ -1,10 +1,10 @@
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 import { ExampleGroup } from "../../../components"
 import * as Examples from "./examples"
 
 export function ActivatablePage() {
-  const examples = ["Default", "Accent", "Size"]
+  const examples = ["Default", "Accent"]
 
   return (
     <div className="page activatable">

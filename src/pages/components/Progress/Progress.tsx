@@ -1,4 +1,4 @@
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 import { ExampleGroup } from "../../../components"
 import * as Examples from "./examples"

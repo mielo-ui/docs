@@ -2,7 +2,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Range.tsx?raw"
 
 //@chunk
-import { RangeSlider } from "mielo-react-slider"
+import { RangeSlider } from "@mielo-ui/mielo-react-slider"
 import { useState } from "react"
 
 function Range() {

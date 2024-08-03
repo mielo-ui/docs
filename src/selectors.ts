@@ -7,3 +7,7 @@ export const darkThemeEnable = (state: RootState) => {
 export const sidebarOpen = (state: RootState) => {
   return state.config.sidebarOpen
 }
+
+export const uiFont = (state: RootState) => {
+  return state.config.uiFont
+}

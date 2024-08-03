@@ -1,8 +1,10 @@
 import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/components/Checkbox/Props.ts?raw"
+
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
@@ -29,6 +31,7 @@ export default Object.assign(Default, {
   title: "Default",
   code: {
     ts: tsFormatSample(rawTsCode),
+    props: rawPropsCode,
     html: rawHtmlCode,
   },
 })

@@ -4,7 +4,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Accent.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function SampleWindow({ accent }: any) {
   return (

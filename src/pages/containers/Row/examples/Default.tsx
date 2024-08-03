@@ -2,7 +2,8 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/containers/Rows/Props.ts?raw"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
@@ -35,6 +36,7 @@ export default Object.assign(Default, {
   title: "Default",
   code: {
     ts: tsFormatSample(rawTsCode),
+    props: rawPropsCode,
     html: rawHtmlCode,
   },
 })

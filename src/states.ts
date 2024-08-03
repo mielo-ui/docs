@@ -1,13 +1,17 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
+export type UiFont = "Roboto" | "Inter" | "Cantarell"
+
 export interface ConfigState {
   darkThemeEnable?: boolean
   sidebarOpen?: boolean
+  uiFont: UiFont
 }
 
 const initialState = {
   darkThemeEnable: true,
   sidebarOpen: true,
+  uiFont: "Roboto",
 }
 
 const configSlice = createSlice({
@@ -23,9 +27,13 @@ const configSlice = createSlice({
       state.darkThemeEnable =
         typeof payload === "boolean" ? payload : !state.darkThemeEnable
     },
+
+    setUiFont(state, { payload }: PayloadAction<UiFont>) {
+      state.uiFont = payload
+    },
   },
 })
 
 const { actions, reducer } = configSlice
-export const { toggleSidebar, toggleDarkTheme } = actions
+export const { toggleSidebar, toggleDarkTheme, setUiFont } = actions
 export default reducer

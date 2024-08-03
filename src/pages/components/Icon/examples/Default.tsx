@@ -1,9 +1,11 @@
 import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/components/Icon/Props.ts?raw"
+
 //@chunk
-import * as Icons from "adwaita-symbolic-icons-react"
-import * as Mie from "mielo-react"
+import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
@@ -24,5 +26,6 @@ export default Object.assign(Default, {
   code: {
     ts: tsFormatSample(rawTsCode),
     html: rawHtmlCode,
+    props: rawPropsCode,
   },
 })

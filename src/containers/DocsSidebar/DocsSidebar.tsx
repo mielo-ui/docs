@@ -1,7 +1,6 @@
-import * as Icons from "adwaita-symbolic-icons-react"
 import { useCallback, useState } from "react"
 import { useMediaQuery } from "usehooks-ts"
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 import { ListItemLink } from "./ListItemLink"
 import logo from "./logo.png"
@@ -20,6 +19,7 @@ const components: PageItemOptions[] = [
     title: "Layout",
     subtitle: "Position helpers",
     links: [
+      { page: "abstract", title: "Abstract" },
       { page: "corners", title: "Corners" },
       { page: "shadow", title: "Shadow" },
       { page: "indents", title: "Indents" },
@@ -93,12 +93,7 @@ const components: PageItemOptions[] = [
       { page: "dialog", title: "Dialog" },
       { page: "message", title: "Message" },
     ],
-  },
-  {
-    title: "Complex ",
-    subtitle: "Popup content",
-    links: [{ page: "card", title: "Card" }],
-  },
+  }
 ]
 
 export function SubMenu({ title, subtitle, links }: PageItemOptions) {

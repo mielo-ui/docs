@@ -1,6 +1,6 @@
-import * as Icons from "adwaita-symbolic-icons-react"
+import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import { useMemo, useState } from "react"
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 const { entries } = Object
 
@@ -64,7 +64,7 @@ export function Library() {
           f
         >
           {icons.map(([group, iconsMap]) => (
-            <Mie.L.View className="group" pb="massive" bg="sidebar" f fc>
+            <Mie.L.View className="group" pb="massive" bg="panel" f fc>
               <Mie.L.Header
                 title={group as any}
                 size="large"

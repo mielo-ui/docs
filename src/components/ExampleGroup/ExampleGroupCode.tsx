@@ -1,8 +1,9 @@
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 import { useState } from "react"
 import { Code } from "../Code"
 
 export interface ExampleCodeOptions {
+  props?: string
   html?: string
   ts?: string
 }
@@ -21,11 +22,33 @@ export function ExampleGroupCode({ code, open }: ExampleGroupCodeProps) {
     codeContainer = tab && code && (
       <Code
         className="mie rt-none"
-        lang={tab === "ts" ? "tsx" : tab}
+        lang={["ts", "props"].includes(tab) ? "tsx" : tab}
         code={code?.[tab]}
       />
     )
   }
+
+  const tabs = Object.assign(
+    {},
+    code?.ts && {
+      ts: {
+        title: "React",
+        name: "ts",
+      },
+    },
+    code?.props && {
+      props: {
+        title: "Props",
+        name: "props",
+      },
+    },
+    code?.html && {
+      html: {
+        title: "HTML",
+        name: "html",
+      },
+    },
+  )
 
   return (
     <Mie.Collapsible open={open} className="mie view f fc">
@@ -36,16 +59,7 @@ export function ExampleGroupCode({ code, open }: ExampleGroupCodeProps) {
         transparent
         mv="large"
         mh="large"
-        tabs={{
-          ts: {
-            title: "React",
-            name: "ts",
-          },
-          html: {
-            title: "HTML",
-            name: "html",
-          },
-        }}
+        tabs={tabs}
       />
 
       <Mie.L.View className="code" rt="none" rb="large" f fc>

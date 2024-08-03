@@ -1,0 +1,38 @@
+.page.home {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+  padding-bottom: 10rem;
+
+  .page-heading {
+    overflow: hidden;
+    padding: 5rem 0;
+    width: 100%;
+
+    >.mie.header {
+      margin-bottom: 3rem;
+    }
+
+    .docs-code {
+      border-radius: 1.2rem;
+      max-width: 50rem;
+      min-width: 26rem;
+    }
+  }
+
+  .motivation {
+    margin-top: -2rem;
+
+    max-width: 50rem;
+    min-width: 26rem;
+
+    .mie.text {
+      line-height: 1.5;
+    }
+  }
+}
+
+.headerbar.homepage {
+  position: absolute;
+}

@@ -1,8 +1,10 @@
 import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/containers/Dialog/Props.ts?raw"
+
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 import { useState } from "react"
 
 function Default() {
@@ -14,7 +16,6 @@ function Default() {
         onRequestClose={() => setModalOpened(false)}
         isOpen={modalOpened}
         attached="modal"
-        theme="dark"
         actions={
           <>
             <Mie.Dialog.Action
@@ -65,6 +66,7 @@ export default Object.assign(Default, {
   title: "Default",
   code: {
     ts: tsFormatSample(rawTsCode),
+    props: rawPropsCode,
     html: rawHtmlCode,
   },
 })

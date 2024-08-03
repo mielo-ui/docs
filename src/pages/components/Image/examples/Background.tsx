@@ -3,7 +3,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Background.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Background() {
   return (

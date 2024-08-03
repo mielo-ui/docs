@@ -4,7 +4,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Select.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Select() {
   const [time, setTime] = useState({

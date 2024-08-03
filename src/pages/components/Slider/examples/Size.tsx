@@ -2,8 +2,8 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Size.tsx?raw"
 
 //@chunk
-import { Slider } from "mielo-react-slider"
-import * as Mie from "mielo-react"
+import { Slider } from "@mielo-ui/mielo-react-slider"
+import * as Mie from "@mielo-ui/mielo-react"
 import { useState } from "react"
 
 function Size() {

@@ -2,7 +2,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
 //@chunk
-import { Slider } from "mielo-react-slider"
+import { Slider } from "@mielo-ui/mielo-react-slider"
 import { useState } from "react"
 
 function Default() {

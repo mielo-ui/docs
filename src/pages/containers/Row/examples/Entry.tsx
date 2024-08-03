@@ -4,7 +4,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Entry.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Entry() {
   const [username, setUsername] = useState("")

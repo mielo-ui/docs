@@ -1,44 +1,18 @@
 import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Default.tsx?raw"
 
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/components/Item/Props.ts?raw"
+
 //@chunk
-import * as Icons from "adwaita-symbolic-icons-react"
-import * as Mie from "mielo-react"
+import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View>
-      <Mie.L.View className="sample" fjc="center" fc f1 f>
-        <Mie.Item title="Item Title" description="Description line" />
-
-        <Mie.Item
-          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-          title="Item Title"
-        />
-
-        <Mie.Item
-          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-          title="Vertical Item Title"
-          description="Description message"
-          vertical
-          center
-        />
-
-        <Mie.Item
-          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-          description="Some description text"
-          title="Item Title"
-          side={
-            <Mie.Button
-              icon={<Icons.Places.UserTrash />}
-              accent="error"
-              size="small"
-              circular
-            />
-          }
-        />
-      </Mie.L.View>
-    </Mie.L.View>
+    <Mie.Item
+      icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+      title="Item Title"
+    />
   )
 }
 
@@ -52,6 +26,7 @@ export default Object.assign(Default, {
   title: "Default",
   code: {
     ts: tsFormatSample(rawTsCode),
+    props: rawPropsCode,
     html: rawHtmlCode,
   },
 })

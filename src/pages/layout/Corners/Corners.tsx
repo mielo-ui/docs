@@ -1,17 +1,41 @@
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
+import { Code } from "../../../components/Code"
 
-import { ExampleGroup } from "../../../components"
-import * as Examples from "./examples"
+const CORNERS = `
+export type RoundSize = boolean | "none" | "tiny" | "small" | "large"
+
+export interface LayoutRoundedProps {
+  r?: RoundSize  // round all corners
+  rt?: RoundSize // round top corners
+  rb?: RoundSize // round bottom corners
+  rl?: RoundSize // round left corners
+  rr?: RoundSize // round right corners
+}
+
+// Mie.L.* used for any component with 
+// layout feature support
+
+// Its round all corners with default rounding size
+<Mie.L.View r />
+
+// Round top corners: left and right with large size
+<Mie.L.View rt="large" />
+
+// HTML
+<div className="mie rb-large rt" />
+`.trim()
 
 export function CornersPage() {
-  const examples = ["Default", "Accent", "Size"]
-
   return (
-    <div className="page toggle">
-      <Mie.Clamp header={<Mie.Header title="Corners" size="massive" center />}>
-        {examples.map(name => (
-          <ExampleGroup key={name} component={Examples[name]} />
-        ))}
+    <div className="page">
+      <Mie.Clamp
+        header={
+          <Mie.Header title="Layout" subtitle="Corners" size="massive" center />
+        }
+      >
+        <Mie.L.View f fc bg="content">
+          <Code lang="tsx" code={CORNERS} />
+        </Mie.L.View>
       </Mie.Clamp>
     </div>
   )

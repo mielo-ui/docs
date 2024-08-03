@@ -1,0 +1,15 @@
+.mie.sidebar.blured {
+  backdrop-filter: blur(5px); 
+}
+
+:root, [data-theme=light] {
+  .mie.sidebar.blured {
+      background-color: rgba(#ebebeb, 0.8); 
+  }    
+}
+
+[data-theme=dark] {
+  .mie.sidebar.blured {
+      background-color: rgba(#303030, 0.8); 
+  }    
+}

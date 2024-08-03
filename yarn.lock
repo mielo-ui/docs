@@ -205,6 +205,39 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
+"@mielo-ui/adwaita-symbolic-icons-react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/adwaita-symbolic-icons-react/-/adwaita-symbolic-icons-react-1.0.0.tgz#dca71fc292e213838924748f27d5f19a738991e3"
+  integrity sha512-rtxDl6+/TyGiZ9AfUusZeqwRkyi9NAEaAiJTug4KhWLVSBhtM8kbZ+5Rxenna8nyJ5H0086FMlpnSObDqun4Dw==
+
+"@mielo-ui/mielo-react-slider@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react-slider/-/mielo-react-slider-1.0.0.tgz#45c1f03d725058b8f0fff14ecb5f076763347d28"
+  integrity sha512-WW2Hav+2cs3BwgclKlBr7is3LEm7VIWPAPYsunMmWUX5CATrKQypfxF05fXC4ZfZv3StzGcFDTRNzDE4RFp60g==
+  dependencies:
+    clsx "^2.1.1"
+    react-range-slider-input "^3.0.7"
+
+"@mielo-ui/mielo-react@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.0.tgz#f6d59eef1d1c84dec0de6a84ac53a4e4a2a3e7f7"
+  integrity sha512-dQKqjWSeFbu+wKOZoVozlpkhBd3wJsilBQSm+3IueL3Moyrgg0SJYiCvKk2q15KI5o/KWlKpi9qDI9/wJMIOQg==
+  dependencies:
+    clsx "^2.1.1"
+    lodash.defaults "^4.2.0"
+    lodash.isequal "^4.5.0"
+    lodash.omit "^4.5.0"
+    lodash.pairs "^3.0.1"
+    lodash.pick "^4.4.0"
+    lodash.topairs "^4.3.0"
+    react-tooltip "^5.26.4"
+    react-transition-group "^4.4.5"
+
+"@mielo-ui/mielo@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-0.1.1.tgz#9fec9c7ae0f1603f16c4cb12c16475ff95367933"
+  integrity sha512-XN+slXx/0x40TogTnVFGaoUI9Tft9BPkRI0vPg21B8Zacnhz4Pz8CsnSB+vJh851A1kmLCRFeS+kT4wueD/lmQ==
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
@@ -573,9 +606,6 @@ acorn@^8.9.0:
   version "8.12.1"
   resolved "https://registry.npmjs.org/acorn/-/acorn-8.12.1.tgz"
   integrity sha512-tcpGyI9zbizT9JbV6oYE477V6mTlXvvi0T0G3SNIYE2apm/G5huBa1+K89VGeovbg+jycCrfhl3ADxErOuO6Jg==
-
-adwaita-symbolic-icons-react@../adwaita-symbolic-icons-react:
-  version "1.0.0"
 
 ajv@^6.12.4:
   version "6.12.6"
@@ -1336,31 +1366,6 @@ micromatch@^4.0.4:
     braces "^3.0.3"
     picomatch "^2.3.1"
 
-mielo-react-slider@../mielo-react-slider:
-  version "1.0.0"
-  dependencies:
-    clsx "^2.1.1"
-    react-range-slider-input "^3.0.7"
-
-mielo-react@../mielo-react:
-  version "1.0.0"
-  dependencies:
-    clsx "^2.1.1"
-    lodash.defaults "^4.2.0"
-    lodash.isequal "^4.5.0"
-    lodash.omit "^4.5.0"
-    lodash.pairs "^3.0.1"
-    lodash.pick "^4.4.0"
-    lodash.topairs "^4.3.0"
-    react-tooltip "^5.26.4"
-    react-transition-group "^4.4.5"
-
-mielo@../mielo:
-  version "1.0.0"
-  dependencies:
-    reseter.css "^2.0.0"
-    sassdash "^0.9.0"
-
 minimatch@^3.0.5, minimatch@^3.1.1, minimatch@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/minimatch/-/minimatch-3.1.2.tgz"
@@ -1662,11 +1667,6 @@ reselect@^5.1.0:
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-5.1.1.tgz#c766b1eb5d558291e5e550298adb0becc24bb72e"
   integrity sha512-K/BG6eIky/SBpzfHZv/dd+9JBFiS4SWV7FIujVyJRux6e45+73RaUHXLmIR1f7WOMaQ0U1km6qwklRQxpJJY0w==
 
-reseter.css@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/reseter.css/-/reseter.css-2.0.0.tgz#6832a057d14a8ad3e9e578a8bebf3c4279a4cae5"
-  integrity sha512-u98r3v0drXwxwRFhBywZOk+9LWoNVMy+tSClR6wJG+XXbrR/fpuuzbWQ8N5Uxczp3xMUX86E4PCWzitzsZ5GOg==
-
 resolve-from@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz"
@@ -1724,11 +1724,6 @@ sass@^1.77.8:
     chokidar ">=3.0.0 <4.0.0"
     immutable "^4.0.0"
     source-map-js ">=0.6.2 <2.0.0"
-
-sassdash@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/sassdash/-/sassdash-0.9.0.tgz#e2114e80af0c01639d1c6b88a3eb350740cb1169"
-  integrity sha512-1SIJltpUOCMY06uTEWrtXDtfGr39P2huhikbiAMU0v9S4PfL5StxGiz5Oo0HqyVpWZK3mAItYEntDikUSUyXeQ==
 
 scheduler@^0.23.2:
   version "0.23.2"

@@ -1,12 +1,12 @@
-import { atomDark } from "react-syntax-highlighter/dist/esm/styles/prism"
-
 import { tsFormatSample } from "../../../../utils"
 import { Code } from "../../../../components/Code"
+
 import rawTsCode from "./Confirm.tsx?raw"
+import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/containers/Dialog/Confirm/Props.ts?raw"
 
 //@chunk
 import { useCallback, useRef, useState } from "react"
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 const themes = [
   { label: "Light", value: "light" },
@@ -29,7 +29,7 @@ const accents = [
 
 function Confirm() {
   const [lastAction, setLastAction] = useState<any | null>(null)
-  const confirmRef = useRef<Mie.ConfirmMethods>(null)
+  const confirmRef = useRef<Mie.ConfirmHandles>(null)
 
   const [title, setTitle] = useState("Save Changes?")
   const [subtitle, setSubtitle] = useState(
@@ -55,7 +55,6 @@ function Confirm() {
       <Mie.Confirm
         ref={confirmRef}
         accent={accent.value as any}
-        theme={theme.value as any}
         size={size.value as any}
         title={title}
         subtitle={subtitle}
@@ -136,6 +135,7 @@ export default Object.assign(Confirm, {
   title: "Confirm",
   code: {
     ts: tsFormatSample(rawTsCode),
+    props: rawPropsCode,
     html: rawHtmlCode,
   },
 })

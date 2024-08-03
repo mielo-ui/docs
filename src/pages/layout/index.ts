@@ -1,3 +1,4 @@
+export * from "./Abstract"
 export * from "./Corners"
 export * from "./Indents"
 export * from "./Shadow"

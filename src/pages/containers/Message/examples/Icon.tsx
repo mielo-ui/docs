@@ -2,7 +2,7 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Icon.tsx?raw"
 
 //@chunk
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
 
 function Icon() {
   return (

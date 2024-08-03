@@ -2,8 +2,8 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Vertical.tsx?raw"
 
 //@chunk
-import { Slider, RangeSlider } from "mielo-react-slider"
-import * as Mie from "mielo-react"
+import { Slider, RangeSlider } from "@mielo-ui/mielo-react-slider"
+import * as Mie from "@mielo-ui/mielo-react"
 import { useState } from "react"
 
 function Vertical() {

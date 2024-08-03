@@ -1,17 +1,35 @@
-import * as Mie from "mielo-react"
+import * as Mie from "@mielo-ui/mielo-react"
+import { Code } from "../../../components/Code"
 
-import { ExampleGroup } from "../../../components"
-import * as Examples from "./examples"
+const SHADOW = `
+export type ShadowType = boolean | "inner" | "outer"
+
+export interface LayoutShadowProps {
+  shadow?: ShadowType
+}
+
+// Mie.L.* used for any component with 
+// layout feature support
+
+// Its: 
+  // shadow - outer container shadow
+<Mie.L.View shadow="outer" />
+
+// HTML
+<div className="mie shadow-outer" />
+`.trim()
 
 export function ShadowPage() {
-  const examples = ["Default", "Accent", "Size"]
-
   return (
-    <div className="page toggle">
-      <Mie.Clamp header={<Mie.Header title="Shadow" size="massive" center />}>
-        {examples.map(name => (
-          <ExampleGroup key={name} component={Examples[name]} />
-        ))}
+    <div className="page">
+      <Mie.Clamp
+        header={
+          <Mie.Header title="Layout" subtitle="Shadow" size="massive" center />
+        }
+      >
+        <Mie.L.View f fc bg="content">
+          <Code lang="tsx" code={SHADOW} />
+        </Mie.L.View>
       </Mie.Clamp>
     </div>
   )
