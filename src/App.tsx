@@ -14,7 +14,7 @@ function App() {
   const sidebarOpen = useSelector(selectors.sidebarOpen)
   const uiFont = useSelector(selectors.uiFont)
 
-  const matches = useMediaQuery("(max-width: 768px)")
+  const isMobile = useMediaQuery("(max-width: 768px)")
   const theme = darkThemeEnable ? "dark" : "light"
   const dispatch = useDispatch<AppDispatch>()
 
@@ -30,13 +30,9 @@ function App() {
   }, [sidebarOpen])
 
   const splitProps: Mie.SplitViewProps = {
-    overlay: matches && onToggleSidebar,
-    sidebarOpen,
-
-    sidebar: ({ open }) => <DocsSidebar open={open} />,
-    headerbar: ({ scrollTop }) => (
-      <DocsHeaderbar shadow={scrollTop > 0 ? "outer" : false} />
-    ),
+    overlay: sidebarOpen && isMobile && onToggleSidebar,
+    headerbar: <DocsHeaderbar />,
+    sidebar: <DocsSidebar />,
   }
 
   return (

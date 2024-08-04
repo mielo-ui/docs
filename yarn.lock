@@ -218,10 +218,10 @@
     clsx "^2.1.1"
     react-range-slider-input "^3.0.7"
 
-"@mielo-ui/mielo-react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.0.tgz#f6d59eef1d1c84dec0de6a84ac53a4e4a2a3e7f7"
-  integrity sha512-dQKqjWSeFbu+wKOZoVozlpkhBd3wJsilBQSm+3IueL3Moyrgg0SJYiCvKk2q15KI5o/KWlKpi9qDI9/wJMIOQg==
+"@mielo-ui/mielo-react@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.1.tgz#d63c758f7a45c2dc1b7d7b71e0115cff77df7612"
+  integrity sha512-Q9VKp0y3jsxyidClSa9SB7AaUJ/aMR48DrYBqsPQNwwS0ZGdAhiOInTSPPD70YJ1/ayJ/GVJuHexjnH08SHe0Q==
   dependencies:
     clsx "^2.1.1"
     lodash.defaults "^4.2.0"
@@ -233,10 +233,10 @@
     react-tooltip "^5.26.4"
     react-transition-group "^4.4.5"
 
-"@mielo-ui/mielo@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-0.1.1.tgz#9fec9c7ae0f1603f16c4cb12c16475ff95367933"
-  integrity sha512-XN+slXx/0x40TogTnVFGaoUI9Tft9BPkRI0vPg21B8Zacnhz4Pz8CsnSB+vJh851A1kmLCRFeS+kT4wueD/lmQ==
+"@mielo-ui/mielo@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-0.1.2.tgz#b0546bdc827f7c385a23568be32ec7febb1c3424"
+  integrity sha512-vHIAXHfzpCEo5DvHOX2COI/CJXiX1fT+bzLoTSaalKNAY0p/O+yZsJJPssD4zuzgiwIvlyLWpFSAfBTvzFY/pw==
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"

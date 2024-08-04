@@ -2,10 +2,6 @@
   overflow: auto;
 }
 
-// :root {
-//   --mie-font-family: "Roboto";
-// }
-
 body {
   background: url(/amber-wallpaper.webp);
   background-repeat: no-repeat;
@@ -14,9 +10,19 @@ body {
   padding: 2rem 3rem;
   height: 100vh;
   width: 100%;
+  
+  @media (max-width: 768px) {
+    padding: 0;
+  }
 }
 
 #root {
   height: 100%;
   width: 100%;
+
+  @media (max-width: 768px) {
+    >.mie.window {
+      border-radius: 0;
+    }
+  }
 }

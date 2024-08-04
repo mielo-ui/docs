@@ -1,13 +1,15 @@
-import { useSelector, useDispatch } from "react-redux"
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
-import { useCallback } from "react"
+import { useSelector, useDispatch } from "react-redux"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useMediaQuery } from "usehooks-ts"
+import { useCallback } from "react"
+import { useRoute } from "wouter"
 
 import { toggleSidebar, toggleDarkTheme, setUiFont } from "../../states"
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
-import { useRoute } from "wouter"
 import { GithubIcon } from "./GithubIcon"
+import { FontSwitcher } from "../FontSwitcher"
 
 export interface DocsHeaderbarProps {
   shadow?: boolean | "outer" | "inner"
@@ -16,6 +18,7 @@ export interface DocsHeaderbarProps {
 export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
   const darkThemeEnable = useSelector(selectors.darkThemeEnable)
   const sidebarOpen = useSelector(selectors.sidebarOpen)
+  const isMobile = useMediaQuery("(max-width: 768px)")
   const uiFont = useSelector(selectors.uiFont)
   const dispatch = useDispatch<AppDispatch>()
   const [isHomePage] = useRoute("/")
@@ -35,7 +38,9 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
 
   return (
     <Mie.L.HeaderBar
-      controls={<Mie.Window.Controls controls={["minimize", "close"]} />}
+      controls={
+        !isMobile && <Mie.Window.Controls controls={["minimize", "close"]} />
+      }
       className={isHomePage && "homepage"}
       shadow={shadow}
       header={header}
@@ -48,37 +53,28 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
             transparent
           />
 
-          <Mie.L.Item
-            link="https://github.com/mielo-ui/mielo.css"
-            icon={<Mie.Icon icon={<GithubIcon />} />}
-            title="GitHub"
-            activatable
-            mh
-            p
-            r
-          />
+          {!isMobile && (
+            <Mie.L.Item
+              link="https://github.com/mielo-ui/mielo.css"
+              icon={<Mie.Icon icon={<GithubIcon />} />}
+              title="GitHub"
+              activatable
+              mh
+              p
+              r
+            />
+          )}
 
-          <Mie.L.Select
-            onChange={option => dispatch(setUiFont(option.value))}
-            value={{ label: uiFont, value: uiFont }}
-            size="small"
-            label="Font"
-            name="font"
-            options={[
-              { label: "Roboto", value: "Roboto" },
-              { label: "Inter", value: "Inter" },
-              { label: "Cantarell", value: "Cantarell" },
-            ]}
-          />
+          {!isMobile && <FontSwitcher />}
         </>
       }
       right={
         <Mie.L.Checkbox
           onChange={onToggleDarkTheme}
           checked={darkThemeEnable}
-          label="Dark Theme"
           accent="success"
           mr="massive"
+          label="Dark"
           toggle
         />
       }
