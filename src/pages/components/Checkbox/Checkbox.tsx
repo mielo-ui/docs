@@ -13,7 +13,7 @@ export function CheckboxPage() {
           <Mie.Header
             subtitle="A checkbox allows a user to select a value from a small set of options, often binary "
             title="Checkbox"
-            size="massive"
+            size="large"
             center
           />
         }

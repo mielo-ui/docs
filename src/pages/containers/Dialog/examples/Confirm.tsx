@@ -9,22 +9,22 @@ import { useCallback, useRef, useState } from "react"
 import * as Mie from "@mielo-ui/mielo-react"
 
 const themes = [
-  { label: "Light", value: "light" },
-  { label: "Dark", value: "dark" },
+  { title: "Light", value: "light" },
+  { title: "Dark", value: "dark" },
 ]
 
 const sizes = [
-  { label: "Small", value: "small" },
-  { label: "Medium", value: "medium" },
-  { label: "large", value: "large" },
+  { title: "Small", value: "small" },
+  { title: "Medium", value: "medium" },
+  { title: "Large", value: "large" },
 ]
 
 const accents = [
-  { label: "Without Accent", value: false },
-  { label: "Accent", value: true },
-  { label: "Warning", value: "warning" },
-  { label: "Error", value: "error" },
-  { label: "Success", value: "success" },
+  { title: "Without Accent", value: false },
+  { title: "Accent", value: true },
+  { title: "Warning", value: "warning" },
+  { title: "Error", value: "error" },
+  { title: "Success", value: "success" },
 ]
 
 function Confirm() {
@@ -39,9 +39,9 @@ function Confirm() {
   `.trim(),
   )
 
-  const [accent, setAccent] = useState(accents[0])
-  const [theme, setTheme] = useState(themes[0])
-  const [size, setSize] = useState(sizes[1])
+  const [accent, setAccent] = useState<Mie.OptionValue>(accents[0])
+  const [theme, setTheme] = useState<Mie.OptionValue>(themes[0])
+  const [size, setSize] = useState<Mie.OptionValue>(sizes[1])
 
   const onOpenModel = useCallback(async () => {
     if (confirmRef.current) {
@@ -56,14 +56,18 @@ function Confirm() {
         ref={confirmRef}
         accent={accent.value as any}
         size={size.value as any}
-        title={title}
-        subtitle={subtitle}
+        header={{
+          size: "large",
+          center: true,
+          subtitle,
+          title,
+        }}
       />
 
       <Mie.L.View f f1 fc>
         <Mie.L.Rows r="large">
           <Mie.L.Rows.Entry
-            onChange={setTitle}
+            onChange={event => setTitle(event.target.value)}
             placeholder="Accent"
             value={title}
             name="title"
@@ -71,14 +75,14 @@ function Confirm() {
             rb="none"
           />
           <Mie.L.Rows.Entry
-            onChange={setSubtitle}
+            onChange={event => setSubtitle(event.target.value)}
             placeholder="Subtitle"
             value={subtitle}
             name="subtitle"
             r="none"
           />
           <Mie.L.Rows.Select
-            onChange={setTheme}
+            onChange={option => setTheme(option)}
             options={themes}
             value={theme}
             label="Theme"
@@ -86,7 +90,7 @@ function Confirm() {
             r="none"
           />
           <Mie.L.Rows.Select
-            onChange={setSize}
+            onChange={option => setSize(option)}
             options={sizes}
             value={size}
             label="Size"
@@ -94,7 +98,7 @@ function Confirm() {
             r="none"
           />
           <Mie.L.Rows.Select
-            onChange={setAccent}
+            onChange={option => setAccent(option)}
             options={accents}
             value={accent}
             label="Accent"

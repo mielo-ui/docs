@@ -3,39 +3,33 @@ import rawTsCode from "./Size.tsx?raw"
 
 //@chunk
 import * as Mie from "@mielo-ui/mielo-react"
+import { useState } from "react"
 
 function Size() {
+  const [username, setUsername] = useState("")
+
+  const defaultProps = {
+    onChange: event => setUsername(event.target.value),
+    placeholder: "Enter Username",
+    label: "Username",
+    value: username,
+    type: "text",
+    r: true,
+  }
+
   return (
     <Mie.L.View f fc sbv="large">
       <Mie.L.Entry
-        message="Small entry message"
-        placeholder="Field name"
-        value="Small entry size"
-        name="username-s-1"
+        {...defaultProps}
+        name="rounded-2"
         size="small"
-        type="text"
-        r
-        accent="error"
-      />
-
-      <Mie.L.Entry
-        message="Default medium entry message"
-        placeholder="Field name"
-        value="Defailt entry size"
-        name="username-s-2"
-        type="text"
-        r
         accent="warning"
       />
-
+      <Mie.L.Entry {...defaultProps} name="rounded-4" accent="error" />
       <Mie.L.Entry
-        message="Large entry message"
-        placeholder="Field name"
-        value="Large entry size"
-        name="username-s-3"
+        {...defaultProps}
+        name="rounded-4"
         size="large"
-        type="text"
-        r
         accent="success"
       />
     </Mie.L.View>

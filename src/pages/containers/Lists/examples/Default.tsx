@@ -9,9 +9,27 @@ import * as Mie from "@mielo-ui/mielo-react"
 function Default() {
   return (
     <Mie.L.List>
-      <Mie.L.List.Item title="Some text..." activatable ph="large" pv r />
-      <Mie.L.List.Item title="Some text..." activatable ph="large" pv r />
-      <Mie.L.List.Item title="Some text..." activatable ph="large" pv r />
+      <Mie.L.List.Item
+        title="Some text..."
+        activatable
+        ph="small"
+        pv="tiny"
+        r
+      />
+      <Mie.L.List.Item
+        title="Some text..."
+        activatable
+        ph="small"
+        pv="tiny"
+        r
+      />
+      <Mie.L.List.Item
+        title="Some text..."
+        activatable
+        ph="small"
+        pv="tiny"
+        r
+      />
     </Mie.L.List>
   )
 }

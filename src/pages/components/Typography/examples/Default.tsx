@@ -8,15 +8,11 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View f fc>
-      <Mie.Header
-        subtitle="Example of big header"
-        title="Union Header"
-        center
-      />
+    <Mie.L.View f fc fai="center" fjc="center">
+      <Mie.Header subtitle="Example of header" title="Union Header" center />
 
       <Mie.L.Text mt="large" accent>
-        Text Base
+        Accent base text
       </Mie.L.Text>
     </Mie.L.View>
   )
@@ -27,7 +23,7 @@ const rawHtmlCode = `
 <div class="mie header center">
   <div class="heading">
     <div class="title">Union Header</div>
-    <div class="subtitle">Example of big header</div>
+    <div class="subtitle">Example of header</div>
   </div>
 </div>
 

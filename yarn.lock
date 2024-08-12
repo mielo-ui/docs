@@ -176,15 +176,30 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.2.4.tgz#1d459cee5031893a08a0e064c406ad2130cced7c"
   integrity sha512-dWO2pw8hhi+WrXq1YJy2yCuWoL20PddgGaqTgVe4cOS9Q6qklXCiA1tJEqX6BEwRNSCP84/afac9hd4MS+zEUA==
 
-"@fontsource/inter@^5.0.19":
-  version "5.0.19"
-  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.19.tgz#680a71be6311e60df77c78fcdd941753886a59e4"
-  integrity sha512-tVU77yjKnsoUotrXGYbbYxmL9nbm/MSo3deZietmf8V2FEDlbi9fvkJHMrYbo7ZsOqR1AYBBqRYmemz4pSE5Mg==
+"@fontsource/cantarell@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/cantarell/-/cantarell-5.0.13.tgz#3157d7e9f0d34f7b978161837247680b85e72409"
+  integrity sha512-105pmmfh8k6APT/CODMuBBvGgJOafHeZ7vsGpL2vnNSgMd5t6ElYMKd3qh8R7gAVYxHZencfGmfs91NFes480A==
+
+"@fontsource/inter@^5.0.20":
+  version "5.0.20"
+  resolved "https://registry.yarnpkg.com/@fontsource/inter/-/inter-5.0.20.tgz#968436ab21f05d3b3cb3191fa0958d91e37dde43"
+  integrity sha512-rtw2F7xfM7rJmmnncXnR4ADr5wXsp4GyN1O1jmQJ1PMjAK+bm620/ZkQkeOYOkGoa09OksGinOeMA+Mkt6K9PQ==
 
 "@fontsource/jetbrains-mono@^5.0.20":
   version "5.0.20"
   resolved "https://registry.yarnpkg.com/@fontsource/jetbrains-mono/-/jetbrains-mono-5.0.20.tgz#600171a052a4ef5fa75dd4815c7e6aae5c51ca65"
   integrity sha512-QkrihYWqftzs+04TinulIhnFqNwO6990HR07iCUae/6daOZAMy7urUPzytrRT9M8KLTTHBeHOY0CKqOs1+o2OQ==
+
+"@fontsource/roboto@^5.0.14":
+  version "5.0.14"
+  resolved "https://registry.yarnpkg.com/@fontsource/roboto/-/roboto-5.0.14.tgz#a3f67e47116309233ff3bba2c3613d2cf0302529"
+  integrity sha512-zHAxlTTm9RuRn9/StwclFJChf3z9+fBrOxC3fw71htjHP1BgXNISwRjdJtAKAmMe5S2BzgpnjkQR93P9EZYI/Q==
+
+"@fontsource/ubuntu@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.yarnpkg.com/@fontsource/ubuntu/-/ubuntu-5.0.13.tgz#1521b3ada4afe82358fbc1f3ab975a7fa5a0864d"
+  integrity sha512-uCnfknLk6ERUUgGPHqvtLGkHkW/0oyxEJy6CZLaHbh6d1om1jvqcnc5nSPel1UCX5frLxRSTkRKU/vAbL9QtJw==
 
 "@humanwhocodes/config-array@^0.11.14":
   version "0.11.14"
@@ -205,23 +220,17 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@mielo-ui/adwaita-symbolic-icons-react@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/adwaita-symbolic-icons-react/-/adwaita-symbolic-icons-react-1.0.0.tgz#dca71fc292e213838924748f27d5f19a738991e3"
-  integrity sha512-rtxDl6+/TyGiZ9AfUusZeqwRkyi9NAEaAiJTug4KhWLVSBhtM8kbZ+5Rxenna8nyJ5H0086FMlpnSObDqun4Dw==
+"@mielo-ui/adwaita-symbolic-icons-react@../adwaita-symbolic-icons-react":
+  version "1.0.1"
 
-"@mielo-ui/mielo-react-slider@^1.0.0":
+"@mielo-ui/mielo-react-slider@../mielo-react-slider":
   version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react-slider/-/mielo-react-slider-1.0.0.tgz#45c1f03d725058b8f0fff14ecb5f076763347d28"
-  integrity sha512-WW2Hav+2cs3BwgclKlBr7is3LEm7VIWPAPYsunMmWUX5CATrKQypfxF05fXC4ZfZv3StzGcFDTRNzDE4RFp60g==
   dependencies:
     clsx "^2.1.1"
     react-range-slider-input "^3.0.7"
 
-"@mielo-ui/mielo-react@^1.0.1":
+"@mielo-ui/mielo-react@../mielo-react":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.1.tgz#d63c758f7a45c2dc1b7d7b71e0115cff77df7612"
-  integrity sha512-Q9VKp0y3jsxyidClSa9SB7AaUJ/aMR48DrYBqsPQNwwS0ZGdAhiOInTSPPD70YJ1/ayJ/GVJuHexjnH08SHe0Q==
   dependencies:
     clsx "^2.1.1"
     lodash.defaults "^4.2.0"
@@ -233,10 +242,10 @@
     react-tooltip "^5.26.4"
     react-transition-group "^4.4.5"
 
-"@mielo-ui/mielo@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-0.1.2.tgz#b0546bdc827f7c385a23568be32ec7febb1c3424"
-  integrity sha512-vHIAXHfzpCEo5DvHOX2COI/CJXiX1fT+bzLoTSaalKNAY0p/O+yZsJJPssD4zuzgiwIvlyLWpFSAfBTvzFY/pw==
+"@mielo-ui/mielo@../mielo":
+  version "0.1.3"
+  dependencies:
+    reseter.css "^2.0.0"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
@@ -1666,6 +1675,11 @@ reselect@^5.1.0:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/reselect/-/reselect-5.1.1.tgz#c766b1eb5d558291e5e550298adb0becc24bb72e"
   integrity sha512-K/BG6eIky/SBpzfHZv/dd+9JBFiS4SWV7FIujVyJRux6e45+73RaUHXLmIR1f7WOMaQ0U1km6qwklRQxpJJY0w==
+
+reseter.css@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/reseter.css/-/reseter.css-2.0.0.tgz#6832a057d14a8ad3e9e578a8bebf3c4279a4cae5"
+  integrity sha512-u98r3v0drXwxwRFhBywZOk+9LWoNVMy+tSClR6wJG+XXbrR/fpuuzbWQ8N5Uxczp3xMUX86E4PCWzitzsZ5GOg==
 
 resolve-from@^4.0.0:
   version "4.0.0"

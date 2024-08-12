@@ -13,8 +13,8 @@ function Size() {
         accent="warning"
         size="small"
         activatable
-        pv="small"
-        ph
+        ph="small"
+        pv="tiny"
         r
       />
 
@@ -23,8 +23,8 @@ function Size() {
         title="Default Title"
         accent="error"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
 
@@ -34,8 +34,8 @@ function Size() {
         accent="success"
         size="large"
         activatable
-        pv="large"
-        ph="big"
+        ph="small"
+        pv="tiny"
         r
       />
     </Mie.List>

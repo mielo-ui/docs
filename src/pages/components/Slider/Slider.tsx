@@ -13,7 +13,7 @@ export function SliderPage() {
           <Mie.Header
             subtitle="Draggable progress indicator"
             title="Slider"
-            size="massive"
+            size="large"
             center
           />
         }

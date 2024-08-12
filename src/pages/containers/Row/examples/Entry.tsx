@@ -12,7 +12,7 @@ function Entry() {
     <Mie.L.Rows shadow r>
       <Mie.L.Rows.Entry
         placeholder="Username"
-        onChange={nextValue => setUsername(nextValue)}
+        onChange={event => setUsername(event.target.value)}
         value={username}
         name="username"
         type="text"

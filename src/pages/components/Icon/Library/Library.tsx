@@ -42,8 +42,9 @@ export function Library() {
       />
 
       <Mie.L.Entry
-        placeholder="Search"
-        onChange={setSearch}
+        onChange={event => setSearch(event.target.value)}
+        placeholder="Enter search query"
+        label="Search"
         value={search}
         size="large"
         name="search"

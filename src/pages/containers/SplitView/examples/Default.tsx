@@ -29,9 +29,7 @@ function Default() {
           headerbar: (
             <Mie.HeaderBar
               transparent
-              header={{
-                title: "Default Title",
-              }}
+              header={<Mie.Header size="tiny" title="Default Title" center />}
               left={
                 <Mie.Button
                   icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
@@ -47,7 +45,10 @@ function Default() {
           sidebar: (
             <Mie.SplitView.Sidebar
               headerbar={
-                <Mie.HeaderBar transparent header={{ title: "Menu" }} />
+                <Mie.HeaderBar
+                  transparent
+                  header={<Mie.Header size="tiny" title="Sidebar" center />}
+                />
               }
               animateStyle="overlap"
               opened={open}
@@ -64,7 +65,7 @@ function Default() {
           <Mie.Header
             subtitle="Starter text"
             title="Welcome"
-            size="massive"
+            size="large"
             center
           />
         </Mie.L.View>

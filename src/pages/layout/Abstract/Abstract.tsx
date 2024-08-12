@@ -13,12 +13,7 @@ export function AbstractPage() {
     <div className="page toggle">
       <Mie.Clamp
         header={
-          <Mie.Header
-            title="Layout"
-            subtitle="Abstract"
-            size="massive"
-            center
-          />
+          <Mie.Header title="Layout" subtitle="Abstract" size="large" center />
         }
       >
         <Mie.View>

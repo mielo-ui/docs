@@ -8,9 +8,9 @@ function Accent() {
   return (
     <Mie.L.View f fr sbh="large">
       <Mie.Button label="Accent" accent />
-      <Mie.Button label="Success" accent="success" />
       <Mie.Button label="Warning" accent="warning" />
       <Mie.Button label="Error" accent="error" />
+      <Mie.Button label="Success" accent="success" />
     </Mie.L.View>
   )
 }

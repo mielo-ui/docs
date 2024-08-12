@@ -10,12 +10,7 @@ export function RowPage() {
     <div className="page checkbox">
       <Mie.Clamp
         header={
-          <Mie.Header
-            subtitle="Styled list"
-            title="Rows"
-            size="massive"
-            center
-          />
+          <Mie.Header subtitle="Styled list" title="Rows" size="large" center />
         }
       >
         {examples.map(name => (

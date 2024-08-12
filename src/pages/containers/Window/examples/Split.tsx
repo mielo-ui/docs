@@ -29,9 +29,7 @@ function Split() {
           headerbar: (
             <Mie.HeaderBar
               transparent
-              header={{
-                title: "Split Title",
-              }}
+              header={<Mie.Header size="tiny" title="SplitView" center />}
               left={
                 <Mie.Button
                   icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
@@ -47,7 +45,10 @@ function Split() {
           sidebar: (
             <Mie.SplitView.Sidebar
               headerbar={
-                <Mie.HeaderBar transparent header={{ title: "Menu" }} />
+                <Mie.HeaderBar
+                  transparent
+                  header={<Mie.Header size="tiny" title="Sidebar" center />}
+                />
               }
               animateStyle="overlap"
               opened={open}
@@ -64,7 +65,7 @@ function Split() {
           <Mie.Header
             subtitle="Starter text"
             title="Welcome"
-            size="massive"
+            size="large"
             center
           />
         </Mie.L.View>

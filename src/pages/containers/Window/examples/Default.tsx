@@ -15,16 +15,14 @@ function Default() {
           width: "30rem",
         }}
         headerbar={{
-          header: {
-            title: "Default Title",
-          },
           controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
+          header: <Mie.Header size="tiny" title="Default Title" center />,
         }}
       >
         <Mie.L.View f fc fai="center" fjc="center" p="massive">
           <Mie.Header
             center
-            size="massive"
+            size="large"
             title="Welcome"
             subtitle="Starter text"
           />

@@ -7,22 +7,22 @@ import rawTsCode from "./Rounded.tsx?raw"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Rounded() {
-  const [time, setTime] = useState({
-    label: "Day",
+  const [time, setTime] = useState<Mie.OptionValue>({
+    title: "Day",
     value: "day",
   })
 
   const options = [
     {
-      label: "Morning",
+      title: "Morning",
       value: "morning",
     },
     {
-      label: "Day",
+      title: "Day",
       value: "day",
     },
     {
-      label: "Night",
+      title: "Night",
       value: "night",
     },
   ]
@@ -30,7 +30,6 @@ function Rounded() {
   return (
     <Mie.L.View f fc sbv="large">
       <Mie.L.Select
-        message="Some accent status"
         onChange={setTime}
         options={options}
         name="rounded-1"
@@ -41,7 +40,6 @@ function Rounded() {
       />
 
       <Mie.L.Select
-        message="Some warning status"
         onChange={setTime}
         options={options}
         name="rounded-2"
@@ -52,7 +50,6 @@ function Rounded() {
       />
 
       <Mie.L.Select
-        message="Some error status"
         onChange={setTime}
         options={options}
         name="rounded-3"
@@ -63,7 +60,6 @@ function Rounded() {
       />
 
       <Mie.L.Select
-        message="Some error status"
         onChange={setTime}
         options={options}
         name="rounded-3"

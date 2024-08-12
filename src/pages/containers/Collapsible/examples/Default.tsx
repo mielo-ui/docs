@@ -18,22 +18,22 @@ function Default() {
         title="Toggle Content"
         accent="success"
         activatable
-        ph="large"
+        pv="small"
         active
         center
-        pv
+        ph
         r
       />
-      <Mie.L.Collapsible mt="large" open={opened}>
-        <Mie.L.View bg="content" ph="large" pv r>
+      <Mie.L.Collapsible mt open={opened}>
+        <Mie.L.View bg="content" ph="small" pv="small" r>
           <Mie.L.Header
             icon={
               <Mie.L.Icon
                 icon={<Icons.Places.FolderMusic />}
+                p="tiny"
                 accent
                 bg
                 r
-                p="small"
               />
             }
             subtitle="Hidden Text"

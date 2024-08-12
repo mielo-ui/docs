@@ -14,16 +14,16 @@ function Variants() {
         icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
         description="Lorem ipsum description"
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
@@ -31,8 +31,8 @@ function Variants() {
         description="Lorem ipsum description"
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
@@ -49,8 +49,8 @@ function Variants() {
             />
           </>
         }
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
@@ -68,8 +68,8 @@ function Variants() {
             />
           </>
         }
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
     </Mie.L.List>

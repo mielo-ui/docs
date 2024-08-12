@@ -13,7 +13,7 @@ export function WindowPage() {
           <Mie.Header
             subtitle="Common app container"
             title="Window"
-            size="massive"
+            size="large"
             center
           />
         }

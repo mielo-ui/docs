@@ -13,7 +13,7 @@ export function ActivatablePage() {
           <Mie.Header
             subtitle="Button from any element"
             title="Activatable"
-            size="massive"
+            size="large"
             center
           />
         }

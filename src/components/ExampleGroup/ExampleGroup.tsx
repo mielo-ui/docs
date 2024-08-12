@@ -21,7 +21,12 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
 
   return (
     <>
-      <Mie.Header size="large" title={title} subtitle={description as any} />
+      <Mie.L.Header
+        mb="small"
+        size="small"
+        title={title}
+        subtitle={description as any}
+      />
 
       <Mie.L.View
         className="example-group"

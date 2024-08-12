@@ -1,34 +1,34 @@
+import { capitalCase } from "change-case"
+
 import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Size.tsx?raw"
 
 //@chunk
 import * as Mie from "@mielo-ui/mielo-react"
+import { useState } from "react"
 
 function Size() {
+  const options = ["small", "default", "large"]
+  const [option, setOption] = useState("default")
+
+  const radio = options.map(accent => {
+    const props: Mie.RadioProps = {
+      id: `radio-basic-${accent}`,
+      name: "radio-basic",
+      value: accent,
+
+      onChange: event => setOption(event.target.value),
+      accent: accent !== "default" && (accent as any),
+      children: capitalCase(accent),
+      defaultChecked: accent === option,
+    }
+
+    return <Mie.Radio key={`radio-${accent}`} {...props} />
+  })
+
   return (
-    <Mie.L.View f fc sbv="large" fai="start">
-      <Mie.Radio
-        name="circular-accent-1"
-        label="Large"
-        accent="warning"
-        size="large"
-        checked
-      />
-
-      <Mie.Radio
-        name="circular-accent-3"
-        label="Medium"
-        accent="success"
-        checked
-      />
-
-      <Mie.Radio
-        name="circular-accent-2"
-        label="Small"
-        accent="error"
-        size="small"
-        checked
-      />
+    <Mie.L.View f fc sbv="large">
+      {radio}
     </Mie.L.View>
   )
 }

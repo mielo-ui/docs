@@ -24,7 +24,7 @@ export function IconPage() {
           <Mie.Header
             subtitle="An icon is a glyph used to represent something else"
             title="Icon"
-            size="massive"
+            size="large"
             center
           />
         }

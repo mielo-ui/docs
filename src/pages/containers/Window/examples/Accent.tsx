@@ -17,11 +17,8 @@ function SampleWindow({ accent }: any) {
       }}
       headerbar={{
         controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
+        header: <Mie.Header size="tiny" title="Default Title" center />,
         transparent: true,
-
-        header: {
-          title: "Default Title",
-        },
       }}
     >
       <Mie.L.View f fc fai="center" fjc="center" pt pb="massive">
@@ -48,21 +45,49 @@ function SampleWindow({ accent }: any) {
 }
 
 function Accent() {
-  const [accent, setAccent] = useState({ label: "Accent", value: true })
+  const [accent, setAccent] = useState<Mie.OptionValue>({
+    label: "Accent",
+    value: true,
+  })
 
   return (
     <Mie.L.View f fc fai="center" sbv="massive" pb="massive">
       <Mie.L.Select
-        label="Window Accent Color"
+        style={{ width: "20rem" }}
+        label="Accent Color"
         accent={accent.value}
         onChange={setAccent}
         value={accent}
         name="accent"
         options={[
-          { label: "Accent", value: true },
-          { label: "Warning", value: "warning" },
-          { label: "Error", value: "error" },
-          { label: "Success", value: "success" },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogInformation />} />,
+            title: "Accent",
+            description: "Info status",
+            value: true,
+            accent: true,
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogWarning />} />,
+            title: "Warning",
+            description: "Have warn message",
+            value: "warning",
+            accent: "warning",
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogError />} />,
+            title: "Error",
+            description: "Failed status",
+            accent: "error",
+            value: "error",
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Emblems.EmblemOk />} />,
+            description: "Complete message",
+            title: "Success",
+            accent: "success",
+            value: "success",
+          },
         ]}
       />
 

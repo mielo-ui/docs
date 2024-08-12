@@ -20,7 +20,7 @@ export function LabelPage() {
           <Mie.Header
             subtitle="Indicator element"
             title="Label"
-            size="massive"
+            size="large"
             center
           />
         }

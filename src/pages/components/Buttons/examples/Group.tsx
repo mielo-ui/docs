@@ -7,21 +7,21 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Group() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fc sbv fai="center">
       <Mie.Button.Group>
-        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
-        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          label="Label"
+        />
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          label="Label"
+        />
       </Mie.Button.Group>
 
       <Mie.Button.Group>
-        <Mie.Button
-          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-          label="Label"
-        />
-        <Mie.Button
-          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-          label="Label"
-        />
+        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
+        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
       </Mie.Button.Group>
     </Mie.L.View>
   )

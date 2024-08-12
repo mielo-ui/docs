@@ -3,11 +3,11 @@ import * as Mie from "@mielo-ui/mielo-react"
 import { useMediaQuery } from "usehooks-ts"
 import { useSelector } from "react-redux"
 
-import * as selectors from "../../selectors"
-import { ListItemLink } from "./ListItemLink"
-import { FontSwitcher } from "../FontSwitcher"
-import logo from "./logo.png"
 import { GithubIcon } from "../DocsHeaderbar/GithubIcon"
+import { FontSwitcher } from "../FontSwitcher"
+import { ListItemLink } from "./ListItemLink"
+import * as selectors from "../../selectors"
+import logo from "./logo.png"
 
 interface PageItemOptions {
   title: string
@@ -114,12 +114,12 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
         onClick={onToggle}
         title={title}
         activatable
-        ph="large"
-        pv
+        pv="small"
+        ph
       />
 
       <Mie.Collapsible open={opened}>
-        <Mie.L.View ph="large" pv>
+        <Mie.L.View ph="large" pv="small">
           <Mie.L.View bg="content" f fc r shadow>
             <Mie.L.List p="none" r>
               {links.map(({ page, title }, linkIdx, array) => {
@@ -132,10 +132,10 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
                     link={`/${page}`}
                     title={title}
                     activatable
-                    pv="large"
-                    ph="large"
                     rt={isFirst}
                     rb={isLast}
+                    pv="small"
+                    ph="small"
                   />
                 )
               })}
@@ -162,7 +162,14 @@ export function DocsSidebar() {
       opened={isOpen}
       headerbar={
         <Mie.HeaderBar
-          header={<Mie.Header title="Documentation" subtitle="UI Elements" />}
+          header={
+            <Mie.Header
+              title="Documentation"
+              subtitle="UI Elements"
+              size="tiny"
+              center
+            />
+          }
           transparent
         />
       }
@@ -191,9 +198,9 @@ export function DocsSidebar() {
             description="Installatiion, setup, etc..."
             title="Getting Started"
             activatable
-            ph="large"
+            pv="small"
             link="/"
-            pv
+            ph
           />
 
           {components.map(_menuMapper)}
@@ -206,10 +213,10 @@ export function DocsSidebar() {
             title="GitHub"
             activatable
             mt="large"
+            p="small"
             active
             accent
             mh
-            p
             r
           />
         )}

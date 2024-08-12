@@ -30,7 +30,7 @@ export function CornersPage() {
     <div className="page">
       <Mie.Clamp
         header={
-          <Mie.Header title="Layout" subtitle="Corners" size="massive" center />
+          <Mie.Header title="Layout" subtitle="Corners" size="large" center />
         }
       >
         <Mie.L.View f fc bg="content">

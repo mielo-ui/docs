@@ -9,22 +9,22 @@ import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
-  const [time, setTime] = useState({
-    label: "Day",
+  const [time, setTime] = useState<Mie.OptionValue>({
+    title: "Day",
     value: "day",
   })
 
   const options = [
     {
-      label: "Morning",
+      title: "Morning",
       value: "morning",
     },
     {
-      label: "Day",
+      title: "Day",
       value: "day",
     },
     {
-      label: "Night",
+      title: "Night",
       value: "night",
     },
   ]

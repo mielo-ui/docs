@@ -13,7 +13,7 @@ export function RadioPage() {
           <Mie.Header
             subtitle="A checkbox can be formatted as a radio element. This means it is an exclusive option."
             title="Radio"
-            size="massive"
+            size="large"
             center
           />
         }

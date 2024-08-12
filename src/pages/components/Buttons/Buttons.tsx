@@ -20,7 +20,7 @@ export function ButtonPage() {
     <div className="page buttons">
       <Mie.Clamp
         header={
-          <Mie.Header subtitle="Tap" title="Button" size="massive" center />
+          <Mie.Header subtitle="Tap" title="Button" size="large" center />
         }
       >
         {examples.map(name => (

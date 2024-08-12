@@ -12,8 +12,8 @@ export function TypographyPage() {
         header={
           <Mie.Header
             subtitle="Example of different tabs"
-            title="Tabs"
-            size="massive"
+            title="Typography"
+            size="large"
             center
           />
         }

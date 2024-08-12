@@ -10,11 +10,13 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   const [username, setUsername] = useState("")
+
   return (
     <Mie.View>
       <Mie.L.Entry
-        placeholder="Username"
-        onChange={text => setUsername(text)}
+        onChange={event => setUsername(event.target.value)}
+        placeholder="Enter username"
+        label="Username"
         value={username}
         name="username"
         type="text"

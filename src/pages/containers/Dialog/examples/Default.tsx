@@ -35,9 +35,10 @@ function Default() {
           </>
         }
       >
-        <Mie.Header
+        <Mie.L.Header
           title="Save Changes?"
           subtitle="Open document contains unsaved changes. Changes which are not saved will be permanently lost."
+          size="large"
           center
         />
       </Mie.Dialog>

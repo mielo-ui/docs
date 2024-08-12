@@ -13,7 +13,7 @@ export function CollapsiblePage() {
           <Mie.Header
             subtitle="Animated hide container"
             title="Collapsible"
-            size="massive"
+            size="large"
             center
           />
         }

@@ -1,7 +1,8 @@
 import { Router, Route } from "wouter"
 import { ReactNode } from "react"
+
+import { HomePage } from "./pages/Home"
 import * as pages from "./pages"
-import { DocsPage } from "./Docs"
 
 const { entries } = Object
 
@@ -18,7 +19,7 @@ export function Routes() {
 
   return (
     <Router>
-      <Route path="/" component={DocsPage} />
+      <Route path="/" component={HomePage} />
       {routes}
     </Router>
   )

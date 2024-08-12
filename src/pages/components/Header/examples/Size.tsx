@@ -7,62 +7,54 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.View>
+    <Mie.L.View f fc sbv="massive" pv="large">
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Tiny Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon size="tiny" icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
         size="tiny"
       />
 
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Small Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon size="small" icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
         size="small"
       />
 
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Medium Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
       />
 
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Large Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon size="large" icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
         size="large"
       />
 
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Big Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon size="big" icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
         size="big"
       />
 
       <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
+        title="Huge Title"
+        subtitle="Subtitle text"
         icon={<Mie.Icon size="huge" icon={<Icons.Places.UserHome />} />}
-        iconSided
+        center
         size="huge"
       />
-
-      <Mie.Header
-        title="Icon Header"
-        subtitle="Subtitle of icon header"
-        icon={<Mie.Icon size="massive" icon={<Icons.Places.UserHome />} />}
-        iconSided
-        size="massive"
-      />
-    </Mie.View>
+    </Mie.L.View>
   )
 }
 

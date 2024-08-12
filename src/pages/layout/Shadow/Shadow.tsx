@@ -24,7 +24,7 @@ export function ShadowPage() {
     <div className="page">
       <Mie.Clamp
         header={
-          <Mie.Header title="Layout" subtitle="Shadow" size="massive" center />
+          <Mie.Header title="Layout" subtitle="Shadow" size="large" center />
         }
       >
         <Mie.L.View f fc bg="content">

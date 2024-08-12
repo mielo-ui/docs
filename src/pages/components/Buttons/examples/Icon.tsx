@@ -5,44 +5,47 @@ import rawTsCode from "./Icon.tsx?raw"
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
 
-// prettier-ignore
 function Icon() {
   return (
-    <Mie.L.View f fr sbh="large">
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-      />
+    <Mie.L.View f fc sbv fai="center">
+      <Mie.L.View f fr sbh>
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          iconLabeled
+          label="Label"
+          accent
+        />
 
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        circular
-      />
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          iconLabeled
+          label="Label"
+          filled
+          accent
+        />
+      </Mie.L.View>
 
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        label="Label"
-      />
+      <Mie.L.View f fr sbh>
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          label="Label"
+        />
 
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        iconLabeled
-        label="Label"
-      />
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          iconLabeled
+          label="Label"
+        />
+      </Mie.L.View>
 
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        iconLabeled
-        label="Label"
-        accent
-      />
+      <Mie.L.View f fr sbh>
+        <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
 
-      <Mie.Button
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        iconLabeled
-        label="Label"
-        filled
-        accent
-      />
+        <Mie.Button
+          icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+          circular
+        />
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

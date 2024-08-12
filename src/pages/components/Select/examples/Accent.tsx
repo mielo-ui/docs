@@ -7,22 +7,22 @@ import rawTsCode from "./Accent.tsx?raw"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Accent() {
-  const [time, setTime] = useState({
-    label: "Day",
+  const [time, setTime] = useState<Mie.OptionValue>({
+    title: "Day",
     value: "day",
   })
 
   const options = [
     {
-      label: "Morning",
+      title: "Morning",
       value: "morning",
     },
     {
-      label: "Day",
+      title: "Day",
       value: "day",
     },
     {
-      label: "Night",
+      title: "Night",
       value: "night",
     },
   ]
@@ -35,7 +35,6 @@ function Accent() {
         value={time}
         label="Time"
         name="accent-1"
-        message="Some warning status"
         accent
       />
 
@@ -45,7 +44,6 @@ function Accent() {
         value={time}
         label="Time"
         name="accent-2"
-        message="Some warning status"
         accent="warning"
       />
 
@@ -55,7 +53,6 @@ function Accent() {
         value={time}
         label="Time"
         name="accent-3"
-        message="Some error status"
         accent="error"
       />
 
@@ -65,7 +62,6 @@ function Accent() {
         value={time}
         label="Time"
         name="accent-4"
-        message="Some success status"
         accent="success"
       />
     </Mie.L.View>

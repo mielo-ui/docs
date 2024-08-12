@@ -3,49 +3,26 @@ import rawTsCode from "./Accent.tsx?raw"
 
 //@chunk
 import * as Mie from "@mielo-ui/mielo-react"
+import { useState } from "react"
 
 function Accent() {
+  const [username, setUsername] = useState("")
+
+  const defaultProps = {
+    onChange: event => setUsername(event.target.value),
+    placeholder: "Enter Username",
+    label: "Username",
+    value: username,
+    type: "text",
+    r: true,
+  }
+
   return (
     <Mie.L.View f fc sbv="large">
-      <Mie.L.Entry
-        message="Error message"
-        placeholder="Username"
-        value="Sample text"
-        name="accent-1"
-        type="text"
-        r
-        accent
-      />
-
-      <Mie.L.Entry
-        message="Error message"
-        placeholder="Username"
-        value="Sample text"
-        name="accent-2"
-        type="text"
-        r
-        accent="error"
-      />
-
-      <Mie.L.Entry
-        message="Warning message"
-        placeholder="Username"
-        value="Sample text"
-        name="accent-3"
-        type="text"
-        r
-        accent="warning"
-      />
-
-      <Mie.L.Entry
-        message="Success message"
-        placeholder="Username"
-        value="Sample text"
-        name="accent-4"
-        type="text"
-        r
-        accent="success"
-      />
+      <Mie.L.Entry {...defaultProps} name="accent-1" accent />
+      <Mie.L.Entry {...defaultProps} name="accent-2" accent="error" />
+      <Mie.L.Entry {...defaultProps} name="accent-3" accent="warning" />
+      <Mie.L.Entry {...defaultProps} name="accent-4" accent="success" />
     </Mie.L.View>
   )
 }

@@ -13,7 +13,7 @@ export function TabsPage() {
           <Mie.Header
             subtitle="Activatable menu"
             title="Tabs"
-            size="massive"
+            size="large"
             center
           />
         }

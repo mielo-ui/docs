@@ -43,7 +43,7 @@ export function FlexPage() {
     <div className="page">
       <Mie.Clamp
         header={
-          <Mie.Header title="Layout" subtitle="Flex" size="massive" center />
+          <Mie.Header title="Layout" subtitle="Flex" size="large" center />
         }
       >
         <Mie.L.View f fc bg="content">

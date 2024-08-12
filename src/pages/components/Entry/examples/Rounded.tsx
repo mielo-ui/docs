@@ -3,47 +3,34 @@ import rawTsCode from "./Rounded.tsx?raw"
 
 //@chunk
 import * as Mie from "@mielo-ui/mielo-react"
+import { useState } from "react"
 
 function Rounded() {
+  const [username, setUsername] = useState("")
+
+  const defaultProps = {
+    onChange: event => setUsername(event.target.value),
+    placeholder: "Enter Username",
+    label: "Username",
+    value: username,
+    type: "text",
+  }
+
   return (
     <Mie.L.View f fc sbv="large">
-      <Mie.Entry
-        placeholder="Field name"
-        value="Some value"
-        message="Message"
-        name="username-s-1"
-        type="text"
-        accent
-      />
-
+      <Mie.L.Entry {...defaultProps} name="rounded-1" accent r="none" />
       <Mie.L.Entry
-        placeholder="Field name"
-        value="Some value"
-        message="Message"
-        name="username-s-3"
-        type="text"
-        r="small"
+        {...defaultProps}
+        name="rounded-2"
         accent="warning"
+        r="tiny"
       />
-
+      <Mie.L.Entry {...defaultProps} name="rounded-4" accent="error" r />
       <Mie.L.Entry
-        placeholder="Field name"
-        value="Some value"
-        message="Message"
-        name="username-s-2"
-        type="text"
-        r
-        accent="error"
-      />
-
-      <Mie.L.Entry
-        placeholder="Field name"
-        value="Some value"
-        message="Message"
-        name="username-s-3"
-        type="text"
-        r="large"
+        {...defaultProps}
+        name="rounded-4"
         accent="success"
+        r="large"
       />
     </Mie.L.View>
   )

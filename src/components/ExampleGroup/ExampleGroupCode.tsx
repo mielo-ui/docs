@@ -57,9 +57,17 @@ export function ExampleGroupCode({ code, open }: ExampleGroupCodeProps) {
         animated={true}
         selected={tab}
         transparent
-        mv="large"
+        mv="small"
         mh="large"
         tabs={tabs}
+        tabProps={
+          {
+            shadow: true,
+            ph: "large",
+            pv: "small",
+            r: "large",
+          } as any
+        }
       />
 
       <Mie.L.View className="code" rt="none" rb="large" f fc>

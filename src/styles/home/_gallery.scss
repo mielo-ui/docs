@@ -1,0 +1,52 @@
+@use "sass:math";
+
+.page.home .mie.view.gallery {
+  width: 90rem;
+
+  > .gallery-sample {
+    padding: indent(tiny);
+  }
+
+  [data-title="Label+Icon"],
+  [data-title="Image+Select"],
+  [data-title="Progress+Sliders"] {
+    padding: 0.8rem !important;
+  }
+
+  [data-title="Progress"] {
+    width: 50%;
+  }
+
+  [data-title="Slider"] {
+    width: 50%;
+  }
+
+  [data-title="Tabs"] {
+    width: 40%;
+  }
+
+  [data-title="Collapsible"] {
+    width: 30%;
+  }
+
+  [data-title="List"] {
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    width: 100% !important;
+    padding: 0 2rem;
+
+    [data-title] {
+      width: 100% !important;
+      flex-direction: column;
+    }
+
+    [data-title="List"] {
+      > .view.card {
+        flex-direction: column !important;
+      }
+    }
+  }
+}

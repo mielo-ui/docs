@@ -13,7 +13,7 @@ export function SelectPage() {
           <Mie.Header
             subtitle="Select field element"
             title="Select"
-            size="massive"
+            size="large"
             center
           />
         }

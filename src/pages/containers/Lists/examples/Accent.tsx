@@ -12,8 +12,8 @@ function Accent() {
         accent="warning"
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
@@ -21,8 +21,8 @@ function Accent() {
         accent="error"
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
       <Mie.L.List.Item
@@ -30,8 +30,8 @@ function Accent() {
         accent="success"
         title="Title"
         activatable
-        ph="large"
-        pv
+        ph="small"
+        pv="tiny"
         r
       />
     </Mie.List>

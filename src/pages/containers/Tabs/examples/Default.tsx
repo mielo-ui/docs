@@ -18,15 +18,15 @@ function Default() {
         animated
         tabs={[
           {
-            title: "Tab 1",
+            title: "Basic",
             name: "tab-1",
           },
           {
-            title: "Tab 2",
+            title: "Interactive",
             name: "tab-2",
           },
           {
-            title: "Tab Long Title",
+            title: "Custom",
             name: "tab-3",
           },
         ]}

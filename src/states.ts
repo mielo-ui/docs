@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 
-export type UiFont = "Roboto" | "Inter" | "Cantarell"
+export type UiFont = "Roboto" | "Inter" | "Ubuntu"
 
 export interface ConfigState {
   darkThemeEnable?: boolean
@@ -10,7 +10,7 @@ export interface ConfigState {
 
 const initialState = {
   darkThemeEnable: true,
-  sidebarOpen: true,
+  sidebarOpen: false,
   uiFont: "Roboto",
 }
 

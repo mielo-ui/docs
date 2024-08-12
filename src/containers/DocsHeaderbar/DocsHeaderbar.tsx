@@ -5,7 +5,7 @@ import { useMediaQuery } from "usehooks-ts"
 import { useCallback } from "react"
 import { useRoute } from "wouter"
 
-import { toggleSidebar, toggleDarkTheme, setUiFont } from "../../states"
+import { toggleSidebar, toggleDarkTheme } from "../../states"
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
 import { GithubIcon } from "./GithubIcon"
@@ -19,7 +19,6 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
   const darkThemeEnable = useSelector(selectors.darkThemeEnable)
   const sidebarOpen = useSelector(selectors.sidebarOpen)
   const isMobile = useMediaQuery("(max-width: 768px)")
-  const uiFont = useSelector(selectors.uiFont)
   const dispatch = useDispatch<AppDispatch>()
   const [isHomePage] = useRoute("/")
 
@@ -34,7 +33,7 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
     [],
   )
 
-  const header = !isHomePage && <Mie.Header title="Mielo Web" />
+  const header = !isHomePage && <Mie.Header title="Mielo" size="tiny" />
 
   return (
     <Mie.L.HeaderBar
@@ -47,11 +46,13 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
       transparent
       left={
         <>
-          <Mie.Button
+          <Mie.L.Button
             icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
             onClick={onToggleSidebar}
-            transparent
+            mr
           />
+
+          {!isMobile && <FontSwitcher />}
 
           {!isMobile && (
             <Mie.L.Item
@@ -59,22 +60,30 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
               icon={<Mie.Icon icon={<GithubIcon />} />}
               title="GitHub"
               activatable
-              mh
-              p
+              p="tiny"
+              ml
               r
             />
           )}
-
-          {!isMobile && <FontSwitcher />}
         </>
       }
       right={
         <Mie.L.Checkbox
+          label={
+            <Mie.Icon
+              icon={
+                darkThemeEnable ? (
+                  <Icons.Status.WeatherClearNight />
+                ) : (
+                  <Icons.Status.WeatherClear />
+                )
+              }
+            />
+          }
           onChange={onToggleDarkTheme}
           checked={darkThemeEnable}
           accent="success"
-          mr="massive"
-          label="Dark"
+          mr="big"
           toggle
         />
       }

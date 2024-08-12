@@ -53,7 +53,7 @@ export function IndentsPage() {
     <div className="page">
       <Mie.Clamp
         header={
-          <Mie.Header title="Layout" subtitle="Indents" size="massive" center />
+          <Mie.Header title="Layout" subtitle="Indents" size="large" center />
         }
       >
         <Mie.L.View f fc bg="content">

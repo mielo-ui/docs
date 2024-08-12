@@ -25,10 +25,8 @@ function SampleWindow({ accent }: any) {
         headerbar: (
           <Mie.HeaderBar
             controls={<Mie.Window.Controls controls={["minimize", "close"]} />}
+            header={<Mie.Header size="tiny" title="Default title" center />}
             transparent
-            header={{
-              title: "Default Title",
-            }}
             left={
               <Mie.Button
                 icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
@@ -41,9 +39,14 @@ function SampleWindow({ accent }: any) {
         sidebar: (
           <Mie.SplitView.Sidebar
             accent={accent}
-            headerbar={<Mie.HeaderBar transparent header={{ title: "Menu" }} />}
             size="small"
             opened={open}
+            headerbar={
+              <Mie.HeaderBar
+                transparent
+                header={<Mie.Header size="tiny" title="Sidebar" center />}
+              />
+            }
           >
             <Mie.L.View f f1 fc fjc="center" m="large">
               <Mie.Button label="Tap" />
@@ -56,7 +59,7 @@ function SampleWindow({ accent }: any) {
         <Mie.Header
           subtitle="Starter text"
           title="Welcome"
-          size="massive"
+          size="large"
           center
         />
       </Mie.L.View>
@@ -65,21 +68,49 @@ function SampleWindow({ accent }: any) {
 }
 
 function Accent() {
-  const [accent, setAccent] = useState({ label: "Accent", value: true })
+  const [accent, setAccent] = useState<Mie.OptionValue>({
+    title: "Accent",
+    value: true,
+  })
 
   return (
     <Mie.L.View f fc fai="center" sbv="massive" pb="massive">
       <Mie.L.Select
-        label="SplitView Accent Color"
+        style={{ width: "20rem" }}
+        label="Accent Color"
         accent={accent.value}
         onChange={setAccent}
         value={accent}
         name="accent"
         options={[
-          { label: "Accent", value: true },
-          { label: "Warning", value: "warning" },
-          { label: "Error", value: "error" },
-          { label: "Success", value: "success" },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogInformation />} />,
+            title: "Accent",
+            description: "Info status",
+            value: true,
+            accent: true,
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogWarning />} />,
+            title: "Warning",
+            description: "Have warn message",
+            value: "warning",
+            accent: "warning",
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Status.DialogError />} />,
+            title: "Error",
+            description: "Failed status",
+            accent: "error",
+            value: "error",
+          },
+          {
+            icon: <Mie.Icon icon={<Icons.Emblems.EmblemOk />} />,
+            description: "Complete message",
+            title: "Success",
+            accent: "success",
+            value: "success",
+          },
         ]}
       />
 

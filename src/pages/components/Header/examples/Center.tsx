@@ -13,6 +13,7 @@ function Center() {
         subtitle="Subtitle of icon header"
         title="Icon Header"
         size="large"
+        center
       />
     </Mie.View>
   )

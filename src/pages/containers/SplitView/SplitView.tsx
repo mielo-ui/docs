@@ -13,7 +13,7 @@ export function SplitViewPage() {
           <Mie.Header
             subtitle="Container with sidebar"
             title="SplitView"
-            size="massive"
+            size="large"
             center
           />
         }
