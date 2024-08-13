@@ -26,12 +26,12 @@ export function Tabs() {
 
       <Mie.L.View
         className="card"
+        fai="center"
         bg="panel"
         r="large"
         p="large"
         shadow
         sbv
-        fai="start"
         fc
         f
       >

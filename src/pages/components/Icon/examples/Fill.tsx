@@ -10,34 +10,34 @@ function Fill() {
     <Mie.L.View f fr sbh="large">
       <Mie.L.Icon
         icon={<Icons.Status.DialogInformation />}
-        p="large"
-        size="big"
+        size="large"
         accent
         filled
+        p
         r
       />
       <Mie.L.Icon
         icon={<Icons.Status.DialogWarning />}
         accent="warning"
-        p="large"
-        size="big"
+        size="large"
         filled
+        p
         r
       />
       <Mie.L.Icon
         icon={<Icons.Status.DialogError />}
         accent="error"
-        p="large"
-        size="big"
+        size="large"
         filled
+        p
         r
       />
       <Mie.L.Icon
         icon={<Icons.Emblems.EmblemOk />}
         accent="success"
-        p="large"
-        size="big"
+        size="large"
         filled
+        p
         r
       />
     </Mie.L.View>

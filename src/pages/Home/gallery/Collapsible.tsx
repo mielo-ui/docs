@@ -21,7 +21,6 @@ export function Collapsible() {
       >
         <Mie.L.Item
           onClick={() => setOpened(prev => !prev)}
-          title="Toggle Content"
           accent="success"
           activatable
           pv="small"
@@ -29,25 +28,31 @@ export function Collapsible() {
           center
           ph
           r
+
+          title={
+            <Mie.Text accent="success" semibold>
+              Toggle Content
+            </Mie.Text>
+          }
         />
         <Mie.L.Collapsible mt open={opened}>
           <Mie.L.View bg="content" ph="small" pv="small" r>
             <Mie.L.Header
+              subtitle="Description text..."
+              title="Content"
+              size="small"
+              iconSided
               icon={
                 <Mie.L.Icon
                   icon={<Icons.Places.FolderMusic />}
+                  size="large"
+                  mr="small"
                   p="tiny"
                   accent
                   bg
                   r
                 />
               }
-              subtitle="Hidden Text"
-              title="Content"
-              iconSided
-              inverted
-              // center
-              m="none"
             />
           </Mie.L.View>
         </Mie.L.Collapsible>

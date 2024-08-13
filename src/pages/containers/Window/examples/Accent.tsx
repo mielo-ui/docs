@@ -7,91 +7,105 @@ import rawTsCode from "./Accent.tsx?raw"
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
 
-function SampleWindow({ accent }: any) {
-  return (
-    <Mie.L.Window
-      accent={accent}
-      shadow
-      style={{
-        width: "30rem",
-      }}
-      headerbar={{
-        controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
-        header: <Mie.Header size="tiny" title="Default Title" center />,
-        transparent: true,
-      }}
-    >
-      <Mie.L.View f fc fai="center" fjc="center" pt pb="massive">
-        <Mie.Header
-          subtitle="Starter text"
-          title="Welcome"
-          size="huge"
-          center
-        />
-
-        <Mie.L.Item
-          icon={<Mie.Icon size="large" icon={<Icons.Status.FolderOpen />} />}
-          description="Open new project"
-          title="Open"
-          activatable
-          mv="massive"
-          ph="big"
-          pv
-          r
-        />
-      </Mie.L.View>
-    </Mie.L.Window>
-  )
-}
-
 function Accent() {
   const [accent, setAccent] = useState<Mie.OptionValue>({
-    label: "Accent",
-    value: true,
+    value: undefined,
+    label: "None",
   })
+
+  const accents: any[] = [
+    {
+      icon: <Mie.L.Icon mr="small" icon={<Icons.Actions.EditClear />} />,
+      value: undefined,
+      title: "None",
+      mt: "small",
+    },
+    {
+      icon: <Mie.L.Icon mr="small" icon={<Icons.Status.DialogInformation />} />,
+      title: "Accent",
+      value: true,
+    },
+    {
+      icon: <Mie.L.Icon mr="small" icon={<Icons.Status.DialogWarning />} />,
+      title: "Warning",
+      value: "warning",
+    },
+    {
+      icon: <Mie.L.Icon mr="small" icon={<Icons.Status.DialogError />} />,
+      title: "Error",
+      value: "error",
+    },
+    {
+      icon: <Mie.L.Icon mr="small" icon={<Icons.Emblems.EmblemOk />} />,
+      title: "Success",
+      value: "success",
+      mb: "small",
+    },
+  ]
 
   return (
     <Mie.L.View f fc fai="center" sbv="massive" pb="massive">
-      <Mie.L.Select
-        style={{ width: "20rem" }}
-        label="Accent Color"
-        accent={accent.value}
-        onChange={setAccent}
-        value={accent}
-        name="accent"
-        options={[
-          {
-            icon: <Mie.Icon icon={<Icons.Status.DialogInformation />} />,
-            title: "Accent",
-            description: "Info status",
-            value: true,
-            accent: true,
-          },
-          {
-            icon: <Mie.Icon icon={<Icons.Status.DialogWarning />} />,
-            title: "Warning",
-            description: "Have warn message",
-            value: "warning",
-            accent: "warning",
-          },
-          {
-            icon: <Mie.Icon icon={<Icons.Status.DialogError />} />,
-            title: "Error",
-            description: "Failed status",
-            accent: "error",
-            value: "error",
-          },
-          {
-            icon: <Mie.Icon icon={<Icons.Emblems.EmblemOk />} />,
-            description: "Complete message",
-            title: "Success",
-            accent: "success",
-            value: "success",
-          },
-        ]}
-      />
+      <Mie.L.Window
+        accent={accent && accent.value}
+        shadow
+        style={{
+          paddingBottom: "5rem",
+          width: "30rem",
+        }}
+        headerbar={{
+          controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
+          header: <Mie.Header size="tiny" title="Default Title" center />,
+          transparent: true,
+        }}
+      >
+        <Mie.L.View f fc fai="center" fjc="center" pt pb="massive">
+          <Mie.L.Header
+            subtitle="Starter text"
+            title="Welcome"
+            size="large"
+            mb="massive"
+            center
+          />
 
-      <SampleWindow accent={accent.value} />
+          <Mie.L.View f fc sbv>
+            <Mie.L.View bg="content" r>
+              <Mie.L.Select
+                // accent={accent && accent.value}
+                style={{ width: "20rem" }}
+                label="Accent Color"
+                onChange={setAccent}
+                options={accents}
+                value={accent}
+                name="accent"
+                transparent
+              />
+            </Mie.L.View>
+
+            <Mie.L.Item
+              accent={accent && accent.value}
+              style={{ width: "20rem" }}
+              activatable
+              ph="large"
+              pv="small"
+              active
+              r
+              title={<Mie.L.Text bold>Open</Mie.L.Text>}
+              description={
+                <Mie.L.Text size="small" muted>
+                  Open new project
+                </Mie.L.Text>
+              }
+              icon={
+                <Mie.L.Icon
+                  icon={<Icons.Status.FolderOpen />}
+                  size="large"
+                  mr="small"
+                />
+              }
+            />
+          </Mie.L.View>
+        </Mie.L.View>
+      </Mie.L.Window>
     </Mie.L.View>
   )
 }

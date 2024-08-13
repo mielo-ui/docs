@@ -7,10 +7,10 @@ export function LabelPage() {
   const examples = [
     "Default",
     "Accent",
-    "Size",
-    "Circular",
     "Bordered",
+    "Circular",
     "Floating",
+    "Size",
   ]
 
   return (

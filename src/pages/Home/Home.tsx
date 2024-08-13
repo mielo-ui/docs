@@ -36,21 +36,22 @@ export function HomePage() {
         title="Gallery"
         size="large"
         mt="massive"
-        mb="big"
+        mb="massive"
         center
       />
 
       <Mie.L.View f fr fw className="gallery">
         <Gallery.Typography />
         <Gallery.Checkbox />
-        <Gallery.Button />
 
-        <Mie.L.View f fc sbv data-title="Label+Icon">
+        <Mie.L.View f fc sbv="massive" data-group>
+          <Gallery.Button />
           <Gallery.Label />
-          <Gallery.Icon />
         </Mie.L.View>
 
-        <Mie.L.View f fc sbv data-title="Image+Select">
+        <Gallery.Icon />
+
+        <Mie.L.View f fc sbv="massive" data-group>
           <Gallery.Image />
           <Gallery.Select />
         </Mie.L.View>
@@ -61,15 +62,19 @@ export function HomePage() {
         <Gallery.Progress />
         <Gallery.Sliders />
 
-        <Gallery.Tabs />
-        <Gallery.Collapsible />
-
         <Gallery.List />
 
-        <Gallery.Window />
-        <Gallery.Activatable />
-        <Gallery.Dialog />
-        <Gallery.View />
+        <Mie.L.View f fc sbv="massive" data-group>
+          <Gallery.Tabs />
+          <Gallery.Dialog />
+          <Gallery.Window />
+        </Mie.L.View>
+
+        <Mie.L.View f fc sbv="massive" data-group>
+          <Gallery.Collapsible />
+          <Gallery.Activatable />
+          <Gallery.View />
+        </Mie.L.View>
       </Mie.L.View>
     </div>
   )

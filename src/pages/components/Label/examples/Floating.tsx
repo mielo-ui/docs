@@ -16,8 +16,9 @@ function Floating() {
         title="Labeled Item"
         size="large"
         activatable
+        pv="tiny"
         active
-        p
+        ph
         r
       />
 
@@ -30,8 +31,9 @@ function Floating() {
         title="Floating Label"
         size="large"
         activatable
+        pv="tiny"
         active
-        p
+        ph
         r
       />
 
@@ -42,8 +44,9 @@ function Floating() {
         title="Labeled Item"
         size="large"
         activatable
+        pv="tiny"
         active
-        p
+        ph
         r
       />
     </Mie.L.View>

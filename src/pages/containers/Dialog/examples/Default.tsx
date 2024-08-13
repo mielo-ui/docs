@@ -14,31 +14,48 @@ function Default() {
     <>
       <Mie.Dialog
         onRequestClose={() => setModalOpened(false)}
+        style={{ maxWidth: "40rem" }}
         isOpen={modalOpened}
         attached="modal"
         actions={
           <>
-            <Mie.Dialog.Action
+            <Mie.L.Button
               onClick={() => setModalOpened(false)}
               label="Cancel"
+              transparent
+              tertiary
+              pv="small"
             />
-            <Mie.Dialog.Action
+            <Mie.L.Button
               onClick={() => setModalOpened(false)}
               label="Discard"
               accent="error"
+              transparent
+              tertiary
+              pv="small"
             />
-            <Mie.Dialog.Action
+            <Mie.L.Button
               onClick={() => setModalOpened(false)}
               label="Save"
+              transparent
+              tertiary
               accent
+              pv="small"
             />
           </>
         }
       >
         <Mie.L.Header
           title="Save Changes?"
-          subtitle="Open document contains unsaved changes. Changes which are not saved will be permanently lost."
+          subtitle={
+            <Mie.L.Text mt="small">
+              Open document contains unsaved changes. <br />
+              Changes which are not saved will be permanently lost.
+            </Mie.L.Text>
+          }
           size="large"
+          mt="large"
+          mh="large"
           center
         />
       </Mie.Dialog>
@@ -51,6 +68,7 @@ function Default() {
         accent="success"
         size="large"
         ph="massive"
+        pilled
         filled
       />
     </>

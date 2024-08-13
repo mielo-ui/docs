@@ -18,16 +18,23 @@ export function Icon() {
         fc
         f
       >
-        <Mie.L.View f fr sbh="small">
-          <Mie.Icon icon={<Icons.Places.Folder />} size="mini" />
-          <Mie.Icon icon={<Icons.Places.FolderDocuments />} size="tiny" />
-          <Mie.Icon icon={<Icons.Places.FolderDownload />} size="small" />
-          <Mie.Icon icon={<Icons.Places.FolderVideos />} />
-          <Mie.Icon icon={<Icons.Places.FolderMusic />} size="large" />
-          <Mie.Icon icon={<Icons.Places.FolderPictures />} size="big" />
-          <Mie.Icon icon={<Icons.Places.FolderRemote />} size="huge" />
-          <Mie.Icon icon={<Icons.Places.FolderTemplates />} size="massive" />
+        <Mie.L.View f fc sbv="small" fai="center">
+          <Mie.L.View f fr sbh="small" fai="center">
+            <Mie.Icon icon={<Icons.Places.Folder />} size="mini" />
+            <Mie.Icon icon={<Icons.Places.FolderDocuments />} size="tiny" />
+            <Mie.Icon icon={<Icons.Places.FolderDownload />} size="small" />
+            <Mie.Icon icon={<Icons.Places.FolderVideos />} />
+            <Mie.Icon icon={<Icons.Places.FolderMusic />} size="large" />
+            <Mie.Icon icon={<Icons.Places.FolderPictures />} size="big" />
+          </Mie.L.View>
+
+          <Mie.L.View f fr sbh="small" fai="center" mt="large">
+            <Mie.Icon icon={<Icons.Places.FolderRemote />} size="huge" />
+            <Mie.Icon icon={<Icons.Places.FolderTemplates />} size="massive" />
+          </Mie.L.View>
         </Mie.L.View>
+
+        <Mie.Divider />
 
         <Mie.L.View f fr sbh="small" fjc="center">
           <Mie.L.Icon

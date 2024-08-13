@@ -8,11 +8,6 @@ import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/
 import { useCallback, useRef, useState } from "react"
 import * as Mie from "@mielo-ui/mielo-react"
 
-const themes = [
-  { title: "Light", value: "light" },
-  { title: "Dark", value: "dark" },
-]
-
 const sizes = [
   { title: "Small", value: "small" },
   { title: "Medium", value: "medium" },
@@ -28,20 +23,17 @@ const accents = [
 ]
 
 function Confirm() {
-  const [lastAction, setLastAction] = useState<any | null>(null)
   const confirmRef = useRef<Mie.ConfirmHandles>(null)
 
+  const [lastAction, setLastAction] = useState<any | null>(null)
   const [title, setTitle] = useState("Save Changes?")
   const [subtitle, setSubtitle] = useState(
-    `
-    Open document contains unsaved changes.
-    Changes which are not saved will be permanently lost.
-  `.trim(),
+    "Open document contains unsaved changes",
   )
 
   const [accent, setAccent] = useState<Mie.OptionValue>(accents[0])
-  const [theme, setTheme] = useState<Mie.OptionValue>(themes[0])
   const [size, setSize] = useState<Mie.OptionValue>(sizes[1])
+  const [isDarkTheme, setDarkTheme] = useState(false)
 
   const onOpenModel = useCallback(async () => {
     if (confirmRef.current) {
@@ -57,18 +49,22 @@ function Confirm() {
         accent={accent.value as any}
         size={size.value as any}
         header={{
+          subtitle: <Mie.L.Text mt="small">{subtitle}</Mie.L.Text>,
           size: "large",
           center: true,
-          subtitle,
           title,
+
+          mt: "large",
+          mh: "large",
         }}
       />
 
       <Mie.L.View f f1 fc>
-        <Mie.L.Rows r="large">
+        <Mie.L.Rows r="large" shadow>
           <Mie.L.Rows.Entry
             onChange={event => setTitle(event.target.value)}
-            placeholder="Accent"
+            placeholder="Enter Accent"
+            label="Accent"
             value={title}
             name="title"
             rt="large"
@@ -76,18 +72,25 @@ function Confirm() {
           />
           <Mie.L.Rows.Entry
             onChange={event => setSubtitle(event.target.value)}
-            placeholder="Subtitle"
+            placeholder="Enter Subtitle"
+            label="Subtitle"
             value={subtitle}
             name="subtitle"
             r="none"
           />
-          <Mie.L.Rows.Select
-            onChange={option => setTheme(option)}
-            options={themes}
-            value={theme}
-            label="Theme"
-            name="theme"
+          <Mie.L.Rows.Row
+            description="Enable dark theme for modal"
+            title="Dark Theme"
             r="none"
+            side={
+              <Mie.L.Checkbox
+                onChange={event => setDarkTheme(event.target.checked)}
+                checked={isDarkTheme}
+                name="dark-theme"
+                accent="success"
+                toggle
+              />
+            }
           />
           <Mie.L.Rows.Select
             onChange={option => setSize(option)}
@@ -116,15 +119,17 @@ function Confirm() {
           />
         )}
 
-        <Mie.L.Button
-          onClick={onOpenModel}
-          label="Open Confirm"
-          accent="success"
-          size="large"
-          ph="massive"
-          mt="big"
-          filled
-        />
+        <Mie.L.View f fjc="center" mt="large">
+          <Mie.L.Button
+            onClick={onOpenModel}
+            label="Open Confirm"
+            accent="success"
+            size="large"
+            ph="massive"
+            filled
+            pilled
+          />
+        </Mie.L.View>
       </Mie.L.View>
     </>
   )

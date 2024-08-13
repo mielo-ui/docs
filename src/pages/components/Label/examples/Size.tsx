@@ -6,14 +6,18 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fr fai="center" sbh="large">
-      <Mie.Label size="tiny">Tiny</Mie.Label>
-      <Mie.Label size="small">Small</Mie.Label>
-      <Mie.Label size="medium">Medium</Mie.Label>
-      <Mie.Label size="large">Large</Mie.Label>
-      <Mie.Label size="big">Big</Mie.Label>
-      <Mie.Label size="huge">Huge</Mie.Label>
-      <Mie.Label size="massive">Massive</Mie.Label>
+    <Mie.L.View f fc fai="center" sbv="large">
+      <Mie.L.View f fr fai="center" sbh>
+        <Mie.Label size="tiny">Tiny</Mie.Label>
+        <Mie.Label size="small">Small</Mie.Label>
+        <Mie.Label size="medium">Medium</Mie.Label>
+        <Mie.Label size="large">Large</Mie.Label>
+      </Mie.L.View>
+      <Mie.L.View f fr fai="center" sbh>
+        <Mie.Label size="big">Big</Mie.Label>
+        <Mie.Label size="huge">Huge</Mie.Label>
+        <Mie.Label size="massive">Massive</Mie.Label>
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

@@ -12,7 +12,6 @@ function Center() {
         icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
         subtitle="Subtitle of icon header"
         title="Icon Header"
-        size="large"
         center
       />
     </Mie.View>

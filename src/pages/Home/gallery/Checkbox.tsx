@@ -8,7 +8,6 @@ export function Checkbox() {
 
       <Mie.L.View
         className="card"
-        sbv="massive"
         bg="panel"
         r="large"
         p="large"
@@ -37,6 +36,9 @@ export function Checkbox() {
           />
         </Mie.L.View>
 
+        <Mie.L.Header mt="large" mb="small" title="Toggles" size="tiny" />
+        <Mie.L.Divider mb="large" />
+
         <Mie.L.View f fc sbv>
           <Mie.Checkbox toggle name="toggle" label="Toggle" />
 
@@ -48,7 +50,7 @@ export function Checkbox() {
           />
 
           <Mie.Checkbox
-            name="toggle-accent-checked"
+            name="toggle-accent-warning-checked"
             label="Accent Warning"
             accent="warning"
             checked
@@ -56,13 +58,24 @@ export function Checkbox() {
           />
 
           <Mie.Checkbox
-            name="toggle-accent-checked"
+            name="toggle-accent-error-checked"
             label="Accent Error"
             accent="error"
             checked
             toggle
           />
+
+          <Mie.Checkbox
+            name="toggle-accent-success-checked"
+            label="Accent Error"
+            accent="success"
+            checked
+            toggle
+          />
         </Mie.L.View>
+
+        <Mie.L.Header mt="large" mb="small" title="Radio" size="tiny" />
+        <Mie.L.Divider mb="large" />
 
         <Mie.L.View f fc sbv>
           <Mie.Radio

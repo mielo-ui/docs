@@ -7,71 +7,101 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Variants() {
   return (
-    <Mie.L.List sbv="small">
-      <Mie.L.List.Item title="Title" activatable ph="large" pv r />
+    <Mie.L.List f f1 fc>
+      <Mie.L.List f fc sbv="small">
+        <Mie.L.List.Item title="Title" activatable ph="small" pv="tiny" r />
 
-      <Mie.L.List.Item
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        title="Title"
-        activatable
-        ph="small"
-        pv="tiny"
-        r
-      />
-      <Mie.L.List.Item
-        description="Lorem ipsum description"
-        title="Title"
-        activatable
-        ph="small"
-        pv="tiny"
-        r
-      />
-      <Mie.L.List.Item
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-        description="Lorem ipsum description"
-        title="Title"
-        activatable
-        ph="small"
-        pv="tiny"
-        r
-      />
-      <Mie.L.List.Item
-        description="Lorem ipsum description"
-        title="Title"
-        activatable
-        side={
-          <>
-            <Mie.Button
-              icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-              label="Label"
-              size="small"
-              accent
+        <Mie.L.List.Item
+          icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}
+          title="Title"
+          activatable
+          ph="small"
+          pv="tiny"
+          r
+        />
+      </Mie.L.List>
+
+      <Mie.L.Header mt="large" mb="small" title="Multiline" size="tiny" />
+      <Mie.L.Divider mb="large" />
+
+      <Mie.L.List f fc sbv="small">
+        <Mie.L.List.Item
+          description="Lorem ipsum description"
+          title="Title"
+          activatable
+          ph="small"
+          pv="tiny"
+          r
+        />
+        <Mie.L.List.Item
+          icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}
+          description="Lorem ipsum description"
+          title="Title"
+          activatable
+          ph="small"
+          pv="tiny"
+          r
+        />
+      </Mie.L.List>
+
+      <Mie.L.Header mt="large" mb="small" title="Sides" size="tiny" />
+      <Mie.L.Divider mb="large" />
+
+      <Mie.L.List f fc sbv="small">
+        <Mie.L.List.Item
+          description="Lorem ipsum description"
+          title="Title"
+          activatable
+          ph="small"
+          pv="tiny"
+          r
+          side={
+            <>
+              <Mie.Button
+                icon={
+                  <Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />
+                }
+                label="Label"
+                size="small"
+                accent
+              />
+            </>
+          }
+        />
+        <Mie.L.List.Item
+          description="Lorem ipsum description"
+          title="Title"
+          activatable
+          ph="small"
+          pv="tiny"
+          r
+          icon={
+            <Mie.L.Icon
+              mr="small"
+              circular
+              filled
+              icon={<Icons.Actions.FolderNew />}
             />
-          </>
-        }
-        ph="small"
-        pv="tiny"
-        r
-      />
-      <Mie.L.List.Item
-        icon={<Mie.Icon circular filled icon={<Icons.Actions.FolderNew />} />}
-        description="Lorem ipsum description"
-        title="Title"
-        activatable
-        side={
-          <>
-            <Mie.Button
-              icon={<Mie.Icon size="small" icon={<Icons.Places.UserTrash />} />}
-              accent="error"
-              size="small"
-              tertiary
-            />
-          </>
-        }
-        ph="small"
-        pv="tiny"
-        r
-      />
+          }
+          side={
+            <Mie.ButtonGroup>
+              <Mie.Button
+                size="small"
+                icon={
+                  <Mie.L.Icon icon={<Icons.Actions.ListAdd />} size="small" />
+                }
+              />
+              <Mie.Button
+                size="small"
+                accent="error"
+                icon={
+                  <Mie.L.Icon icon={<Icons.Places.UserTrash />} size="small" />
+                }
+              />
+            </Mie.ButtonGroup>
+          }
+        />
+      </Mie.L.List>
     </Mie.L.List>
   )
 }

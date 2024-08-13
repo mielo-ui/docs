@@ -24,7 +24,7 @@ function SampleWindow({ accent }: any) {
             header={<Mie.Header title="Default title" size="tiny" />}
             left={
               <Mie.Button
-                icon={<Mie.Icon icon={<Icons.Actions.SidebarShow />} />}
+                icon={<Mie.L.Icon icon={<Icons.Actions.SidebarShow />} />}
                 onClick={() => setOpen(prev => !prev)}
                 transparent
               />
@@ -70,7 +70,7 @@ export function Window() {
 
   return (
     <Mie.L.View f fc fai="start" sbv="large" mt mh="small">
-      <Mie.L.Header title="View" />
+      <Mie.L.Header title="Window" />
 
       <Mie.L.Select
         style={{ width: "20rem" }}
@@ -79,45 +79,72 @@ export function Window() {
         onChange={setAccent}
         value={accent}
         name="accent"
-        options={[
-          {
-            icon: <Mie.Icon accent icon={<Icons.Status.DialogInformation />} />,
-            description: "Info status",
-            title: "Accent",
-            value: true,
-            accent: true,
-          },
-          {
-            description: "Have warn message",
-            title: "Warning",
-            value: "warning",
-            accent: "warning",
-            icon: (
-              <Mie.Icon
-                icon={<Icons.Status.DialogWarning />}
-                accent="warning"
-              />
-            ),
-          },
-          {
-            description: "Failed status",
-            title: "Error",
-            accent: "error",
-            value: "error",
-            icon: (
-              <Mie.Icon accent="error" icon={<Icons.Status.DialogError />} />
-            ),
-          },
-          {
-            description: "Complete message",
-            accent: "success",
-            title: "Success",
-            value: "success",
-            icon: (
-              <Mie.Icon accent="success" icon={<Icons.Emblems.EmblemOk />} />
-            ),
-          },
-        ]}
+        options={
+          [
+            {
+              description: "Info status",
+              title: "Accent",
+              value: true,
+              accent: true,
+              mh: "none",
+              rt: "large",
+              r: "none",
+              icon: (
+                <Mie.L.Icon
+                  icon={<Icons.Status.DialogInformation />}
+                  mr="small"
+                  accent
+                />
+              ),
+            },
+            {
+              description: "Have warn message",
+              title: "Warning",
+              value: "warning",
+              accent: "warning",
+              mh: "none",
+              r: "none",
+              icon: (
+                <Mie.L.Icon
+                  icon={<Icons.Status.DialogWarning />}
+                  accent="warning"
+                  mr="small"
+                />
+              ),
+            },
+            {
+              description: "Failed status",
+              title: "Error",
+              accent: "error",
+              value: "error",
+              mh: "none",
+              r: "none",
+              icon: (
+                <Mie.L.Icon
+                  icon={<Icons.Status.DialogError />}
+                  accent="error"
+                  mr="small"
+                />
+              ),
+            },
+            {
+              description: "Complete message",
+              accent: "success",
+              title: "Success",
+              value: "success",
+              rb: "large",
+              mh: "none",
+              r: "none",
+              icon: (
+                <Mie.L.Icon
+                  icon={<Icons.Emblems.EmblemOk />}
+                  accent="success"
+                  mr="small"
+                />
+              ),
+            },
+          ] as any
+        }
       />
 
       <SampleWindow accent={accent.value} />

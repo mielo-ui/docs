@@ -8,55 +8,61 @@ export function Activatable() {
 
       <Mie.L.View
         className="card"
+        fjc="center"
         bg="panel"
         r="large"
         p="large"
         shadow
-        sbv
-        fc
+        sbh
+        fr
         f
       >
         <Mie.L.View fc f sbv>
           <Mie.L.Activatable
             shadow="inner"
-            accent
             ph="large"
             pv="small"
-            r
             active
+            accent
+            r
           >
             <Mie.L.Item
-              icon={
-                <Mie.L.Icon icon={<Icons.Places.FolderDocuments />} accent />
-              }
               description="Welcome text"
               title="Documents Button"
               accent
+              icon={
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderDocuments />}
+                  size="large"
+                  mr="small"
+                  accent
+                />
+              }
             />
           </Mie.L.Activatable>
           <Mie.L.Activatable
-            shadow="inner"
             accent="warning"
+            shadow="inner"
             ph="large"
             pv="small"
-            r
             active
+            r
           >
             <Mie.L.Item
+              description="Welcome text"
+              title="Pictures Button"
+              accent="warning"
               icon={
                 <Mie.L.Icon
                   icon={<Icons.Places.FolderPictures />}
                   accent="warning"
                   size="small"
+                  mr="small"
                   p="small"
                   bg
                   r
                 />
               }
-              description="Welcome text"
-              title="Pictures Button"
-              accent="warning"
-              center
             />
           </Mie.L.Activatable>
           <Mie.L.Activatable
@@ -68,24 +74,24 @@ export function Activatable() {
             active
           >
             <Mie.L.Item
+              description="Welcome text"
+              accent="error"
+              title={
+                <Mie.L.Text accent="error" semibold>
+                  Video Button
+                </Mie.L.Text>
+              }
               icon={
                 <Mie.L.Icon
                   icon={<Icons.Places.FolderVideos />}
                   accent="error"
                   size="small"
+                  mr="small"
                   p="small"
                   circular
                   bg
                 />
               }
-              description="Welcome text"
-              title={
-                <Mie.L.Text mb="mini" accent="error" size="large" semibold>
-                  Video Button
-                </Mie.L.Text>
-              }
-              accent="error"
-              center
             />
           </Mie.L.Activatable>
           <Mie.L.Activatable
@@ -99,18 +105,100 @@ export function Activatable() {
             <Mie.L.Item
               icon={
                 <Mie.L.Icon
-                  bg
-                  size="small"
-                  p="small"
-                  r
                   icon={<Icons.Places.FolderMusic />}
                   accent="success"
+                  size="small"
+                  mr="small"
+                  p="small"
+                  bg
+                  r
                 />
               }
               description="Welcome text"
               title="Music Button"
               accent="success"
+            />
+          </Mie.L.Activatable>
+        </Mie.L.View>
+
+        <Mie.L.View fc f sbv>
+          <Mie.L.Activatable
+            shadow="inner"
+            ph="large"
+            pv="large"
+            active
+            accent
+            r
+          >
+            <Mie.L.Icon icon={<Icons.Places.FolderDocuments />} accent />
+          </Mie.L.Activatable>
+          <Mie.L.Activatable
+            shadow="inner"
+            accent="warning"
+            ph="large"
+            pv="small"
+            r
+            active
+          >
+            <Mie.L.Item
+              accent="warning"
               center
+              icon={
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderPictures />}
+                  accent="warning"
+                  size="small"
+                  p="small"
+                  bg
+                  r
+                />
+              }
+            />
+          </Mie.L.Activatable>
+          <Mie.L.Activatable
+            shadow="inner"
+            accent="error"
+            ph="large"
+            pv="small"
+            r="large"
+            active
+          >
+            <Mie.L.Item
+              accent="error"
+              center
+              icon={
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderVideos />}
+                  accent="error"
+                  size="small"
+                  p="small"
+                  circular
+                  bg
+                />
+              }
+            />
+          </Mie.L.Activatable>
+          <Mie.L.Activatable
+            accent="success"
+            shadow="inner"
+            ph="large"
+            pv="small"
+            r="large"
+            active
+          >
+            <Mie.L.Item
+              accent="success"
+              center
+              icon={
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderMusic />}
+                  accent="success"
+                  size="small"
+                  p="small"
+                  bg
+                  r
+                />
+              }
             />
           </Mie.L.Activatable>
         </Mie.L.View>

@@ -4,7 +4,7 @@ import { ExampleGroup } from "../../../components"
 import * as Examples from "./examples"
 
 export function HeaderBarPage() {
-  const examples = ["Default", "Accent", "Transparent"]
+  const examples = ["Default", "Accent"]
 
   return (
     <div className="page select">

@@ -11,7 +11,7 @@ function Item() {
       <Mie.L.Rows.Row rt title="Title" activatable />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+        icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}
         title="Title"
         activatable
       />
@@ -23,7 +23,7 @@ function Item() {
       />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+        icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
@@ -36,24 +36,27 @@ function Item() {
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
               label="Label"
               size="small"
               accent
+              icon={
+                <Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />
+              }
             />
           </>
         }
       />
 
       <Mie.L.Rows.Row
-        icon={<Mie.Icon circular filled icon={<Icons.Actions.FolderNew />} />}
         description="Lorem ipsum description"
         title="Title"
         activatable
+        
+        icon={<Mie.L.Icon icon={<Icons.Actions.FolderNew />} circular filled />}
         side={
           <>
             <Mie.Button
-              icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />}
+              icon={<Mie.L.Icon icon={<Icons.Places.UserTrash />} />}
               accent="error"
               size="small"
               filled

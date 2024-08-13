@@ -75,7 +75,11 @@ export function List() {
           <Mie.L.List sbv="tiny">
             <Mie.L.List.Item
               icon={
-                <Mie.Icon icon={<Icons.Places.FolderVideos />} size="small" />
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderVideos />}
+                  size="small"
+                  mr="small"
+                />
               }
               description="Common video container"
               title="Video"
@@ -86,7 +90,11 @@ export function List() {
             />
             <Mie.L.List.Item
               icon={
-                <Mie.Icon icon={<Icons.Places.FolderMusic />} size="small" />
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderMusic />}
+                  size="small"
+                  mr="small"
+                />
               }
               description="Common music container"
               title="Music"
@@ -97,7 +105,11 @@ export function List() {
             />
             <Mie.L.List.Item
               icon={
-                <Mie.Icon icon={<Icons.Places.FolderDownload />} size="small" />
+                <Mie.L.Icon
+                  icon={<Icons.Places.FolderDownload />}
+                  size="small"
+                  mr="small"
+                />
               }
               description="Network downloads"
               title="Download"
@@ -112,11 +124,18 @@ export function List() {
         <Mie.L.View f fc>
           <Mie.L.List>
             <Mie.L.List.Item
+              description="Network downloads"
+              title="Download"
+              activatable
+              ph="small"
+              pv="tiny"
+              accent
+              r
               label={
                 <Mie.Label
                   style={{ transform: "translateX(30%)", top: "-0.6rem" }}
                   transparent
-                  size="small"
+                  size="tiny"
                   bordered
                   floating
                   accent
@@ -128,7 +147,7 @@ export function List() {
                       mr="mini"
                       accent
                     />
-                    <Mie.Text accent size="small">
+                    <Mie.Text accent size="tiny">
                       4 upload now
                     </Mie.Text>
                   </Mie.L.View>
@@ -139,21 +158,22 @@ export function List() {
                   icon={<Icons.Places.FolderDownload />}
                   size="small"
                   r="large"
+                  mr="tiny"
                   p="small"
                   accent
                   bg
                 />
               }
-              description="Network downloads"
-              title="Download"
-              activatable
-              ph="small"
-              pv="tiny"
-              accent
-              r
             />
 
             <Mie.L.List.Item
+              description="Common video container"
+              accent="error"
+              title="Video"
+              activatable
+              ph="small"
+              pv="tiny"
+              r
               label={
                 <Mie.Label
                   children="5 fresh video"
@@ -169,20 +189,21 @@ export function List() {
                   icon={<Icons.Places.FolderVideos />}
                   accent="error"
                   size="small"
+                  mr="tiny"
                   r="large"
                   p="small"
                   bg
                 />
               }
-              description="Common video container"
-              accent="error"
-              title="Video"
+            />
+            <Mie.L.List.Item
+              description="Common music container"
+              accent="success"
+              title="Music"
               activatable
               ph="small"
               pv="tiny"
               r
-            />
-            <Mie.L.List.Item
               label={
                 <Mie.Label
                   children="5 played"
@@ -198,21 +219,22 @@ export function List() {
                   icon={<Icons.Places.FolderMusic />}
                   accent="success"
                   size="small"
+                  mr="tiny"
                   r="large"
                   p="small"
                   bg
                 />
               }
-              description="Common music container"
-              accent="success"
-              title="Music"
+            />
+
+            <Mie.L.List.Item
+              description="Network configurations"
+              accent="warning"
+              title="Remote"
               activatable
               ph="small"
               pv="tiny"
               r
-            />
-
-            <Mie.L.List.Item
               label={
                 <Mie.Label
                   style={{ transform: "translateX(30%)", top: "-0.6rem" }}
@@ -237,18 +259,12 @@ export function List() {
                   icon={<Icons.Places.FolderRemote />}
                   accent="warning"
                   size="small"
-                  r="large"
+                  mr="tiny"
                   p="small"
+                  r="large"
                   bg
                 />
               }
-              description="Network configurations"
-              accent="warning"
-              title="Remote"
-              activatable
-              ph="small"
-              pv="tiny"
-              r
             />
           </Mie.L.List>
         </Mie.L.View>

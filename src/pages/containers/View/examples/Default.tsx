@@ -12,7 +12,7 @@ function Default() {
       <Mie.L.View bg="panel" f1 f p="massive" r>
         <Mie.Header title="Background" subtitle="Panel" inverted />
       </Mie.L.View>
-      <Mie.L.View bg="window" f1 f p="massive" r>
+      <Mie.L.View bg="windows" f1 f p="massive" r>
         <Mie.Header title="Background" subtitle="Window" inverted />
       </Mie.L.View>
       <Mie.L.View bg="content" f1 f p="massive" r>

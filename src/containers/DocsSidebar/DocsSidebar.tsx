@@ -109,7 +109,7 @@ export function SubMenu({ title, subtitle, links }: PageItemOptions) {
 
   return (
     <>
-      <Mie.L.ListItem
+      <Mie.L.List.Item
         description={subtitle}
         onClick={onToggle}
         title={title}

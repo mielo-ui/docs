@@ -11,8 +11,9 @@ function Entry() {
   return (
     <Mie.L.Rows shadow r>
       <Mie.L.Rows.Entry
-        placeholder="Username"
         onChange={event => setUsername(event.target.value)}
+        placeholder="Enter Username"
+        label="Username"
         value={username}
         name="username"
         type="text"

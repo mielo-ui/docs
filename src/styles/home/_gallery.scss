@@ -1,16 +1,46 @@
 @use "sass:math";
 
 .page.home .mie.view.gallery {
-  width: 90rem;
+  width: 102.4rem;
 
   > .gallery-sample {
     padding: indent(tiny);
   }
 
-  [data-title="Label+Icon"],
-  [data-title="Image+Select"],
-  [data-title="Progress+Sliders"] {
-    padding: 0.8rem !important;
+  [data-group] {
+    padding: 3.2rem 1.2rem;
+
+    [data-title] {
+      padding: 0;
+    }
+  }
+  
+  [data-title] {
+    padding: 3.2rem 1.2rem;
+  }
+
+  [data-title="Typography"] {
+    width: 30%;
+  }
+
+  [data-title="Checkbox"] {
+    width: 30%;
+  }
+
+  [data-title="Button+Label"] {
+    width: 40%;
+  }
+
+  [data-title="Icon"] {
+    width: calc(100% / 3);
+  }
+
+  [data-title="Entry"] {
+    width: calc(100% / 3);
+  }
+
+  [data-title="Image+Select"] {
+    width: calc(100% / 3);
   }
 
   [data-title="Progress"] {
@@ -21,22 +51,20 @@
     width: 50%;
   }
 
-  [data-title="Tabs"] {
-    width: 40%;
+  [data-title="Tabs+Dialog"] {
+    width: 60%;
   }
 
-  [data-title="Collapsible"] {
-    width: 30%;
+  [data-title="Collapsible+Activatable"] {
+    width: 40%;
   }
 
   [data-title="List"] {
     width: 100%;
   }
 
-
   @media screen and (max-width: 768px) {
     width: 100% !important;
-    padding: 0 2rem;
 
     [data-title] {
       width: 100% !important;

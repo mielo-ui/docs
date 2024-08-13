@@ -12,7 +12,6 @@ export function Button() {
         r="large"
         p="large"
         shadow
-        sbv
         fc
         f
       >
@@ -28,64 +27,113 @@ export function Button() {
           </Mie.L.View>
         </Mie.L.View>
 
+        <Mie.L.Header mt="large" mb="small" title="With Icon" size="tiny" />
+        <Mie.L.Divider mb="large" />
+
         <Mie.L.View f fr fai="start" fjc="start" sbh="tiny">
-          <Mie.Button icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />} />
+          <Mie.Button icon={<Mie.Icon icon={<Icons.Status.MailUnread />} />} />
 
           <Mie.Button
-            icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+            icon={<Mie.Icon icon={<Icons.Actions.ListAdd />} />}
             circular
           />
 
           <Mie.Button
-            icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-            label="Label"
+            icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.BookmarkNew />} />}
+            label="Add Bookmark"
           />
         </Mie.L.View>
 
+        <Mie.L.Header mt="large" mb="small" title="Styled" size="tiny" />
+        <Mie.L.Divider mb="large" />
+
         <Mie.L.View f fr sbh="tiny">
-          <Mie.L.Button label="Pilled + Padding" pilled ph="large" />
+          <Mie.L.Button label="Pilled" pilled ph="large" />
           <Mie.Button label="Filled Accent" filled accent />
         </Mie.L.View>
 
+        <Mie.L.Header mt="large" mb="small" title="Custom Styled" size="tiny" />
+        <Mie.L.Divider mb="large" />
+
         <Mie.L.View f fr fai="start" fjc="start" sbh="tiny">
-          <Mie.Button
-            icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-            iconLabeled
-            label="Button"
-            filled
-            accent
+          <Mie.L.Button
+            accent="warning"
+            pl="none"
+            pv="none"
             pilled
+            pr
+            label={
+              <Mie.L.Text bold ml="tiny">
+                Pilled
+              </Mie.L.Text>
+            }
+            icon={
+              <Mie.L.Icon
+                icon={<Icons.Actions.FolderNew />}
+                accent="warning"
+                pl="small"
+                pv="tiny"
+                pr="tiny"
+                bg
+              />
+            }
           />
 
-          <Mie.Button
-            icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-            iconLabeled
-            label="Button"
+          <Mie.L.Button
+            pl="none"
+            pv="none"
             accent
+            pr
+            label={
+              <Mie.L.Text bold ml="tiny">
+                Labeled
+              </Mie.L.Text>
+            }
+            icon={
+              <Mie.L.Icon
+                icon={<Icons.Actions.FolderNew />}
+                pl="small"
+                p="tiny"
+                accent
+                bg
+              />
+            }
           />
 
-          <Mie.Button
-            icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
-            iconLabeled
-            label="Button"
+          <Mie.L.Button
+            pr="small"
+            pl="none"
+            pv="none"
             filled
             accent
+            label={
+              <Mie.L.Text bold ml="mini">
+                Filled
+              </Mie.L.Text>
+            }
+            icon={
+              <Mie.L.Icon
+                icon={<Icons.Actions.FolderNew />}
+                p="tiny"
+                accent
+                bg
+              />
+            }
           />
         </Mie.L.View>
 
-        <Mie.L.View f fr fai="center" sbh="large">
+        <Mie.L.View f fr mt fai="center" sbh="large">
           <Mie.L.Button
-            label="Pill + Sized"
+            label="Bob Success"
             accent="success"
-            size="large"
             ph="massive"
             pilled
             filled
           />
 
           <Mie.Button
-            label="Tertiary Success"
-            accent="success"
+            label="Tertiary Error"
+            accent="error"
             transparent
             tertiary
           />

@@ -21,10 +21,10 @@ function Default() {
       >
         <Mie.L.View f fc fai="center" fjc="center" p="massive">
           <Mie.Header
-            center
-            size="large"
-            title="Welcome"
             subtitle="Starter text"
+            title="Welcome"
+            size="large"
+            center
           />
         </Mie.L.View>
       </Mie.L.Window>

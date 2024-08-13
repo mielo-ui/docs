@@ -47,27 +47,37 @@ export function Select() {
     ...defaultTime,
 
     icon: (
-      <Mie.Icon
-        accent={accents[defaultTime.value]}
-        icon={timeIcon[defaultTime.value]}
-      />
-    ),
-  }))
-
-  const timesExtraCustom: any = times.map(defaultTime => ({
-    description: "Sample description text",
-    accent: accents[defaultTime.value],
-    ...defaultTime,
-    p: "small",
-
-    icon: (
       <Mie.L.Icon
         accent={accents[defaultTime.value]}
         icon={timeIcon[defaultTime.value]}
-        p="small"
+        mr="small"
       />
     ),
   }))
+
+  const timesExtraCustom: any = times.map((defaultTime, timeIdx) =>
+    Object.assign(
+      {
+        description: "Sample description text",
+        accent: accents[defaultTime.value],
+        ...defaultTime,
+        mh: "none",
+        p: "small",
+        r: null as any,
+
+        icon: (
+          <Mie.L.Icon
+            accent={accents[defaultTime.value]}
+            icon={timeIcon[defaultTime.value]}
+            mr="tiny"
+            p="small"
+          />
+        ),
+      },
+      times.length - 1 === timeIdx && { rb: true },
+      timeIdx === 0 && { rt: true },
+    ),
+  )
 
   return (
     <Mie.L.View f fc className="gallery-sample" data-title="Select">
@@ -117,7 +127,6 @@ export function Select() {
             value={thirdTime}
             name="time-third"
             label="Time"
-            opened
             prefix={
               <Mie.L.View ml="small" f fai="center" fjc="center">
                 <Mie.L.Icon

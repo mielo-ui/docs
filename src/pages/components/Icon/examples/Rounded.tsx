@@ -14,15 +14,17 @@ function Rounded() {
         p="large"
         accent
         bg
+
         r="tiny"
       />
 
       <Mie.L.Icon
         icon={<Icons.Status.DialogWarning />}
         accent="warning"
-        size="huge"
+        size="big"
         p="large"
         bg
+
         r="small"
       />
 
@@ -32,6 +34,7 @@ function Rounded() {
         size="big"
         p="large"
         bg
+
         r
       />
 

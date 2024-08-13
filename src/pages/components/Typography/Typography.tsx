@@ -4,7 +4,7 @@ import { ExampleGroup } from "../../../components"
 import * as Examples from "./examples"
 
 export function TypographyPage() {
-  const examples = ["Default", "Titles", "Accent"]
+  const examples = ["Default", "Accent", "Sizes"]
 
   return (
     <div className="page typography">

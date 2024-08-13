@@ -9,17 +9,28 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View f f1>
-      <Mie.L.HeaderBar
-        header={<Mie.Header title="Title" subtitle="Subtitle" />}
-        r
-        left={
-          <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
-        }
-        right={
-          <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />} />
-        }
-      />
+    <Mie.L.View f f1 fai="center" fjc="center" mt="big">
+      <Mie.L.Window
+        shadow
+        style={{
+          width: "100%",
+        }}
+        headerbar={{
+          controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
+          header: <Mie.Header size="tiny" title="Default Title" center />,
+          left: (
+            <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
+          ),
+          right: (
+            <Mie.L.Button
+              icon={<Mie.Icon icon={<Icons.Places.UserTrash />} />}
+              mr="small"
+            />
+          ),
+        }}
+      >
+        <Mie.L.View f fc fai="center" fjc="center" p="massive"></Mie.L.View>
+      </Mie.L.Window>
     </Mie.L.View>
   )
 }

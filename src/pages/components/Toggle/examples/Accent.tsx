@@ -16,17 +16,17 @@ function Accent() {
       />
 
       <Mie.Checkbox
-        name="circular-accent-2"
-        label="Success"
-        accent="success"
+        name="circular-accent-3"
+        label="Error"
+        accent="error"
         checked
         toggle
       />
 
       <Mie.Checkbox
-        name="circular-accent-3"
-        label="Error"
-        accent="error"
+        name="circular-accent-2"
+        label="Success"
+        accent="success"
         checked
         toggle
       />

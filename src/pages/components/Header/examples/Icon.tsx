@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Icon() {
   return (
-    <Mie.View>
+    <Mie.L.View f fc sbv="large">
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"
@@ -20,7 +20,7 @@ function Icon() {
         icon={<Mie.Icon icon={<Icons.Places.UserHome />} />}
         iconSided
       />
-    </Mie.View>
+    </Mie.L.View>
   )
 }
 

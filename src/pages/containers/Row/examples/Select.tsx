@@ -28,13 +28,14 @@ function Select() {
   ]
 
   return (
-    <Mie.L.Rows shadow>
-      <Mie.Rows.Select
+    <Mie.L.Rows shadow r>
+      <Mie.L.Rows.Select
         onChange={option => setTime(option)}
         label="Time"
         options={options}
         value={time}
         name="time"
+        r
       />
     </Mie.L.Rows>
   )
