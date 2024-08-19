@@ -8,7 +8,7 @@ export function List() {
 
       <Mie.L.View
         className="card"
-        sbh="massive"
+        gc="massive"
         bg="panel"
         r="large"
         p="large"
@@ -72,7 +72,7 @@ export function List() {
         </Mie.L.View>
 
         <Mie.L.View f fc>
-          <Mie.L.List sbv="tiny">
+          <Mie.L.List gr="tiny">
             <Mie.L.List.Item
               icon={
                 <Mie.L.Icon
@@ -122,7 +122,7 @@ export function List() {
         </Mie.L.View>
 
         <Mie.L.View f fc>
-          <Mie.L.List>
+          <Mie.L.List gr="tiny">
             <Mie.L.List.Item
               description="Network downloads"
               title="Download"

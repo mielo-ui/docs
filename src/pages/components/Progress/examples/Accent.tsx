@@ -5,23 +5,55 @@ import rawTsCode from "./Accent.tsx?raw"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Accent() {
+  const accents = [true, "warning", "error", "success"].map((accent, idx) => (
+    <Mie.Progress
+      key={`accent-${idx}-${accent}`}
+      accent={accent as Mie.ProgressAccent}
+    >
+      <Mie.Progress.Bar accent={accent as Mie.ProgressAccent} progress={60} />
+    </Mie.Progress>
+  ))
+
+  const colors = [
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "red",
+    "purple",
+    "brown",
+    "pink",
+    "deeppurple",
+    "indigo",
+    "lightgreen",
+    "deeporange",
+    "light",
+    "dark",
+  ].map((color, idx) => (
+    <Mie.Progress
+      key={`color-${idx}-${color}`}
+      color={color as Mie.ProgressColor}
+    >
+      <Mie.Progress.Bar color={color as Mie.ProgressColor} progress={60} />
+    </Mie.Progress>
+  ))
+
   return (
-    <Mie.L.View f fc f1 sbv="large">
-      <Mie.Progress accent>
-        <Mie.Progress.Bar progress={40} />
-      </Mie.Progress>
+    <Mie.L.View f fc gr="massive">
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {accents}
+      </Mie.L.View>
 
-      <Mie.Progress accent="warning">
-        <Mie.Progress.Bar accent="warning" progress={60} />
-      </Mie.Progress>
+      <Mie.L.Header
+        subtitle="Colored variant allowed for all components"
+        title="Colored"
+        size="small"
+        center
+      />
 
-      <Mie.Progress accent="error">
-        <Mie.Progress.Bar accent="error" progress={60} />
-      </Mie.Progress>
-
-      <Mie.Progress accent="success">
-        <Mie.Progress.Bar accent="success" progress={60} />
-      </Mie.Progress>
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {colors}
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

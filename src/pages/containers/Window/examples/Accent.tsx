@@ -44,10 +44,9 @@ function Accent() {
   ]
 
   return (
-    <Mie.L.View f fc fai="center" sbv="massive" pb="massive">
+    <Mie.L.View f fc fai="center" gr="massive" pb="massive">
       <Mie.L.Window
         accent={accent && accent.value}
-        shadow
         style={{
           paddingBottom: "5rem",
           width: "30rem",
@@ -74,6 +73,7 @@ function Accent() {
                 style={{ width: "20rem" }}
                 label="Accent Color"
                 onChange={setAccent}
+                menuHeight="12.5rem"
                 options={accents}
                 value={accent}
                 name="accent"
@@ -81,28 +81,33 @@ function Accent() {
               />
             </Mie.L.View>
 
-            <Mie.L.Item
+            <Mie.L.Button
               accent={accent && accent.value}
               style={{ width: "20rem" }}
-              activatable
+              fjc="start"
               ph="large"
               pv="small"
-              active
+              hover
               r
-              title={<Mie.L.Text bold>Open</Mie.L.Text>}
-              description={
-                <Mie.L.Text size="small" muted>
-                  Open new project
-                </Mie.L.Text>
-              }
-              icon={
-                <Mie.L.Icon
-                  icon={<Icons.Status.FolderOpen />}
-                  size="large"
-                  mr="small"
-                />
-              }
-            />
+              f
+            >
+              <Mie.L.Item
+                title={<Mie.L.Text bold>Open</Mie.L.Text>}
+                r
+                description={
+                  <Mie.L.Text size="small" muted>
+                    Open new project
+                  </Mie.L.Text>
+                }
+                icon={
+                  <Mie.L.Icon
+                    icon={<Icons.Status.FolderOpen />}
+                    size="large"
+                    mr="small"
+                  />
+                }
+              />
+            </Mie.L.Button>
           </Mie.L.View>
         </Mie.L.View>
       </Mie.L.Window>

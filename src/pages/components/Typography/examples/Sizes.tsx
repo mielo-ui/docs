@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Sizes() {
   return (
-    <Mie.L.View f fc sbv="large" fai="center">
+    <Mie.L.View f fc gr="large" fai="center">
       <Mie.Header title="Title 1" size="tiny" />
       <Mie.Header title="Title 2" size="small" />
       <Mie.Header title="Title 3" />

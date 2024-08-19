@@ -16,7 +16,7 @@ export function Label() {
         fc
         f
       >
-        <Mie.L.View f fr sbh="tiny">
+        <Mie.L.View f fr gc="tiny">
           <Mie.Label accent>Accent</Mie.Label>
           <Mie.Label accent="warning">Warning</Mie.Label>
           <Mie.Label accent="error">Error</Mie.Label>
@@ -26,7 +26,7 @@ export function Label() {
         <Mie.L.Header mt="large" mb="small" title="Transparent" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fr fai="center" sbh="small">
+        <Mie.L.View f fr fai="center" gc="small">
           <Mie.Label size="small" bordered transparent accent>
             Label
           </Mie.Label>
@@ -48,7 +48,7 @@ export function Label() {
         <Mie.L.Divider mb="large" />
 
         <Mie.L.View f fr sbh fai="center">
-          <Mie.L.View f fr fai="center" sbh="small">
+          <Mie.L.View f fr fai="center" gc="small">
             <Mie.Label size="small" circular accent>
               10
             </Mie.Label>
@@ -66,7 +66,7 @@ export function Label() {
             </Mie.Label>
           </Mie.L.View>
 
-          <Mie.L.View f fr fai="center" sbh="small">
+          <Mie.L.View f fr fai="center" gc="small">
             <Mie.Label size="big" circular accent />
             <Mie.Label size="large" circular accent="success" />
             <Mie.Label circular accent="error" />
@@ -77,10 +77,10 @@ export function Label() {
         <Mie.L.Header mt="large" mb="small" title="Labeled" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fr fw fai="center" fjc="center" sbh="large">
+        <Mie.L.View f fr fw fai="center" fjc="center" gc="large">
           <Mie.L.Item
             label={
-              <Mie.Label size="small" floating>
+              <Mie.Label accent size="small" floating>
                 +100
               </Mie.Label>
             }
@@ -88,7 +88,7 @@ export function Label() {
             size="small"
             activatable
             p="tiny"
-            active
+            hover
             r
           />
 
@@ -102,7 +102,7 @@ export function Label() {
             size="small"
             activatable
             p="tiny"
-            active
+            hover
             r
           />
         </Mie.L.View>
@@ -118,7 +118,7 @@ export function Label() {
           activatable
           mt="large"
           p="tiny"
-          active
+          hover
           r
         />
       </Mie.L.View>

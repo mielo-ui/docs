@@ -1,9 +1,13 @@
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useSelector } from "react-redux"
 
 import whiteframe from "../../../images/whiteframe.png"
+import darkframe from "../../../images/darkframe.png"
+import * as selectors from "../../../selectors"
 
 export function Image() {
+  const darkThemeEnable = useSelector(selectors.darkThemeEnable)
   return (
     <Mie.L.View f fc className="gallery-sample" data-title="Image">
       <Mie.L.Header title="Image" size="small" mb="small" />
@@ -19,36 +23,9 @@ export function Image() {
         fc
         f
       >
-        <Mie.L.View f fr fjc="center" sbh="large">
-          <Mie.L.Image src={whiteframe} accent="success" size="mini" r />
-
-          <Mie.L.Image
-            src={whiteframe}
-            accent="warning"
-            size="mini"
-            bordered
-            r="large"
-          />
-          <Mie.L.Image
-            src={whiteframe}
-            accent="error"
-            size="mini"
-            bordered
-            circular
-          />
-          <Mie.L.Image
-            src={whiteframe}
-            accent="success"
-            size="mini"
-            circular
-            bordered
-            r
-          />
-        </Mie.L.View>
-
         <Mie.L.Image
-          style={{ backgroundSize: "contain", width: "100%" }}
-          src={whiteframe}
+          style={{ width: "18rem", height: "18rem" }}
+          src={darkThemeEnable ? darkframe : whiteframe}
           fjc="center"
           fai="center"
           container

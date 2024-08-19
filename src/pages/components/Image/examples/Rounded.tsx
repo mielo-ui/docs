@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Rounded() {
   return (
-    <Mie.L.View f fr sbh="large" fai="center" pv="large">
+    <Mie.L.View f fr gc="large" fai="center" pv="large">
       <Mie.L.Image r="small" size="tiny" src={whiteframe} />
       <Mie.L.Image r size="tiny" src={whiteframe} />
       <Mie.L.Image r="large" size="tiny" src={whiteframe} />

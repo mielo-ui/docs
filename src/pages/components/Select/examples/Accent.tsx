@@ -27,43 +27,59 @@ function Accent() {
     },
   ]
 
+  const accents = [true, "warning", "error", "success"].map((accent, idx) => (
+    <Mie.Select
+      accent={accent as Mie.SelectAccent}
+      name={`accent-${accent}`}
+      onChange={setTime}
+      options={options}
+      value={time}
+      label="Time"
+    />
+  ))
+
+  const colors = [
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "red",
+    "purple",
+    "brown",
+    "pink",
+    "deeppurple",
+    "indigo",
+    "lightgreen",
+    "deeporange",
+    "light",
+    "dark",
+  ].map((color, idx) => (
+    <Mie.Select
+      color={color as Mie.SelectColor}
+      name={`color-${color}-${idx}`}
+      onChange={setTime}
+      options={options}
+      value={time}
+      label="Time"
+    />
+  ))
+
   return (
-    <Mie.L.View f fc sbv="large">
-      <Mie.Select
-        onChange={setTime}
-        options={options}
-        value={time}
-        label="Time"
-        name="accent-1"
-        accent
+    <Mie.L.View f fc gr="massive">
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {accents}
+      </Mie.L.View>
+
+      <Mie.L.Header
+        subtitle="Colored variant allowed for all components"
+        title="Colored"
+        size="small"
+        center
       />
 
-      <Mie.Select
-        onChange={setTime}
-        options={options}
-        value={time}
-        label="Time"
-        name="accent-2"
-        accent="warning"
-      />
-
-      <Mie.Select
-        onChange={setTime}
-        options={options}
-        value={time}
-        label="Time"
-        name="accent-3"
-        accent="error"
-      />
-
-      <Mie.Select
-        onChange={setTime}
-        options={options}
-        value={time}
-        label="Time"
-        name="accent-4"
-        accent="success"
-      />
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {colors}
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

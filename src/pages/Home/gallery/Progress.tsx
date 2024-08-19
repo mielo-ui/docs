@@ -8,7 +8,7 @@ export function Progress() {
 
       <Mie.L.View
         className="card"
-        sbv="massive"
+        gr="massive"
         bg="panel"
         r="large"
         p="large"
@@ -16,7 +16,7 @@ export function Progress() {
         fc
         f
       >
-        <Mie.L.View f fc f1 sbv="small">
+        <Mie.L.View f fc f1 gr="small">
           <Mie.Progress size="small">
             <Mie.Progress.Bar progress={35} />
           </Mie.Progress>
@@ -26,7 +26,7 @@ export function Progress() {
           </Mie.Progress>
         </Mie.L.View>
 
-        <Mie.L.View f fc f1 sbv="small">
+        <Mie.L.View f fc f1 gr="small">
           <Mie.Progress size="small" multiple>
             <Mie.Progress.Bar accent="error" progress={25} />
             <Mie.Progress.Bar accent="warning" progress={18} />
@@ -40,7 +40,7 @@ export function Progress() {
           </Mie.Progress>
         </Mie.L.View>
 
-        <Mie.L.View f fc f1 sbv="small">
+        <Mie.L.View f fc f1 gr="small">
           <Mie.Progress size="small" accent>
             <Mie.Progress.Bar
               indeterminate="pulsating"

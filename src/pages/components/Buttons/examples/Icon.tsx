@@ -22,72 +22,75 @@ function Icon() {
         />
       </Mie.L.View>
 
-      <Mie.L.View f fr fai="start" fjc="start" sbh="tiny">
-          <Mie.L.Button
-            accent="warning"
-            pl="none"
-            pv="none"
-            pilled
-            pr
-            label={
-              <Mie.L.Text bold ml="tiny">
-                Pilled
-              </Mie.L.Text>
-            }
-            icon={
-              <Mie.L.Icon
-                icon={<Icons.Actions.FolderNew />}
-                accent="warning"
-                pl="small"
-                pv="tiny"
-                pr="tiny"
-                bg
-              />
-            }
-          />
+      <Mie.L.View f fr fai="start" fjc="start" gc="tiny">
+        <Mie.L.Button
+          accent="warning"
+          pl="none"
+          pv="none"
+          pilled
+          pr
+          label={
+            <Mie.L.Text bold ml="tiny">
+              Pilled
+            </Mie.L.Text>
+          }
+          icon={
+            <Mie.L.Icon
+              icon={<Icons.Actions.FolderNew />}
+              accent="warning"
+              rl="circular"
+              pl="small"
+              pv="tiny"
+              pr="tiny"
+              bg
+            />
+          }
+        />
 
-          <Mie.L.Button
-            pl="none"
-            pv="none"
-            accent
-            pr
-            label={
-              <Mie.L.Text bold ml="tiny">
-                Labeled
-              </Mie.L.Text>
-            }
-            icon={
-              <Mie.L.Icon
-                icon={<Icons.Actions.FolderNew />}
-                pl="small"
-                p="tiny"
-                accent
-                bg
-              />
-            }
-          />
+        <Mie.L.Button
+          pl="none"
+          pv="none"
+          accent
+          pr
+          label={
+            <Mie.L.Text bold ml="tiny">
+              Labeled
+            </Mie.L.Text>
+          }
+          icon={
+            <Mie.L.Icon
+              icon={<Icons.Actions.FolderNew />}
+              pl="small"
+              p="tiny"
+              accent
+              rl
+              bg
+            />
+          }
+        />
 
-          <Mie.L.Button
-            pr="small"
-            pl="none"
-            pv="none"
-            filled
-            accent
-            label={
-              <Mie.L.Text bold ml="mini">
-                Filled
-              </Mie.L.Text>
-            }
-            icon={
-              <Mie.L.Icon
-                icon={<Icons.Actions.FolderNew />}
-                p="tiny"
-                accent
-                bg
-              />
-            }
-          />
-        </Mie.L.View>
+        <Mie.L.Button
+          pr="small"
+          pl="none"
+          pv="none"
+          filled
+          accent
+          label={
+            <Mie.L.Text bold ml="mini">
+              Filled
+            </Mie.L.Text>
+          }
+          icon={
+            <Mie.L.Icon
+              icon={<Icons.Actions.FolderNew />}
+              rl
+              p="tiny"
+              accent
+              bg
+            />
+          }
+        />
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

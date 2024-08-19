@@ -2,15 +2,53 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Accent.tsx?raw"
 
 //@chunk
+import { capitalCase } from "change-case"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Accent() {
+  const accents = [true, "warning", "error", "success"].map((accent, idx) => (
+    <Mie.Text key={`accent-${accent}-${idx}`} accent={accent as Mie.TextAccent}>
+      {capitalCase(accent === true ? "Accent" : accent.toString())}
+    </Mie.Text>
+  ))
+
+  const colors = [
+    "blue",
+    "green",
+    "yellow",
+    "orange",
+    "red",
+    "purple",
+    "brown",
+    "pink",
+    "deeppurple",
+    "indigo",
+    "lightgreen",
+    "deeporange",
+    "light",
+    "dark",
+  ].map((color, idx) => (
+    <Mie.Text key={`color-${color}-${idx}`} color={color as Mie.TextColor}>
+      {capitalCase(color)}
+    </Mie.Text>
+  ))
+
   return (
-    <Mie.L.View f fc sbv="large" fai="center">
-      <Mie.Text accent>Accent</Mie.Text>
-      <Mie.Text accent="success">Success</Mie.Text>
-      <Mie.Text accent="warning">Warning</Mie.Text>
-      <Mie.Text accent="error">Error</Mie.Text>
+    <Mie.L.View f fc gr="massive">
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {accents}
+      </Mie.L.View>
+
+      <Mie.L.Header
+        subtitle="Colored variant allowed for all components"
+        title="Colored"
+        size="small"
+        center
+      />
+
+      <Mie.L.View f fr fw fai="center" fjc="center" g="small">
+        {colors}
+      </Mie.L.View>
     </Mie.L.View>
   )
 }

@@ -1,23 +1,22 @@
-@import "@mielo-ui/mielo/sass/index";
+@use "@fontsource/jetbrains-mono" as *;
 
-@import "@fontsource/jetbrains-mono";
+@use "@fontsource/ubuntu/700" as *;
+@use "@fontsource/ubuntu/500" as *;
+@use "@fontsource/ubuntu" as *;
 
-@import "@fontsource/ubuntu/700";
-@import "@fontsource/ubuntu/500";
-@import "@fontsource/ubuntu";
+@use "@fontsource/roboto/700" as *;
+@use "@fontsource/roboto/500" as *;
+@use "@fontsource/roboto" as *;
 
-@import "@fontsource/roboto/700";
-@import "@fontsource/roboto/500";
-@import "@fontsource/roboto";
+@use "@fontsource/inter/700" as *;
+@use "@fontsource/inter/500" as *;
+@use "@fontsource/inter" as *;
 
-@import "@fontsource/inter/700";
-@import "@fontsource/inter/500";
-@import "@fontsource/inter";
+@use "@mielo-ui/mielo/sass/index";
+@use "./example-group";
+@use "./icon-library";
+@use "./sidebar";
+@use "./code";
 
-@import "./example-group";
-@import "./icon-library";
-@import "./sidebar";
-@import "./code";
-
-@import "./layout";
-@import "./home";
+@use "./layout";
+@use "./home";

@@ -31,7 +31,7 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
       <Mie.L.View
         className="example-group"
         shadow="outer"
-        bg="content"
+        bg="panel"
         r="large"
         fc
         f
@@ -41,10 +41,12 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
 
           <Mie.L.Button
             onClick={() => setCodeOpen(prev => !prev)}
+            accent={codeOpen ? true : "success"}
             className="show-code"
-            accent={codeOpen ? "warning" : "success"}
-            r="large"
-            ph="big"
+            size="small"
+            rtr="large"
+            rbl="large"
+            ph="large"
           >
             {codeOpen ? "Hide Code" : "Show Code"}
           </Mie.L.Button>

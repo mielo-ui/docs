@@ -6,7 +6,7 @@ import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Fill() {
-  return <Mie.L.View f fr sbh="large"></Mie.L.View>
+  return <Mie.L.View f fr gc="large"></Mie.L.View>
 }
 
 //@chunk

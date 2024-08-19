@@ -51,7 +51,6 @@ function Item() {
         description="Lorem ipsum description"
         title="Title"
         activatable
-        
         icon={<Mie.L.Icon icon={<Icons.Actions.FolderNew />} circular filled />}
         side={
           <>

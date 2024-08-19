@@ -28,7 +28,6 @@ export function Collapsible() {
           center
           ph
           r
-
           title={
             <Mie.Text accent="success" semibold>
               Toggle Content

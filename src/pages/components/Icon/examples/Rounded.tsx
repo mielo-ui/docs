@@ -7,14 +7,13 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Rounded() {
   return (
-    <Mie.L.View f fr sbh="large" fai="center">
+    <Mie.L.View f fr gc="large" fai="center">
       <Mie.L.Icon
         icon={<Icons.Status.DialogInformation />}
         size="big"
         p="large"
         accent
         bg
-
         r="tiny"
       />
 
@@ -24,7 +23,6 @@ function Rounded() {
         size="big"
         p="large"
         bg
-
         r="small"
       />
 
@@ -34,7 +32,6 @@ function Rounded() {
         size="big"
         p="large"
         bg
-
         r
       />
 

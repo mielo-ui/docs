@@ -58,11 +58,11 @@ export function Select() {
   const timesExtraCustom: any = times.map((defaultTime, timeIdx) =>
     Object.assign(
       {
-        description: "Sample description text",
+        description: "Some text...",
         accent: accents[defaultTime.value],
         ...defaultTime,
         mh: "none",
-        p: "small",
+        p: "tiny",
         r: null as any,
 
         icon: (
@@ -70,7 +70,9 @@ export function Select() {
             accent={accents[defaultTime.value]}
             icon={timeIcon[defaultTime.value]}
             mr="tiny"
-            p="small"
+            pv="mini"
+            pr="tiny"
+            pl="mini"
           />
         ),
       },
@@ -85,7 +87,7 @@ export function Select() {
 
       <Mie.L.View
         className="card"
-        sbv="big"
+        gr="big"
         fjc="center"
         fai="center"
         bg="panel"
@@ -127,6 +129,11 @@ export function Select() {
             value={thirdTime}
             name="time-third"
             label="Time"
+            menuHeight="16.2rem"
+            listProps={{
+              gr: "none",
+              pv: "none",
+            }}
             prefix={
               <Mie.L.View ml="small" f fai="center" fjc="center">
                 <Mie.L.Icon

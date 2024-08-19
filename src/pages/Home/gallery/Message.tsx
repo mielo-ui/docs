@@ -50,13 +50,6 @@ export function Message() {
           onClose={() => {}}
           accent="error"
         />
-        <Mie.Message
-          title="With description"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          onClose={() => {}}
-          accent="success"
-          size="big"
-        />
       </Mie.L.View>
     </Mie.L.View>
   )

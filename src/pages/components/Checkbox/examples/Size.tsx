@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.Checkbox
         name="circular-accent-2"
         label="Small"

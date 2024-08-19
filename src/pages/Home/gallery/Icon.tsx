@@ -8,7 +8,7 @@ export function Icon() {
 
       <Mie.L.View
         className="card"
-        sbv="big"
+        gr="big"
         fjc="center"
         fai="center"
         bg="panel"
@@ -18,8 +18,8 @@ export function Icon() {
         fc
         f
       >
-        <Mie.L.View f fc sbv="small" fai="center">
-          <Mie.L.View f fr sbh="small" fai="center">
+        <Mie.L.View f fc gr="small" fai="center">
+          <Mie.L.View f fr gc="small" fai="center">
             <Mie.Icon icon={<Icons.Places.Folder />} size="mini" />
             <Mie.Icon icon={<Icons.Places.FolderDocuments />} size="tiny" />
             <Mie.Icon icon={<Icons.Places.FolderDownload />} size="small" />
@@ -28,7 +28,7 @@ export function Icon() {
             <Mie.Icon icon={<Icons.Places.FolderPictures />} size="big" />
           </Mie.L.View>
 
-          <Mie.L.View f fr sbh="small" fai="center" mt="large">
+          <Mie.L.View f fr gc="small" fai="center" mt="large">
             <Mie.Icon icon={<Icons.Places.FolderRemote />} size="huge" />
             <Mie.Icon icon={<Icons.Places.FolderTemplates />} size="massive" />
           </Mie.L.View>
@@ -36,7 +36,7 @@ export function Icon() {
 
         <Mie.Divider />
 
-        <Mie.L.View f fr sbh="small" fjc="center">
+        <Mie.L.View f fr gc="small" fjc="center">
           <Mie.L.Icon
             icon={<Icons.Places.FolderDocuments />}
             r="tiny"
@@ -74,7 +74,7 @@ export function Icon() {
           />
         </Mie.L.View>
 
-        <Mie.L.View f fr sbh="large" fjc="center">
+        <Mie.L.View f fr gc="large" fjc="center">
           <Mie.L.Icon
             icon={<Icons.Status.DialogInformation />}
             size="large"

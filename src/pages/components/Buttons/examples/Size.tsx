@@ -6,13 +6,13 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc sbv="large" fjc="center" fai="center">
-      <Mie.L.View f fr sbh="small" fai="center">
+    <Mie.L.View f fc gr="large" fjc="center" fai="center">
+      <Mie.L.View f fr gc="small" fai="center">
         <Mie.Button label="Tiny" size="tiny" />
         <Mie.Button label="Small" size="small" />
         <Mie.Button label="Medium Default" />
       </Mie.L.View>
-      <Mie.L.View f fr sbh="small" fai="center">
+      <Mie.L.View f fr gc="small" fai="center">
         <Mie.Button label="Large" size="large" />
         <Mie.Button label="Big" size="big" />
         <Mie.Button label="Huge" size="huge" />

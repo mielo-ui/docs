@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc f1 sbv="large">
+    <Mie.L.View f fc f1 gr="large">
       <Mie.Progress size="small">
         <Mie.Progress.Bar progress={40} />
       </Mie.Progress>

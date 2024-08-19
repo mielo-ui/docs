@@ -1,5 +1,5 @@
 import * as Mie from "@mielo-ui/mielo-react"
-import { Code } from "../../../components/Code"
+import { Code } from "../../components/Code"
 
 const INDENTS = `
 export type IndentSize =
@@ -32,6 +32,12 @@ export interface LayoutIndentMargin {
   mr?: IndentSize // right
   mb?: IndentSize // bottom
   ml?: IndentSize // left
+}
+
+export interface LayoutGap {
+  g?: IndentSize // gap for all 
+  gr?: IndentSize // gap row
+  gc?: IndentSize // gap column
 }
 
 // Mie.L.* used for any component with 

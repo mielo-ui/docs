@@ -1,5 +1,5 @@
 import * as Mie from "@mielo-ui/mielo-react"
-import { Code } from "../../../components/Code"
+import { Code } from "../../components/Code"
 
 const FLEX = `
 export interface LayoutFlexProps {

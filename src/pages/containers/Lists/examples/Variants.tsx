@@ -8,7 +8,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 function Variants() {
   return (
     <Mie.L.List f f1 fc>
-      <Mie.L.List f fc sbv="small">
+      <Mie.L.List f fc gr="small">
         <Mie.L.List.Item title="Title" activatable ph="small" pv="tiny" r />
 
         <Mie.L.List.Item
@@ -24,7 +24,7 @@ function Variants() {
       <Mie.L.Header mt="large" mb="small" title="Multiline" size="tiny" />
       <Mie.L.Divider mb="large" />
 
-      <Mie.L.List f fc sbv="small">
+      <Mie.L.List f fc gr="small">
         <Mie.L.List.Item
           description="Lorem ipsum description"
           title="Title"
@@ -47,7 +47,7 @@ function Variants() {
       <Mie.L.Header mt="large" mb="small" title="Sides" size="tiny" />
       <Mie.L.Divider mb="large" />
 
-      <Mie.L.List f fc sbv="small">
+      <Mie.L.List f fc gr="small">
         <Mie.L.List.Item
           description="Lorem ipsum description"
           title="Title"

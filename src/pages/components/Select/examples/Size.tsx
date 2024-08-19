@@ -28,7 +28,7 @@ function Size() {
   ]
 
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc fai="center" gr="large">
       <Mie.Select
         onChange={setTime}
         options={options}
@@ -37,6 +37,11 @@ function Size() {
         label="Time"
         accent
         size="small"
+        // By default with size changed text & indicators, base indents - dont resize
+        // You can use Layout clases like ph="large" for styling
+        // default width - calculated from select button size
+        // this width - is minimal simulation
+        style={{ width: "12rem" }}
       />
 
       <Mie.Select
@@ -46,6 +51,7 @@ function Size() {
         name="size-2"
         label="Time"
         accent="warning"
+        style={{ width: "15rem" }}
       />
 
       <Mie.Select
@@ -56,6 +62,7 @@ function Size() {
         name="size-3"
         accent="error"
         size="large"
+        style={{ width: "18rem" }}
       />
     </Mie.L.View>
   )

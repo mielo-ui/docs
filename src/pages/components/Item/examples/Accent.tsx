@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Accent() {
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.Item
         description="Custom text item description"
         title="Accent"

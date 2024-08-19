@@ -6,8 +6,8 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Circular() {
   return (
-    <Mie.L.View f fr fai="center" sbh="large">
-      <Mie.L.View f fr fai="center" sbh="small">
+    <Mie.L.View f fr fai="center" gc="large">
+      <Mie.L.View f fr fai="center" gc="small">
         <Mie.Label circular accent>
           10
         </Mie.Label>
@@ -22,7 +22,7 @@ function Circular() {
         </Mie.Label>
       </Mie.L.View>
 
-      <Mie.L.View f fr fai="center" sbh="small">
+      <Mie.L.View f fr fai="center" gc="small">
         <Mie.Label size="small" circular accent="warning"></Mie.Label>
         <Mie.Label circular accent="error"></Mie.Label>
         <Mie.Label size="large" circular accent="success"></Mie.Label>

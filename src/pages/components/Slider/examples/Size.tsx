@@ -10,7 +10,7 @@ function Size() {
   const [value, setValue] = useState(50)
 
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Slider
         onChange={nextValue => setValue(nextValue)}
         accent="warning"

@@ -11,7 +11,12 @@ function Variants() {
     <Mie.Item title="Item Title" description="Description line" />,
 
     <Mie.Item
-      icon={<Mie.Icon icon={<Icons.Status.NetworkCellularSignalWeak />} />}
+      icon={
+        <Mie.L.Icon
+          mr="small"
+          icon={<Icons.Status.NetworkCellularSignalWeak />}
+        />
+      }
       description="Some description text"
       title="Item Title"
       side={
@@ -20,7 +25,7 @@ function Variants() {
           size="small"
           circular
           icon={
-            <Mie.Icon
+            <Mie.L.Icon
               icon={<Icons.Places.UserTrash />}
               accent="error"
               size="small"
@@ -31,12 +36,14 @@ function Variants() {
     />,
 
     <Mie.Item
-      icon={<Mie.Icon icon={<Icons.Status.DialogError />} />}
+      icon={<Mie.L.Icon mr="small" icon={<Icons.Status.DialogError />} />}
       title="Item Title"
     />,
 
+    <Mie.Divider />,
+
     <Mie.Item
-      icon={<Mie.Icon icon={<Icons.Status.Alarm />} />}
+      icon={<Mie.L.Icon mb="small" icon={<Icons.Status.Alarm />} />}
       title="Vertical Item Title"
       description="Description message"
       vertical
@@ -44,11 +51,9 @@ function Variants() {
     />,
   ]
   return (
-    <Mie.L.View f f1 fc sbv="large">
+    <Mie.L.View f f1 fc gr="large">
       {variants.map((di, idx) => (
-        <Fragment key={`variant-${idx}`}>
-          {di} <Mie.Divider />
-        </Fragment>
+        <Fragment key={`variant-${idx}`}>{di}</Fragment>
       ))}
     </Mie.L.View>
   )

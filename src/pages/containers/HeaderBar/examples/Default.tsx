@@ -6,8 +6,11 @@ import rawPropsCode from "../../../../../node_modules/@mielo-ui/mielo-react/src/
 //@chunk
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useMediaQuery } from "usehooks-ts"
 
 function Default() {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+
   return (
     <Mie.L.View f f1 fai="center" fjc="center" mt="big">
       <Mie.L.Window
@@ -17,7 +20,9 @@ function Default() {
         }}
         headerbar={{
           controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
-          header: <Mie.Header size="tiny" title="Default Title" center />,
+          header: !isMobile && (
+            <Mie.Header size="tiny" title="Default Title" center />
+          ),
           left: (
             <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
           ),

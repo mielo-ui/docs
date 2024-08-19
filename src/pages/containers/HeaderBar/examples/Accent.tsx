@@ -5,11 +5,13 @@ import rawTsCode from "./Accent.tsx?raw"
 //@chunk
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useMediaQuery } from "usehooks-ts"
 
 function Accent() {
   const [accent, setAccent] = useState<Mie.OptionValue | undefined>()
   const [isAccentWindow, setIsAccentWindow] = useState(false)
   const [isTransparent, setIsTransparent] = useState(false)
+  const isMobile = useMediaQuery("(max-width: 768px)")
 
   const times: Mie.OptionValue[] = [
     {
@@ -56,10 +58,12 @@ function Accent() {
         }}
         headerbar={{
           controls: <Mie.Window.Controls controls={["minimize", "close"]} />,
-          header: <Mie.Header size="tiny" title="Default Title" center />,
+          header: !isMobile && (
+            <Mie.Header size="tiny" title="Default Title" center />
+          ),
           accent: accent && accent.value,
           transparent: isTransparent,
-          
+
           left: (
             <Mie.Button icon={<Mie.Icon icon={<Icons.Places.UserHome />} />} />
           ),
@@ -74,9 +78,9 @@ function Accent() {
         <Mie.L.View
           bg="content"
           fjc="center"
-          sbv="large"
-          m="massive"
-          p="large"
+          gr="large"
+          m={isMobile ? "small" : "massive"}
+          p={isMobile ? "tiny" : "large"}
           r="large"
           shadow
           fc
@@ -119,11 +123,15 @@ function Accent() {
                 options={accentsOptions}
                 label="Accent"
                 size="small"
+                menuHeight="8rem"
                 value={accent}
                 name="accent"
                 prefix={
                   <Mie.L.View pl f fai="center" fjc="center">
-                    <Mie.Icon size="small" icon={<Icons.Status.WeatherClear />} />
+                    <Mie.Icon
+                      size="small"
+                      icon={<Icons.Status.WeatherClear />}
+                    />
                   </Mie.L.View>
                 }
               />

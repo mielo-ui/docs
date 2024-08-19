@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Circular() {
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.Checkbox name="checkbox-default-1" label="Default" circular />
 
       <Mie.Checkbox

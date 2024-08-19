@@ -17,7 +17,14 @@ export function View() {
           <Mie.Header title={<Mie.Text semibold>Window</Mie.Text>} inverted />
         </Mie.L.View>
         <Mie.L.View bg="osd" f1 f p="large" rb="large">
-          <Mie.Header title={<Mie.Text semibold>OSD</Mie.Text>} inverted />
+          <Mie.Header
+            title={
+              <Mie.Text color="light" semibold>
+                OSD
+              </Mie.Text>
+            }
+            inverted
+          />
         </Mie.L.View>
       </Mie.L.View>
 

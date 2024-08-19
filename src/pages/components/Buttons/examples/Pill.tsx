@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Pill() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fr fw p fai="center" fjc="center" g>
       <Mie.Button pilled label="Pilled" />
       <Mie.Button pilled label="Accent" accent />
       <Mie.Button pilled label="Success" accent="success" />

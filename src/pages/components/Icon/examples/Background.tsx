@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Background() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fr gc="large">
       <Mie.L.Icon
         icon={<Icons.Status.DialogInformation />}
         p="large"

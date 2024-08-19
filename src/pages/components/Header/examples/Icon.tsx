@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Icon() {
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.Header
         title="Icon Header"
         subtitle="Subtitle of icon header"

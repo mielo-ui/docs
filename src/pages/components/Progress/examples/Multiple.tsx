@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Multiple() {
   return (
-    <Mie.L.View f fc f1 sbv="large">
+    <Mie.L.View f fc f1 gr="large">
       <Mie.Progress multiple>
         <Mie.Progress.Bar accent="error" progress={25} />
         <Mie.Progress.Bar accent="warning" progress={18} />

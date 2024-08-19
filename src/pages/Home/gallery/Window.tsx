@@ -10,7 +10,6 @@ function SampleWindow({ accent }: any) {
   return (
     <Mie.L.Window
       accent={accent}
-      shadow
       style={{
         width: isMobile ? "30rem" : "50rem",
       }}
@@ -69,7 +68,7 @@ export function Window() {
   })
 
   return (
-    <Mie.L.View f fc fai="start" sbv="large" mt mh="small">
+    <Mie.L.View f fc fai="start" gr="large" mt mh="small">
       <Mie.L.Header title="Window" />
 
       <Mie.L.Select

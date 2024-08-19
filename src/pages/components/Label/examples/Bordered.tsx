@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Bordered() {
   return (
-    <Mie.L.View f fr fai="center" sbh="large">
+    <Mie.L.View f fr fai="center" gc="large">
       <Mie.Label bordered transparent accent>
         Label
       </Mie.Label>

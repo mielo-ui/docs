@@ -8,7 +8,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 // prettier-ignore
 function Accent() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fr fw p fai="center" fjc="center" g>
       <Mie.L.Image circular bordered accent r size="tiny" src={whiteframe} />
       <Mie.L.Image circular bordered accent="warning" r size="tiny" src={whiteframe} />
       <Mie.L.Image circular bordered accent="error" r size="tiny" src={whiteframe} />

@@ -28,7 +28,7 @@ function Rounded() {
   ]
 
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.L.Select
         onChange={setTime}
         options={options}

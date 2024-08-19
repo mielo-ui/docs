@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc sbv="massive" pv="large">
+    <Mie.L.View f fc gr="massive" pv="large">
       <Mie.Header
         title="Tiny Title"
         subtitle="Subtitle text"

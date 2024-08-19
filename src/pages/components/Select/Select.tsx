@@ -4,7 +4,7 @@ import { ExampleGroup } from "../../../components"
 import * as Examples from "./examples"
 
 export function SelectPage() {
-  const examples = ["Default", "Accent", "Rounded", "Size"]
+  const examples = ["Default", "Accent", "Rounded", "Size", "Custom"]
 
   return (
     <div className="page select">

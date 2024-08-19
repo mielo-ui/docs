@@ -6,22 +6,14 @@ export function Button() {
     <Mie.L.View f fc className="gallery-sample" data-title="Button">
       <Mie.L.Header title="Button" size="small" mb="small" />
 
-      <Mie.L.View
-        className="card"
-        bg="panel"
-        r="large"
-        p="large"
-        shadow
-        fc
-        f
-      >
-        <Mie.L.View f fc fai="start" fjc="start" sbv="tiny">
-          <Mie.L.View f fr sbh="tiny">
+      <Mie.L.View className="card" bg="panel" r="large" p="large" shadow fc f>
+        <Mie.L.View f fc fai="start" fjc="start" gr="tiny">
+          <Mie.L.View f fr gc="tiny">
             <Mie.Button label="Success" accent="success" />
             <Mie.Button label="Warning" accent="warning" />
             <Mie.Button label="Error" accent="error" />
           </Mie.L.View>
-          <Mie.L.View f fr sbh="tiny">
+          <Mie.L.View f fr gc="tiny">
             <Mie.Button label="Accent" accent />
             <Mie.Button label="Default" />
           </Mie.L.View>
@@ -30,7 +22,7 @@ export function Button() {
         <Mie.L.Header mt="large" mb="small" title="With Icon" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fr fai="start" fjc="start" sbh="tiny">
+        <Mie.L.View f fr fai="start" fjc="start" gc="tiny">
           <Mie.Button icon={<Mie.Icon icon={<Icons.Status.MailUnread />} />} />
 
           <Mie.Button
@@ -39,7 +31,9 @@ export function Button() {
           />
 
           <Mie.Button
-            icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.BookmarkNew />} />}
+            icon={
+              <Mie.L.Icon mr="small" icon={<Icons.Actions.BookmarkNew />} />
+            }
             label="Add Bookmark"
           />
         </Mie.L.View>
@@ -47,7 +41,7 @@ export function Button() {
         <Mie.L.Header mt="large" mb="small" title="Styled" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fr sbh="tiny">
+        <Mie.L.View f fr gc="tiny">
           <Mie.L.Button label="Pilled" pilled ph="large" />
           <Mie.Button label="Filled Accent" filled accent />
         </Mie.L.View>
@@ -55,7 +49,7 @@ export function Button() {
         <Mie.L.Header mt="large" mb="small" title="Custom Styled" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fr fai="start" fjc="start" sbh="tiny">
+        <Mie.L.View f fr fai="start" fjc="start" gc="tiny">
           <Mie.L.Button
             accent="warning"
             pl="none"
@@ -71,6 +65,7 @@ export function Button() {
               <Mie.L.Icon
                 icon={<Icons.Actions.FolderNew />}
                 accent="warning"
+                rl="circular"
                 pl="small"
                 pv="tiny"
                 pr="tiny"
@@ -96,6 +91,7 @@ export function Button() {
                 p="tiny"
                 accent
                 bg
+                rl
               />
             }
           />
@@ -116,13 +112,14 @@ export function Button() {
                 icon={<Icons.Actions.FolderNew />}
                 p="tiny"
                 accent
+                rl
                 bg
               />
             }
           />
         </Mie.L.View>
 
-        <Mie.L.View f fr mt fai="center" sbh="large">
+        <Mie.L.View f fr mt fai="center" gc="large">
           <Mie.L.Button
             label="Bob Success"
             accent="success"

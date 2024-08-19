@@ -220,17 +220,23 @@
   resolved "https://registry.npmjs.org/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@mielo-ui/adwaita-symbolic-icons-react@../adwaita-symbolic-icons-react":
+"@mielo-ui/adwaita-symbolic-icons-react@adwaita-symbolic-icons-react":
   version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/adwaita-symbolic-icons-react/-/adwaita-symbolic-icons-react-1.0.1.tgz#c94bf0e53164e2a9defdf341c4ed750a41a403a7"
+  integrity sha512-YXz4Osa3W/6BhnKzfdHa+caFCZ7rdOKhMObTEFohFeIgtUWR5g2jRMAKtzJM1E0iYBTsCNe4vXkFwbiygVuo3Q==
 
-"@mielo-ui/mielo-react-slider@../mielo-react-slider":
-  version "1.0.0"
+"@mielo-ui/mielo-react-slider@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react-slider/-/mielo-react-slider-1.0.1.tgz#ed4a75f633affd5bf045dbeaac939f96a0eb60f0"
+  integrity sha512-lQxI12e1qj4Vyuh4Ew5MPth4cqLgwLEKBmuuu0lsw5aCJoF57ZDUdgusVFzYGcrWkqf3lUVuSVyyqZMOP0j0CQ==
   dependencies:
     clsx "^2.1.1"
     react-range-slider-input "^3.0.7"
 
-"@mielo-ui/mielo-react@../mielo-react":
-  version "1.0.1"
+"@mielo-ui/mielo-react@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.2.tgz#421bf34eee34aa0913a32bedb5f600f734a5fa89"
+  integrity sha512-UWfb9Gg5JiKqNaincYLQH9o8Rw8+O+I6TXZllNQUIAMOnpyv7TNV4Uo8CK5rWz8BKPVI8kzqU0ToxpSti7heeA==
   dependencies:
     clsx "^2.1.1"
     lodash.defaults "^4.2.0"
@@ -242,8 +248,10 @@
     react-tooltip "^5.26.4"
     react-transition-group "^4.4.5"
 
-"@mielo-ui/mielo@../mielo":
-  version "0.1.3"
+"@mielo-ui/mielo@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-1.0.1.tgz#66a16a6a27818979b36a0f86dada58fc46529bf1"
+  integrity sha512-y/OrfrVcnfS1VAFi13yFy960U38hkdh70PlHVGfrxEFMyVyBWddYsY+FqdoLHu1WqYMzHhPL+jFAzhCHua4bgQ==
   dependencies:
     reseter.css "^2.0.0"
 
@@ -1530,7 +1538,7 @@ prismjs@~1.27.0:
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.27.0.tgz#bb6ee3138a0b438a3653dd4d6ce0cc6510a45057"
   integrity sha512-t13BGPUlFDR7wRB5kQDG4jjl7XeuH6jbJGt11JHPL96qwsEHNX2+68tFXqc1/k+/jALsbSWJKUOT/hcYAZ5LkA==
 
-prop-types@^15.6.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -1564,6 +1572,21 @@ react-dom@^18.3.1:
     loose-envify "^1.1.0"
     scheduler "^0.23.2"
 
+react-fast-compare@^3.1.1:
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.2.2.tgz#929a97a532304ce9fee4bcae44234f1ce2c21d49"
+  integrity sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==
+
+react-helmet@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/react-helmet/-/react-helmet-6.1.0.tgz#a750d5165cb13cf213e44747502652e794468726"
+  integrity sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.7.2"
+    react-fast-compare "^3.1.1"
+    react-side-effect "^2.1.0"
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
@@ -1584,6 +1607,11 @@ react-redux@^9.1.2:
   dependencies:
     "@types/use-sync-external-store" "^0.0.3"
     use-sync-external-store "^1.0.0"
+
+react-side-effect@^2.1.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-side-effect/-/react-side-effect-2.1.2.tgz#dc6345b9e8f9906dc2eeb68700b615e0b4fe752a"
+  integrity sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==
 
 react-syntax-highlighter@^15.5.0:
   version "15.5.0"

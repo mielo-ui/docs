@@ -14,9 +14,10 @@ function Vertical() {
   })
 
   return (
-    <Mie.L.View f fr sbh="large" fjc="center">
+    <Mie.L.View f fr g="big" fjc="center">
       <Slider
         onChange={nextValue => setFirst(nextValue)}
+        style={{ minHeight: "15rem" }}
         orientation="vertical"
         value={first}
         max={100}
@@ -25,6 +26,7 @@ function Vertical() {
 
       <RangeSlider
         onChange={nextValue => setSecond(nextValue)}
+        style={{ minHeight: "15rem" }}
         orientation="vertical"
         value={second}
         step={1}

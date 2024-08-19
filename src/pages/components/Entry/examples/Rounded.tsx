@@ -17,7 +17,7 @@ function Rounded() {
   }
 
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.L.Entry {...defaultProps} name="rounded-1" accent r="none" />
       <Mie.L.Entry
         {...defaultProps}

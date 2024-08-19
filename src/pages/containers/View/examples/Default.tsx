@@ -8,7 +8,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View f f1 fc sbv="big">
+    <Mie.L.View f f1 fc gr="big">
       <Mie.L.View bg="panel" f1 f p="massive" r>
         <Mie.Header title="Background" subtitle="Panel" inverted />
       </Mie.L.View>

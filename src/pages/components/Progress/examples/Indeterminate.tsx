@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 function Indeterminate() {
   return (
     <Mie.L.View f f1 fc p>
-      <Mie.L.View f fc f1 sbv="large">
+      <Mie.L.View f fc f1 gr="large">
         <Mie.Header size="small" title="Default Bars" />
 
         <Mie.Progress accent>
@@ -41,7 +41,7 @@ function Indeterminate() {
 
       <Mie.L.Header size="small" title="Transparent Bars" mt="massive" />
 
-      <Mie.L.View f fc f1 sbv="large">
+      <Mie.L.View f fc f1 gr="large">
         <Mie.Progress accent>
           <Mie.Progress.Bar
             indeterminate="pulsating"

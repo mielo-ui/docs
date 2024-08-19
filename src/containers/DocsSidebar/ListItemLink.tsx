@@ -15,6 +15,6 @@ export function ListItemLink({ link, ...props }: any) {
     [link],
   )
 
-  return <Mie.L.List.Item onClick={onClickLink} active={isActive} {...props} />
+  return <Mie.L.List.Item onClick={onClickLink} hover={isActive} {...props} />
 }
 

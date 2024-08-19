@@ -16,7 +16,7 @@ export function Sliders() {
 
       <Mie.L.View
         className="card"
-        sbv="large"
+        gr="large"
         bg="panel"
         r="large"
         shadow
@@ -25,7 +25,7 @@ export function Sliders() {
         f
       >
         <Mie.L.View f fr>
-          <Mie.L.View fai="center" fjc="center" sbv="small" f1 fc f>
+          <Mie.L.View fai="center" fjc="center" gr="small" f1 fc f>
             <Slider
               onChange={nextValue => setValue(nextValue)}
               style={{ width: "100%" }}
@@ -44,7 +44,7 @@ export function Sliders() {
             />
           </Mie.L.View>
 
-          <Mie.L.View sbh="massive" fai="center" fjc="center" f1 fr f>
+          <Mie.L.View gc="massive" fai="center" fjc="center" f1 fr f>
             <Slider
               onChange={nextValue => setValue(nextValue)}
               style={{ height: "100%" }}
@@ -65,7 +65,7 @@ export function Sliders() {
             />
           </Mie.L.View>
         </Mie.L.View>
-        <Mie.L.View fai="center" fjc="center" sbv="small" f1 fc f>
+        <Mie.L.View fai="center" fjc="center" gr="small" f1 fc f>
           <Slider
             onChange={nextValue => setValue(nextValue)}
             style={{ width: "100%" }}

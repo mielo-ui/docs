@@ -27,7 +27,7 @@ function Size() {
   })
 
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       {radio}
     </Mie.L.View>
   )

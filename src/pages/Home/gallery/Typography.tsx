@@ -7,7 +7,7 @@ export function Typography() {
       <Mie.L.Header title="Typography" size="small" mb="small" />
 
       <Mie.L.View className="card" bg="panel" r="large" p="large" shadow fc f>
-        <Mie.L.View sbv="large" f fc>
+        <Mie.L.View gr="large" f fc>
           <Mie.Header
             subtitle="Example of header"
             title="Union Header"
@@ -25,7 +25,7 @@ export function Typography() {
         <Mie.L.Header mt="large" mb="small" title="With Icon" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fc sbv="massive">
+        <Mie.L.View f fc gr="massive">
           <Mie.Header
             subtitle="Start next step?"
             title="Checkpoint!"
@@ -63,7 +63,7 @@ export function Typography() {
         <Mie.L.Header mt="large" mb="small" title="Sizes" size="tiny" />
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fc sbv="small" fai="start">
+        <Mie.L.View f fc gr="small" fai="start">
           <Mie.Header title="Title 1" size="huge" />
           <Mie.Header title="Title 2" size="big" />
           <Mie.Header title="Title 3" size="large" />
@@ -78,10 +78,10 @@ export function Typography() {
           title="Text Accents"
           size="tiny"
         />
-        
+
         <Mie.L.Divider mb="large" />
 
-        <Mie.L.View f fc sbv="small" fai="start">
+        <Mie.L.View f fc gr="small" fai="start">
           <Mie.Text>Text Default</Mie.Text>
           <Mie.Text accent>Accent</Mie.Text>
           <Mie.Text accent="success">Success</Mie.Text>

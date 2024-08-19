@@ -8,7 +8,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View f fc sbv="large">
+    <Mie.L.View f fc gr="large">
       <Mie.Radio
         children="First Option"
         name="radio-default"

@@ -19,7 +19,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fr sbh="large" fai="center" pv="large">
+    <Mie.L.View f fr gc="large" fai="center" pv="large">
       <Mie.L.Image r size="mini" src={whiteframe} />
       <Mie.L.Image r size="tiny" src={whiteframe} />
       <Mie.L.Image r size="small" src={whiteframe} />

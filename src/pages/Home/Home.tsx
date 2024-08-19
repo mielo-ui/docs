@@ -16,9 +16,9 @@ export function HomePage() {
         shadow="outer"
         fjc="center"
         fai="center"
+        rtr="large"
         bg="panel"
         fc
-        rt
         f
       >
         <Mie.Header
@@ -44,14 +44,14 @@ export function HomePage() {
         <Gallery.Typography />
         <Gallery.Checkbox />
 
-        <Mie.L.View f fc sbv="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group>
           <Gallery.Button />
           <Gallery.Label />
         </Mie.L.View>
 
         <Gallery.Icon />
 
-        <Mie.L.View f fc sbv="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group>
           <Gallery.Image />
           <Gallery.Select />
         </Mie.L.View>
@@ -64,13 +64,13 @@ export function HomePage() {
 
         <Gallery.List />
 
-        <Mie.L.View f fc sbv="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group>
           <Gallery.Tabs />
           <Gallery.Dialog />
           <Gallery.Window />
         </Mie.L.View>
 
-        <Mie.L.View f fc sbv="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group>
           <Gallery.Collapsible />
           <Gallery.Activatable />
           <Gallery.View />

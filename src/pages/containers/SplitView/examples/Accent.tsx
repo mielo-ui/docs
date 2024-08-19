@@ -79,15 +79,19 @@ function Accent() {
   ]
 
   return (
-    <Mie.L.View f fc fai="center" sbv="massive" pb="massive" pt="massive">
+    <Mie.L.View f fc fai="center" gr="massive" pb="massive" pt="massive">
       <Mie.L.Window
         accent={accent.value}
-        shadow
         style={{
           width: isMobile ? "30rem" : "50rem",
         }}
         split={{
           accent: accent.value,
+          overlay:
+            open &&
+            function () {
+              setOpen(false)
+            },
 
           headerbar: (
             <Mie.HeaderBar

@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Tertiary() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fr fw p fai="center" fjc="center" g>
       <Mie.Button label="Transparent" tertiary transparent />
       <Mie.Button label="Accent" tertiary transparent accent />
       <Mie.Button label="Success" tertiary transparent accent="success" />

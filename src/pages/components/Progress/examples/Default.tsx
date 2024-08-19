@@ -8,7 +8,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Default() {
   return (
-    <Mie.L.View f fc f1 sbv="large">
+    <Mie.L.View f fc f1 gr="large">
       <Mie.Progress>
         <Mie.Progress.Bar progress={35} />
       </Mie.Progress>

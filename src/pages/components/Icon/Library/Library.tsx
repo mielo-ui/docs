@@ -57,7 +57,7 @@ export function Library() {
         <Mie.L.View
           className="library"
           mt="massive"
-          sbv="large"
+          gr="large"
           scrollable
           r="large"
           shadow

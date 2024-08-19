@@ -1,5 +1,5 @@
 import * as Mie from "@mielo-ui/mielo-react"
-import { Code } from "../../../components/Code"
+import { Code } from "../../components/Code"
 
 const CORNERS = `
 export type RoundSize = boolean | "none" | "tiny" | "small" | "large"
@@ -10,6 +10,11 @@ export interface LayoutRoundedProps {
   rb?: RoundSize // round bottom corners
   rl?: RoundSize // round left corners
   rr?: RoundSize // round right corners
+
+  rtl?: RoundSize // round top left
+  rtr?: RoundSize // round top right
+  rbl?: RoundSize // round bottom left
+  rbr?: RoundSize // round bottom right
 }
 
 // Mie.L.* used for any component with 

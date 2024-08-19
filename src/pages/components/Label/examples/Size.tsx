@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc fai="center" sbv="large">
+    <Mie.L.View f fc fai="center" gr="large">
       <Mie.L.View f fr fai="center" sbh>
         <Mie.Label size="tiny">Tiny</Mie.Label>
         <Mie.Label size="small">Small</Mie.Label>

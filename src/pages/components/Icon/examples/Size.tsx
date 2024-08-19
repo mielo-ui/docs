@@ -7,7 +7,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Size() {
   return (
-    <Mie.L.View f fc sbv="large" fai="center">
+    <Mie.L.View f fc gr="large" fai="center">
       <Mie.L.View f fr fai="center" sbh>
         <Mie.Icon icon={<Icons.Places.UserHome />} size="mini" />
         <Mie.Icon icon={<Icons.Places.UserHome />} size="tiny" />

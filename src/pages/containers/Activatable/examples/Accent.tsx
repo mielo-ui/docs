@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Accent() {
   return (
-    <Mie.L.View f fr fai="center" fjc="center" sbh="large">
+    <Mie.L.View f fr fai="center" fjc="center" gc="large">
       <Mie.L.View fc f sbv>
         <Mie.L.Activatable accent ph="large" pv="small" r>
           <Mie.L.Item title="Item Layer" description="Welcome text" center />

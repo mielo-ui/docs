@@ -20,7 +20,7 @@ export function Entry() {
 
       <Mie.L.View
         className="card"
-        sbv="big"
+        gr="big"
         fjc="center"
         fai="center"
         bg="panel"
@@ -30,7 +30,7 @@ export function Entry() {
         fc
         f
       >
-        <Mie.L.View f fc sbv="small">
+        <Mie.L.View f fc gr="small">
           <Mie.L.Entry
             onChange={event => setUsername(event.target.value)}
             placeholder="Enter username"
@@ -65,7 +65,7 @@ export function Entry() {
 
         <Mie.Divider />
 
-        <Mie.L.View f fc sbv="small">
+        <Mie.L.View f fc gr="small">
           <Mie.L.Entry {...defaultProps} name="rounded-1" accent r="none" />
           <Mie.L.Entry
             {...defaultProps}

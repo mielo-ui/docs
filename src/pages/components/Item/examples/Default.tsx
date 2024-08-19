@@ -10,7 +10,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 function Default() {
   return (
     <Mie.Item
-      icon={<Mie.Icon icon={<Icons.Actions.FolderNew />} />}
+      icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}
       title="Item Title"
     />
   )

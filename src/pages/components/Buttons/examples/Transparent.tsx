@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Transparent() {
   return (
-    <Mie.L.View f fr sbh="large">
+    <Mie.L.View f fr fw p fai="center" fjc="center" g>
       <Mie.Button label="Transparent" transparent />
       <Mie.Button label="Accent" transparent accent />
       <Mie.Button label="Success" transparent accent="success" />

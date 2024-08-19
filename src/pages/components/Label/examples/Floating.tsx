@@ -6,7 +6,7 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 function Floating() {
   return (
-    <Mie.L.View f fc sbv="big">
+    <Mie.L.View f fc gr="small">
       <Mie.L.Item
         label={
           <Mie.Label size="small" floating>
@@ -14,10 +14,9 @@ function Floating() {
           </Mie.Label>
         }
         title="Labeled Item"
-        size="large"
         activatable
         pv="tiny"
-        active
+        hover
         ph
         r
       />
@@ -29,10 +28,9 @@ function Floating() {
           </Mie.Label>
         }
         title="Floating Label"
-        size="large"
         activatable
         pv="tiny"
-        active
+        hover
         ph
         r
       />
@@ -42,10 +40,9 @@ function Floating() {
           <Mie.Label size="small" accent="error" circular floating></Mie.Label>
         }
         title="Labeled Item"
-        size="large"
         activatable
         pv="tiny"
-        active
+        hover
         ph
         r
       />
