@@ -11,3 +11,7 @@ export const sidebarOpen = (state: RootState) => {
 export const uiFont = (state: RootState) => {
   return state.config.uiFont
 }
+
+export const uiTheme = (state: RootState) => {
+  return state.config.uiTheme
+}

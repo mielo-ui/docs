@@ -1,17 +1,20 @@
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useMediaQuery } from "usehooks-ts"
 
 export function List() {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+  
   return (
     <Mie.L.View f fc className="gallery-sample" data-title="List">
       <Mie.L.Header title="List" size="small" mb="small" />
 
       <Mie.L.View
+        p={isMobile ? "massive" : "large"}
         className="card"
-        gc="massive"
+        gr="massive"
         bg="panel"
         r="large"
-        p="large"
         shadow
         fr
         f

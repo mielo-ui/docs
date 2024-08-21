@@ -77,7 +77,7 @@ export function Activatable() {
               description="Welcome text"
               accent="error"
               title={
-                <Mie.L.Text accent="error" semibold>
+                <Mie.L.Text accent="error" fsemibold>
                   Video Button
                 </Mie.L.Text>
               }

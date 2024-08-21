@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @use "@fontsource/jetbrains-mono" as *;
 
 @use "@fontsource/ubuntu/700" as *;
@@ -12,11 +14,10 @@
 @use "@fontsource/inter/500" as *;
 @use "@fontsource/inter" as *;
 
-@use "@mielo-ui/mielo/sass/index";
 @use "./example-group";
 @use "./icon-library";
 @use "./sidebar";
 @use "./code";
 
 @use "./layout";
-@use "./home";
+@use "./home";  

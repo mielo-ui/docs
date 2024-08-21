@@ -10,12 +10,12 @@ npm install @mielo-ui/mielo @mielo-ui/mielo-react --save-dev
 
 export function HomePage() {
   return (
-    <div className="page home">
+    <Mie.L.View className="page home" f fc>
       <Mie.L.View
         className="page-heading"
         shadow="outer"
-        fjc="center"
         fai="center"
+        fjc="center"
         rtr="large"
         bg="panel"
         fc
@@ -24,7 +24,7 @@ export function HomePage() {
         <Mie.Header
           subtitle="Frameword inspired by LibAdwaita"
           title="Mielo UI"
-          size="large"
+          size="huge"
           center
         />
 
@@ -44,14 +44,14 @@ export function HomePage() {
         <Gallery.Typography />
         <Gallery.Checkbox />
 
-        <Mie.L.View f fc gr="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group="Button+Label">
           <Gallery.Button />
           <Gallery.Label />
         </Mie.L.View>
 
         <Gallery.Icon />
 
-        <Mie.L.View f fc gr="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group="Image+Select">
           <Gallery.Image />
           <Gallery.Select />
         </Mie.L.View>
@@ -64,18 +64,18 @@ export function HomePage() {
 
         <Gallery.List />
 
-        <Mie.L.View f fc gr="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group="Tabs+Dialog+Window">
           <Gallery.Tabs />
           <Gallery.Dialog />
           <Gallery.Window />
         </Mie.L.View>
 
-        <Mie.L.View f fc gr="massive" data-group>
+        <Mie.L.View f fc gr="massive" data-group="Collapsible+Activatable+View">
           <Gallery.Collapsible />
           <Gallery.Activatable />
           <Gallery.View />
         </Mie.L.View>
       </Mie.L.View>
-    </div>
+    </Mie.L.View>
   )
 }

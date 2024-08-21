@@ -3,28 +3,28 @@ import * as Mie from "@mielo-ui/mielo-react"
 
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
-import { setUiFont } from "../../states"
+import { setTheme } from "../../states"
 
-const options: Mie.OptionValue[] = ["Roboto", "Inter", "Ubuntu"].map(title => ({
+const options: Mie.OptionValue[] = ["Default", "Material"].map(title => ({
   value: title,
   pv: "tiny",
   title,
 }))
 
-export function FontSwitcher() {
-  const uiFont = useSelector(selectors.uiFont)
+export function ThemeSwitcher() {
+  const theme = useSelector(selectors.uiTheme)
   const dispatch = useDispatch<AppDispatch>()
-  const selected = options.find(option => option.value === uiFont)
+  const selected = options.find(option => option.value === theme)
 
   return (
     <Mie.L.Select
-      onChange={option => dispatch(setUiFont(option.value))}
+      onChange={option => dispatch(setTheme(option.value))}
       options={options}
       value={selected}
       menuHeight="8rem"
+      label="Theme"
+      name="theme"
       size="small"
-      label="Font"
-      name="font"
       transparent
       bordered
     />

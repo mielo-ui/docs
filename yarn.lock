@@ -233,10 +233,8 @@
     clsx "^2.1.1"
     react-range-slider-input "^3.0.7"
 
-"@mielo-ui/mielo-react@1.0.2":
+"@mielo-ui/mielo-react@../mielo-react":
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.2.tgz#421bf34eee34aa0913a32bedb5f600f734a5fa89"
-  integrity sha512-UWfb9Gg5JiKqNaincYLQH9o8Rw8+O+I6TXZllNQUIAMOnpyv7TNV4Uo8CK5rWz8BKPVI8kzqU0ToxpSti7heeA==
   dependencies:
     clsx "^2.1.1"
     lodash.defaults "^4.2.0"
@@ -248,10 +246,8 @@
     react-tooltip "^5.26.4"
     react-transition-group "^4.4.5"
 
-"@mielo-ui/mielo@1.0.1":
+"@mielo-ui/mielo@../mielo":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-1.0.1.tgz#66a16a6a27818979b36a0f86dada58fc46529bf1"
-  integrity sha512-y/OrfrVcnfS1VAFi13yFy960U38hkdh70PlHVGfrxEFMyVyBWddYsY+FqdoLHu1WqYMzHhPL+jFAzhCHua4bgQ==
   dependencies:
     reseter.css "^2.0.0"
 

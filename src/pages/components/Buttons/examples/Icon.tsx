@@ -30,7 +30,7 @@ function Icon() {
           pilled
           pr
           label={
-            <Mie.L.Text bold ml="tiny">
+            <Mie.L.Text fbold ml="tiny">
               Pilled
             </Mie.L.Text>
           }
@@ -53,7 +53,7 @@ function Icon() {
           accent
           pr
           label={
-            <Mie.L.Text bold ml="tiny">
+            <Mie.L.Text fbold ml="tiny">
               Labeled
             </Mie.L.Text>
           }
@@ -76,7 +76,7 @@ function Icon() {
           filled
           accent
           label={
-            <Mie.L.Text bold ml="mini">
+            <Mie.L.Text fbold ml="mini">
               Filled
             </Mie.L.Text>
           }
@@ -123,21 +123,21 @@ const rawHtmlCode = `
     <div class="mie icon warning bg pv-tiny pr-tiny pl-small">
       <svg />
     </div>
-    <div class="mie text bold ml-tiny">Pilled</div>
+    <div class="mie text fbold ml-tiny">Pilled</div>
   </button>
 
   <button class="mie button accent pv-none pr pl-none content">
     <div class="mie icon accent bg p-tiny pl-small">
       <svg />
     </div>
-    <div class="mie text bold ml-tiny">Labeled</div>
+    <div class="mie text fbold ml-tiny">Labeled</div>
   </button>
   
   <button class="mie button accent pv-none pr-small pl-none content filled">
     <div class="mie icon accent bg p-tiny">
       <svg />
     </div>
-    <div class="mie text bold ml-mini">Filled</div>
+    <div class="mie text fbold ml-mini">Filled</div>
   </button>
 </div>
 

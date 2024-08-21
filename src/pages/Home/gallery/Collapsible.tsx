@@ -29,7 +29,7 @@ export function Collapsible() {
           ph
           r
           title={
-            <Mie.Text accent="success" semibold>
+            <Mie.Text accent="success" fsemibold>
               Toggle Content
             </Mie.Text>
           }

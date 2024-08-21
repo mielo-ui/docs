@@ -10,6 +10,7 @@ import * as selectors from "../../selectors"
 import { AppDispatch } from "../../store"
 import { GithubIcon } from "./GithubIcon"
 import { FontSwitcher } from "../FontSwitcher"
+import { ThemeSwitcher } from "../ThemeSwitcher "
 
 export interface DocsHeaderbarProps {
   shadow?: boolean | "outer" | "inner"
@@ -53,43 +54,49 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
           />
 
           {!isMobile && <FontSwitcher />}
-
+          {!isMobile && (
+            <Mie.L.View ml="small">
+              <ThemeSwitcher />
+            </Mie.L.View>
+          )}
+        </>
+      }
+      right={
+        <Mie.L.View f fr fai="center">
           {!isMobile && (
             <Mie.L.Item
               link="https://github.com/mielo-ui/mielo.css"
               icon={<Mie.Icon icon={<GithubIcon />} />}
               title={
-                <Mie.L.Text ml="small" bold>
+                <Mie.L.Text ml="small" fbold>
                   GitHub
                 </Mie.L.Text>
               }
               activatable
               p="tiny"
-              ml
+              mr
               r
             />
           )}
-        </>
-      }
-      right={
-        <Mie.L.Checkbox
-          label={
-            <Mie.Icon
-              icon={
-                darkThemeEnable ? (
-                  <Icons.Status.WeatherClearNight />
-                ) : (
-                  <Icons.Status.WeatherClear />
-                )
-              }
-            />
-          }
-          onChange={onToggleDarkTheme}
-          checked={darkThemeEnable}
-          accent="success"
-          mr="big"
-          toggle
-        />
+          <Mie.L.Checkbox
+            label={
+              <Mie.Icon
+                icon={
+                  darkThemeEnable ? (
+                    <Icons.Status.WeatherClearNight />
+                  ) : (
+                    <Icons.Status.WeatherClear />
+                  )
+                }
+              />
+            }
+            onChange={onToggleDarkTheme}
+            checked={darkThemeEnable}
+            accent="success"
+            mr="big"
+            toggle
+          />
+        </Mie.L.View>
       }
     />
   )

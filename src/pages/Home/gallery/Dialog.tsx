@@ -1,7 +1,10 @@
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
+import { useMediaQuery } from "usehooks-ts"
 
 export function Dialog() {
+  const isMobile = useMediaQuery("(max-width: 768px)")
+
   return (
     <Mie.L.View f fc className="gallery-sample" data-title="Dialog">
       <Mie.L.Header title="Dialog" size="small" mb="small" />
@@ -18,12 +21,14 @@ export function Dialog() {
         p
       >
         <Mie.Dialog
+          size={isMobile ? "small" : undefined}
           actions={[
             <Mie.L.Button
               label="Cancel"
               key="cancel"
               transparent
               tertiary
+              size={isMobile ? "tiny" : undefined}
               pv="small"
             />,
             <Mie.L.Button
@@ -32,6 +37,7 @@ export function Dialog() {
               key="save"
               tertiary
               accent
+              size={isMobile ? "tiny" : undefined}
               pv="small"
             />,
             <Mie.L.Button
@@ -40,6 +46,7 @@ export function Dialog() {
               key="discard"
               transparent
               tertiary
+              size={isMobile ? "tiny" : undefined}
               pv="small"
             />,
           ]}
@@ -47,6 +54,7 @@ export function Dialog() {
           <Mie.L.Header
             subtitle="Open document contains unsaved changes."
             title="Save Changes?"
+            size={isMobile ? "tiny" : undefined}
             mt="large"
             center
           />
@@ -63,8 +71,8 @@ export function Dialog() {
             icon={
               <Mie.L.Icon
                 icon={<Icons.Places.FolderMusic />}
+                size={isMobile ? "tiny" : "small"}
                 accent="success"
-                size="small"
                 r="large"
                 mr="small"
                 p="small"
@@ -76,7 +84,7 @@ export function Dialog() {
                 /home/my/Audio/Old/tagged/#dnb
               </Mie.L.Text>
             }
-            title={<Mie.L.Text semibold>MyProject.daw</Mie.L.Text>}
+            title={<Mie.L.Text size={isMobile ? "small" : undefined} fsemibold>MyProject.daw</Mie.L.Text>}
           />
         </Mie.Dialog>
       </Mie.L.View>

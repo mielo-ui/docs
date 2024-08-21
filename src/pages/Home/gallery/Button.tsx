@@ -57,7 +57,7 @@ export function Button() {
             pilled
             pr
             label={
-              <Mie.L.Text bold ml="tiny">
+              <Mie.L.Text fbold accent="warning" ml="tiny">
                 Pilled
               </Mie.L.Text>
             }
@@ -80,16 +80,16 @@ export function Button() {
             accent
             pr
             label={
-              <Mie.L.Text bold ml="tiny">
+              <Mie.L.Text color="blue" fbold ml="tiny">
                 Labeled
               </Mie.L.Text>
             }
             icon={
               <Mie.L.Icon
                 icon={<Icons.Actions.FolderNew />}
+                color="blue"
                 pl="small"
                 p="tiny"
-                accent
                 bg
                 rl
               />
@@ -103,13 +103,14 @@ export function Button() {
             filled
             accent
             label={
-              <Mie.L.Text bold ml="mini">
+              <Mie.L.Text fbold color="light" ml="small">
                 Filled
               </Mie.L.Text>
             }
             icon={
               <Mie.L.Icon
                 icon={<Icons.Actions.FolderNew />}
+                color="light"
                 p="tiny"
                 accent
                 rl

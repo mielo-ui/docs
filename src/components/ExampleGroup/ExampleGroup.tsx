@@ -36,7 +36,15 @@ export function ExampleGroup({ component: Component }: ExampleGroupProps) {
         fc
         f
       >
-        <Mie.L.View className="preview" fjc="center" fai="center" rt="large" f>
+        <Mie.L.View
+          rb={codeOpen ? "none" : "large"}
+          className="preview"
+          bg="panel"
+          fjc="center"
+          fai="center"
+          rt="large"
+          f
+        >
           <Component />
 
           <Mie.L.Button

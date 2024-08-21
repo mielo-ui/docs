@@ -8,6 +8,7 @@ import { FontSwitcher } from "../FontSwitcher"
 import { ListItemLink } from "./ListItemLink"
 import * as selectors from "../../selectors"
 import logo from "./logo.png"
+import { ThemeSwitcher } from "../ThemeSwitcher "
 
 interface PageItemOptions {
   title: string
@@ -174,12 +175,6 @@ export function DocsSidebar() {
         />
       }
     >
-      {isMobile && (
-        <Mie.L.View mh="large" mv="large">
-          <FontSwitcher />
-        </Mie.L.View>
-      )}
-
       <Mie.L.View f fc f1 scrollable>
         <Mie.L.View mt="large" mb="massive" f fai="center" fjc="center">
           <img
@@ -192,6 +187,13 @@ export function DocsSidebar() {
             }}
           />
         </Mie.L.View>
+
+        {isMobile && (
+          <Mie.L.View mh="large" mv="large" f fc gr="small">
+            <FontSwitcher />
+            <ThemeSwitcher />
+          </Mie.L.View>
+        )}
 
         <Mie.L.List m="none">
           <ListItemLink

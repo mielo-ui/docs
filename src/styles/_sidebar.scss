@@ -1,15 +1,16 @@
 .mie.sidebar.blured {
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
 }
 
-:root, [data-theme=light] {
+:root,
+[data-theme="light"] {
   .mie.sidebar.blured {
-      background-color: rgba(#ebebeb, 0.8); 
-  }    
+    --mie-sidebar-bg-main: #{rgba(#ebebeb, 0.8)} !important;
+  }
 }
 
-[data-theme=dark] {
+[data-theme="dark"] {
   .mie.sidebar.blured {
-      background-color: rgba(#303030, 0.8); 
-  }    
+    --mie-sidebar-bg-main: #{rgba(#303030, 0.8)} !important;
+  }
 }

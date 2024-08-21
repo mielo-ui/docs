@@ -92,7 +92,7 @@ function Accent() {
               f
             >
               <Mie.L.Item
-                title={<Mie.L.Text bold>Open</Mie.L.Text>}
+                title={<Mie.L.Text fbold>Open</Mie.L.Text>}
                 r
                 description={
                   <Mie.L.Text size="small" muted>

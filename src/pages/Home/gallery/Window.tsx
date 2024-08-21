@@ -11,7 +11,7 @@ function SampleWindow({ accent }: any) {
     <Mie.L.Window
       accent={accent}
       style={{
-        width: isMobile ? "30rem" : "50rem",
+        width: isMobile ? "100%" : "50rem",
       }}
       split={{
         accent,
