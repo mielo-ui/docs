@@ -1,23 +1,7 @@
 @charset "utf-8";
 
-@use "@fontsource/jetbrains-mono" as *;
-
-@use "@fontsource/ubuntu/700" as *;
-@use "@fontsource/ubuntu/500" as *;
-@use "@fontsource/ubuntu" as *;
-
-@use "@fontsource/roboto/700" as *;
-@use "@fontsource/roboto/500" as *;
-@use "@fontsource/roboto" as *;
-
-@use "@fontsource/inter/700" as *;
-@use "@fontsource/inter/500" as *;
-@use "@fontsource/inter" as *;
-
-@use "./example-group";
-@use "./icon-library";
-@use "./sidebar";
-@use "./code";
-
-@use "./layout";
-@use "./home";  
+@use "fonts";
+@use "layout";
+@use "components";
+@use "pages";
+@use "apps";

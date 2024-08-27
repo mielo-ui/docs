@@ -1,12 +1,13 @@
+import { getCurrentWindow } from "@tauri-apps/api/window"
 import ReactDOM from "react-dom/client"
-import { Provider } from "react-redux"
-import { store } from "./store"
-import App from "./App"
-
+import { DocsApp } from "./apps"
 import "./styles/index.scss"
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-)
+const appWindow = (window as any).__TAURI_INTERNALS__ && getCurrentWindow()
+
+if (appWindow) {
+  document.body.classList.add("tauri")
+}
+
+const root = document.getElementById("root")
+ReactDOM.createRoot(root!).render(<DocsApp />)

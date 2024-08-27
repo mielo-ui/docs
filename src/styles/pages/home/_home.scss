@@ -1,0 +1,53 @@
+.page.home {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+
+  padding-bottom: 10rem;
+
+  .page-heading {
+    overflow: hidden;
+    padding: 5rem 0;
+    width: 100%;
+
+    > .mie.header {
+      margin: 3rem 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0 1.2rem;
+    }
+
+    .header-sample {
+      max-width: 80vh;
+      margin: 3rem 0;
+
+      @media screen and (max-width: 768px) {
+        max-width: 30rem;
+      }
+    }
+
+    .docs-code {
+      border-radius: 1.2rem;
+      min-height: 10rem;
+    }
+
+    .sample-window {
+      min-height: 10rem;
+    }
+  }
+
+  .code-stack {
+    .docs-code {
+      &:first-child {
+        border-bottom: 1px solid rgba(#FFF, 0.1) !important;
+        border-radius: 1.2rem 1.2rem 0 0;
+      }
+
+      &:last-child {
+        border-radius: 0 0 1.2rem 1.2rem;
+        height: 35rem;
+      }
+    }
+  }
+}

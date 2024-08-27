@@ -1,0 +1,39 @@
+@use "@mielo-ui/mielo/sass/variables" as *;
+
+.icon-library {
+  position: relative;
+
+  >.search-for-menu {
+    transform: translateY(-50%);
+    position: fixed;
+    top: 50%;
+    
+    margin-left: -23rem;
+    width: 18rem;
+
+    @media screen and (max-width: 768px) {
+      margin: indent(large) indent(none);
+      position: relative;
+      transform: none;
+      width: 100%;
+    }
+  }
+  
+  > .gallery {
+    > .group {
+      .icon-card {
+        width: 20%;
+
+        @media screen and (max-width: 768px) {
+          width: 25%;
+        }
+
+        >.mie.header {
+          .title {
+            height: 4rem;
+          }
+        } 
+      }
+    }
+  }
+}

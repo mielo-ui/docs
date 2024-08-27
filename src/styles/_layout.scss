@@ -1,28 +1,42 @@
-.page:not(.mie) {
-  overflow: auto;
-}
-
 body {
-  background: url(/amber-wallpaper.webp);
   background-repeat: no-repeat;
   background-size: cover;
   
-  padding: 2rem 3rem;
   height: 100vh;
   width: 100%;
+
+  #root {
+    height: 100%;
+    width: 100%;
+  }
   
   @media (max-width: 768px) {
     padding: 0;
   }
 }
 
-#root {
-  height: 100%;
-  width: 100%;
+// Browser site styles
+body:not(.tauri) {
+  background-image: linear-gradient(-140deg, #512da8 0%, #26a269 40%, #1c71d8 100%);
+  padding: 2rem 3rem;
 
   @media (max-width: 768px) {
     >.mie.window {
       border-radius: 0;
     }
+  }
+}
+
+// Other
+.page:not(.mie) {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mie.sidebar.docs {
+  z-index: 110;
+
+  & + .overlay {
+    z-index: 105;
   }
 }
