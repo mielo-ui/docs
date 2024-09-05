@@ -9,7 +9,7 @@ export function Progress() {
       <Mie.L.View
         className="card"
         gr="massive"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

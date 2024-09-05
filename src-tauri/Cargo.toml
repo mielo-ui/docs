@@ -1,8 +1,8 @@
 [package]
 name = "mielo-docs"
-version = "1.0.0"
+version = "1.0.7"
 description = "Desktop app based on tauri with Mielo components"
-authors = ["you"]
+authors = ["Anton Shramko <antonshramko@yandex.ru>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html

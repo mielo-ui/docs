@@ -1,0 +1,26 @@
+@use "@mielo-ui/mielo/sass/variables" as *;
+@use "@mielo-ui/mielo/sass/utils" as *;
+
+.page.theming {
+  .mie.text {
+    line-height: 1.5;
+  }
+
+  ul {
+    margin-left: indent(large);
+
+    li {
+      margin: 1rem 0;
+
+      &::marker {
+        color: rgba(#000, 0.82);
+      }
+    }
+  }
+}
+
+[data-theme=dark] {
+  .page.theming ul li::marker {
+    color: rgba(#FFF, 0.82);
+  }
+}

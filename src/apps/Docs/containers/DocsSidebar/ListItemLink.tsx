@@ -16,7 +16,7 @@ export function ListItemLink({ link, ...props }: any) {
     (event: MouseEvent<any>) => {
       event.stopPropagation()
       event.preventDefault()
-      
+
       if (isMobile) {
         dispatch(toggleSidebar())
       }

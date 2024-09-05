@@ -7,7 +7,6 @@ import * as Mie from "@mielo-ui/mielo-react"
 function Fill() {
   return (
     <Mie.L.View f fr fw p fai="center" fjc="center" g>
-      <Mie.Button label="Filled" filled />
       <Mie.Button label="Accent" filled accent />
       <Mie.Button label="Success" filled accent="success" />
       <Mie.Button label="Warning" filled accent="warning" />

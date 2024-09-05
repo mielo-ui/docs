@@ -7,7 +7,7 @@ export function ImagePage() {
   const examples = ["Default", "Accent", "Background", "Rounded", "Size"]
 
   return (
-    <div className="page iamges">
+    <div className="page images">
       <Mie.Clamp header={<Mie.Header title="Image" size="large" center />}>
         {examples.map(name => (
           <ExampleGroup key={name} component={Examples[name]} />

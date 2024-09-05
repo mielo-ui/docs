@@ -15,7 +15,7 @@ export function Image() {
       <Mie.L.View
         className="card"
         fai="stretch"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

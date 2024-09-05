@@ -90,7 +90,7 @@ export function Select() {
         gr="big"
         fjc="center"
         fai="center"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

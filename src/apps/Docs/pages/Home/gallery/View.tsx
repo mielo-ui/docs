@@ -6,11 +6,11 @@ export function View() {
     <Mie.L.View f fc className="gallery-sample" data-title="View">
       <Mie.L.Header title="View" size="small" mb="small" />
 
-      <Mie.L.View className="card" bg="panel" r="large" shadow fc f>
+      <Mie.L.View className="card" bg="content" r="large" shadow fc f>
         <Mie.L.View bg="content" f1 f p="large" rt="large">
           <Mie.Header title={<Mie.Text fsemibold>Content</Mie.Text>} inverted />
         </Mie.L.View>
-        <Mie.L.View bg="panel" f1 f p="large">
+        <Mie.L.View bg="content" f1 f p="large">
           <Mie.Header title={<Mie.Text fsemibold>Panel</Mie.Text>} inverted />
         </Mie.L.View>
         <Mie.L.View bg="windows" f1 f p="large">
@@ -28,7 +28,7 @@ export function View() {
         </Mie.L.View>
       </Mie.L.View>
 
-      <Mie.L.View className="card" bg="panel" r="large" mt="large" shadow fc f>
+      <Mie.L.View className="card" bg="content" r="large" mt="large" shadow fc f>
         <Mie.L.View accent f1 f p="large" rt="large">
           <Mie.Header
             title={<Mie.Text fsemibold>Accent</Mie.Text>}

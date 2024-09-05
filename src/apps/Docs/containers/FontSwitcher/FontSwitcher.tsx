@@ -4,7 +4,12 @@ import * as Mie from "@mielo-ui/mielo-react"
 import { AppDispatch, setUiFont } from "../../state"
 import * as selectors from "../../selectors"
 
-const options: Mie.OptionValue[] = ["Roboto", "Inter", "Ubuntu"].map(title => ({
+const options: Mie.OptionValue[] = [
+  "Roboto",
+  "Cantarell",
+  "Inter",
+  "Ubuntu",
+].map(title => ({
   value: title,
   pv: "tiny",
   title,
@@ -20,7 +25,7 @@ export function FontSwitcher() {
       onChange={option => dispatch(setUiFont(option.value))}
       options={options}
       value={selected}
-      menuHeight="8rem"
+      menuHeight="9.9rem"
       size="small"
       label="Font"
       name="font"

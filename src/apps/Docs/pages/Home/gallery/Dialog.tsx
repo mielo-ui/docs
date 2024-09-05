@@ -19,14 +19,12 @@ export function Dialog() {
             label="Cancel"
             key="cancel"
             transparent
-            tertiary
             pv="small"
           />,
           <Mie.L.Button
             label="Save Changes"
             transparent
             key="save"
-            tertiary
             accent
             pv="small"
           />,
@@ -35,7 +33,6 @@ export function Dialog() {
             accent="error"
             key="discard"
             transparent
-            tertiary
             pv="small"
           />,
         ]}
@@ -71,11 +68,7 @@ export function Dialog() {
               /home/my/Audio/Old/tagged/#dnb
             </Mie.L.Text>
           }
-          title={
-            <Mie.L.Text fsemibold>
-              MyProject.daw
-            </Mie.L.Text>
-          }
+          title={<Mie.L.Text fsemibold>MyProject.daw</Mie.L.Text>}
         />
       </Mie.L.Dialog>
     </Mie.L.View>

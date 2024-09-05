@@ -1,7 +1,7 @@
 {
   "productName": "Mielo",
   "version": "1.0.0",
-  "identifier": "com.mielo.dev",
+  "identifier": "mielo-ui.github.io",
   "build": {
     "beforeDevCommand": "yarn dev",
     "beforeBuildCommand": "yarn build",

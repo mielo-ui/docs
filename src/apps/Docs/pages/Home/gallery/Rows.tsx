@@ -8,7 +8,7 @@ export function Rows() {
 
       <Mie.L.View
         className="card"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

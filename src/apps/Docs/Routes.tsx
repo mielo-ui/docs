@@ -1,9 +1,10 @@
 import { useBrowserLocation } from "wouter/use-browser-location"
 import { FunctionComponent, ReactNode } from "react"
+import { Router, Route, Redirect } from "wouter"
 import { capitalCase } from "change-case"
-import { Router, Route } from "wouter"
 import { Helmet } from "react-helmet"
 
+import { ThemesPage } from "./pages/Themes"
 import { HomePage } from "./pages/Home"
 import * as pages from "./pages"
 
@@ -47,7 +48,9 @@ export function Routes() {
   return (
     <Router hook={useBrowserLocation}>
       <Route path="/" component={HomePage} />
+      <Route path="/themes" component={ThemesPage} />
       {routes}
+      <Redirect to="/" />
     </Router>
   )
 }

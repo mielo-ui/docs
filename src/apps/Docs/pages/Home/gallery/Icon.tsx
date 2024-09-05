@@ -11,7 +11,7 @@ export function Icon() {
         gr="big"
         fjc="center"
         fai="center"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

@@ -26,7 +26,7 @@ export function Sliders() {
       <Mie.L.View
         className="card"
         gr="large"
-        bg="panel"
+        bg="content"
         r="large"
         shadow
         fc

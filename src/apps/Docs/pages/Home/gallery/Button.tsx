@@ -6,7 +6,7 @@ export function Button() {
     <Mie.L.View f fc className="gallery-sample" data-title="Button">
       <Mie.L.Header title="Button" size="small" mb="small" />
 
-      <Mie.L.View className="card" bg="panel" r="large" p="large" shadow fc f>
+      <Mie.L.View className="card" bg="content" r="large" p="large" shadow fc f>
         <Mie.L.View f fc fai="start" fjc="start" gr="tiny">
           <Mie.L.View f fr gc="tiny">
             <Mie.Button label="Success" accent="success" />
@@ -62,14 +62,14 @@ export function Button() {
             pilled
             pr
             label={
-              <Mie.L.Text fbold accent="warning" ml="tiny">
+              <Mie.L.Text color="orange" ml="small">
                 Pilled
               </Mie.L.Text>
             }
             icon={
               <Mie.L.Icon
                 icon={<Icons.Actions.FolderNew />}
-                accent="warning"
+                color="orange"
                 rl="circular"
                 pl="small"
                 pv="tiny"
@@ -77,7 +77,7 @@ export function Button() {
                 bg
               />
             }
-          />
+          />  
 
           <Mie.L.Button
             pl="none"

@@ -3,12 +3,13 @@ import * as Mie from "@mielo-ui/mielo-react"
 import { useMediaQuery } from "usehooks-ts"
 import { useSelector } from "react-redux"
 
-import { GithubIcon } from "../DocsHeaderbar/GithubIcon"
 import { ThemeSwitcher } from "../ThemeSwitcher"
 import { FontSwitcher } from "../FontSwitcher"
 import { ListItemLink } from "./ListItemLink"
 import * as selectors from "../../selectors"
-import logo from "./logo.png"
+
+import logo from "../../../../images/logo.png"
+import { GithubLink } from "../../components/GithubLink/GithubLink"
 
 interface PageItemOptions {
   title: string
@@ -197,7 +198,7 @@ export function DocsSidebar() {
 
         <Mie.L.List m="none">
           <ListItemLink
-            description="Installatiion, setup, etc..."
+            description="Installatiion, gallery, etc..."
             title="Getting Started"
             activatable
             pv="small"
@@ -205,23 +206,20 @@ export function DocsSidebar() {
             ph
           />
 
+          <ListItemLink
+            description="How to custom themes"
+            title="Themes"
+            activatable
+            pv="small"
+            link="/themes"
+            ph
+          />
+
           {components.map(_menuMapper)}
         </Mie.L.List>
 
         {isMobile && (
-          <Mie.L.Item
-            link="https://github.com/mielo-ui/mielo.css"
-            icon={<Mie.L.Icon mr="small" accent icon={<GithubIcon />} />}
-            title={<Mie.Text fbold accent>GitHub</Mie.Text>}
-            activatable
-            mt="large"
-            mb="large"
-            p="small"
-            active
-            accent
-            mh
-            r
-          />
+          <GithubLink target="sidebar" />
         )}
       </Mie.L.View>
     </Mie.SplitView.Sidebar>

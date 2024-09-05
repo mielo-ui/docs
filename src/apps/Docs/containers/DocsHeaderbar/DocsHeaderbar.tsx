@@ -7,18 +7,17 @@ import { useCallback } from "react"
 import { useRoute } from "wouter"
 
 import { toggleSidebar, toggleDarkTheme } from "../../state/states"
+import { callWindowControl, isDesktop } from "../../../../desktop"
 import * as selectors from "../../selectors"
 import { AppDispatch } from "../../state"
 
 import { ThemeSwitcher } from "../ThemeSwitcher"
 import { FontSwitcher } from "../FontSwitcher"
-import { GithubIcon } from "./GithubIcon"
+import { GithubLink } from "../../components/GithubLink/GithubLink"
 
 export interface DocsHeaderbarProps {
   shadow?: boolean | "outer" | "inner"
 }
-
-const appWindow = (window as any).__TAURI_INTERNALS__ && getCurrentWindow()
 
 export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
   const darkThemeEnable = useSelector(selectors.darkThemeEnable)
@@ -32,11 +31,7 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
       _event: React.MouseEvent<HTMLButtonElement>,
       controlType: Mie.WindowControlType,
     ) => {
-      if (controlType === "close") {
-        appWindow?.close()
-      } else if (controlType === "minimize") {
-        appWindow?.minimize()
-      }
+      callWindowControl(controlType)
     },
     [],
   )
@@ -53,14 +48,17 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
   )
 
   const header = !isHomePage && <Mie.Header title="Mielo" size="tiny" />
-  const windowControls = (!isMobile || appWindow) && (
-    <Mie.Window.Controls onClickControl={onClickControl} controls={["minimize", "close"]} />
+  const windowControls = (!isMobile || isDesktop()) && (
+    <Mie.Window.Controls
+      onClickControl={onClickControl}
+      controls={["minimize", "close"]}
+    />
   )
 
   return (
     <Mie.L.HeaderBar
-      data-tauri-drag-region={true}
       controls={windowControls}
+      data-desktop-drag={true}
       shadow={shadow}
       header={header}
       left={
@@ -84,26 +82,13 @@ export function DocsHeaderbar({ shadow }: DocsHeaderbarProps) {
       }
       right={
         <Mie.L.View f fr fai="center">
-          {!isMobile && (
-            <Mie.L.Item
-              link="https://github.com/mielo-ui/mielo.css"
-              icon={<Mie.Icon icon={<GithubIcon />} />}
-              activatable
-              p="tiny"
-              mr
-              r
-              title={
-                <Mie.L.Text ml="small" fbold>
-                  GitHub
-                </Mie.L.Text>
-              }
-            />
-          )}
+          {!isMobile && <GithubLink target="headerbar" />}
+          
           <Mie.L.Checkbox
-            mr={isMobile ? "none" : "big"}
             onChange={onToggleDarkTheme}
             checked={darkThemeEnable}
             accent="success"
+            mr={windowControls ? "small" : "none"}
             toggle
             label={
               <Mie.Icon
