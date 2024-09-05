@@ -453,10 +453,10 @@
     lodash.pick "^4.4.0"
     react-range-slider-input "^3.0.7"
 
-"@mielo-ui/mielo-react@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.7.tgz#b1590dfd7afe295e7b2a7b089a0d39f6abbd1f41"
-  integrity sha512-k9JdS91BVUjioZ0st8gLNgnuSaVHzUh2ImOIlpswikAiGjktiH6CL4xyOyA6HkIYBff9ZDqLSptJ0Zqs9XL7BQ==
+"@mielo-ui/mielo-react@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo-react/-/mielo-react-1.0.8.tgz#485d9fc4860b643de3265a6a8c5c023503cc7735"
+  integrity sha512-XZ6ja7+7T1gyB3XMXOVp9CqBSxxOnOOeekchkN28Ibasg4bOuj+XaxSEzJ+biyLo9n6Br/bzdrzr0bZk+j0mhA==
   dependencies:
     clsx "^2.1.1"
     lodash.defaults "^4.2.0"

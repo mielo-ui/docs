@@ -10,7 +10,9 @@
   Mielo UI Documentation site with examples.
 </p>
 
-Website & documentation for [mielo.css](https://github.com/friktor/mielo) framework & for react wrapper.
+![dark](https://raw.githubusercontent.com/mielo-ui/mielo.css/main/media/Mielo.Dark.png)
+
+Website & documentation for [mielo.css](https://github.com/mielo-ui/mielo.css) framework & for react wrapper.
 
 ## Browser Support
 
