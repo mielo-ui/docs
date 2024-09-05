@@ -6,7 +6,7 @@ export function Typography() {
     <Mie.L.View f fc className="gallery-sample" data-title="Typography">
       <Mie.L.Header title="Typography" size="small" mb="small" />
 
-      <Mie.L.View className="card" bg="panel" r="large" p="large" shadow fc f>
+      <Mie.L.View className="card" bg="content" r="large" p="large" shadow fc f>
         <Mie.L.View gr="large" f fc>
           <Mie.Header
             subtitle="Example of header"

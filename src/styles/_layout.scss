@@ -16,7 +16,7 @@ body {
 }
 
 // Browser site styles
-body:not(.tauri) {
+body.web {
   background-image: linear-gradient(-140deg, #512da8 0%, #26a269 40%, #1c71d8 100%);
   padding: 2rem 3rem;
 
@@ -31,6 +31,21 @@ body:not(.tauri) {
 .page:not(.mie) {
   overflow-x: hidden;
   overflow-y: auto;
+  
+  flex-direction: column;
+  display: flex;
+  
+  &:not(.home) {
+    padding-top: 2rem;
+  }
+  
+  > .mie.clamp {
+    > .header {
+      > .mie.header {
+        padding: 0 4rem;
+      }
+    }
+  }
 }
 
 .mie.sidebar.docs {

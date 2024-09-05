@@ -19,21 +19,11 @@
     }
 
     .header-sample {
-      max-width: 80vh;
       margin: 3rem 0;
 
-      @media screen and (max-width: 768px) {
-        max-width: 30rem;
+      @media screen and (max-width: 1024px) {
+        width: 86%;
       }
-    }
-
-    .docs-code {
-      border-radius: 1.2rem;
-      min-height: 10rem;
-    }
-
-    .sample-window {
-      min-height: 10rem;
     }
   }
 
@@ -47,6 +37,14 @@
       &:last-child {
         border-radius: 0 0 1.2rem 1.2rem;
         height: 35rem;
+      }
+    }
+  }
+
+  .feature-cards {
+    @media screen and (max-width: 768px) {
+      > .feature-card {
+        min-width: 30% !important;
       }
     }
   }

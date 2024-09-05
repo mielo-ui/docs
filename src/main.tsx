@@ -1,13 +1,19 @@
-import { getCurrentWindow } from "@tauri-apps/api/window"
-import ReactDOM from "react-dom/client"
-import { DocsApp } from "./apps"
+import "@fontsource/jetbrains-mono"
+
+import "@fontsource/ubuntu/700.css"
+import "@fontsource/ubuntu/500.css"
+import "@fontsource/ubuntu"
+
+import "@fontsource/roboto/700.css"
+import "@fontsource/roboto/500.css"
+import "@fontsource/roboto"
+
+import "@fontsource/inter/700.css"
+import "@fontsource/inter/500.css"
+import "@fontsource/inter"
+
+// For Web & Tauri builds
+import { setup } from "./setup"
 import "./styles/index.scss"
 
-const appWindow = (window as any).__TAURI_INTERNALS__ && getCurrentWindow()
-
-if (appWindow) {
-  document.body.classList.add("tauri")
-}
-
-const root = document.getElementById("root")
-ReactDOM.createRoot(root!).render(<DocsApp />)
+setup()

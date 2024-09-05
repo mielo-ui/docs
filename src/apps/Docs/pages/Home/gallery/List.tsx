@@ -12,8 +12,8 @@ export function List() {
       <Mie.L.View
         p="massive"
         className="card"
-        gr="massive"
-        bg="panel"
+        g="massive"
+        bg="content"
         r="large"
         shadow
         fr

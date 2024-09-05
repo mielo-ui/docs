@@ -8,7 +8,7 @@ export function Activatable() {
 
       <Mie.L.View
         className="card"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         g="large"

@@ -9,7 +9,7 @@ export function Label() {
       <Mie.L.View
         className="card"
         fai="start"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

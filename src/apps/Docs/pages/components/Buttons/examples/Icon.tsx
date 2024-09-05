@@ -30,14 +30,12 @@ function Icon() {
           pilled
           pr
           label={
-            <Mie.L.Text fbold accent="warning" ml="tiny">
-              Pilled
-            </Mie.L.Text>
+            <Mie.L.Text color="orange" ml="small">Pilled</Mie.L.Text>
           }
           icon={
             <Mie.L.Icon
               icon={<Icons.Actions.FolderNew />}
-              accent="warning"
+              color="orange"
               rl="circular"
               pl="small"
               pv="tiny"

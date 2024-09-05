@@ -45,6 +45,62 @@ export function HomePage() {
             <Code lang="bash" code={INSTALL} />
             <Code lang="tsx" code={sampleWindowCode} />
           </Mie.L.View>
+
+          <Mie.L.View
+            className="feature-cards"
+            fai="stretch"
+            gc="large"
+            gr="large"
+            fw
+            f1
+            f
+          >
+            {[
+              {
+                title: "25",
+                description: "Elements",
+                bg: "lightgreen",
+              },
+              {
+                title: "6-25kb",
+                description: "Css Bundle (gzip)",
+                bg: "pink",
+              },
+              {
+                title: "22kb",
+                description: "React Lib (gzip)",
+                bg: "orange",
+              },
+              {
+                title: "Layout",
+                description: "Sizing & positions",
+                bg: "deeppurple",
+              },
+              {
+                title: "Theming",
+                description: "Simple style setup",
+                bg: "yellow",
+              },
+            ].map(({ title, description, bg }, idx) => (
+              <Mie.L.View
+                className="feature-card"
+                key={`${bg}-${idx}`}
+                color={bg}
+                bordered
+                p="large"
+                r="large"
+                shadow
+                fc
+                f1
+                f
+              >
+                <Mie.L.Text size="huge" fbold>
+                  {title}
+                </Mie.L.Text>
+                <Mie.L.Text mt="small">{description}</Mie.L.Text>
+              </Mie.L.View>
+            ))}
+          </Mie.L.View>
         </Mie.L.View>
       </Mie.L.View>
 

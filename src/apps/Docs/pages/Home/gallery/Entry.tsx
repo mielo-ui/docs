@@ -21,7 +21,7 @@ export function Entry() {
       <Mie.L.View
         className="card"
         gr="big"
-        bg="panel"
+        bg="content"
         r="large"
         p="large"
         shadow

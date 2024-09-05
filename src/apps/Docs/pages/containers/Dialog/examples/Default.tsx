@@ -23,7 +23,6 @@ function Default() {
               onClick={() => setModalOpened(false)}
               label="Cancel"
               transparent
-              tertiary
               pv="small"
             />
             <Mie.L.Button
@@ -31,14 +30,12 @@ function Default() {
               label="Discard"
               accent="error"
               transparent
-              tertiary
               pv="small"
             />
             <Mie.L.Button
               onClick={() => setModalOpened(false)}
               label="Save"
               transparent
-              tertiary
               accent
               pv="small"
             />

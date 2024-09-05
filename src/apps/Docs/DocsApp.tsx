@@ -11,8 +11,8 @@ import { AppDispatch } from "./state"
 import * as states from "./state"
 import { Routes } from "./Routes"
 
-import materialCss from "@mielo-ui/mielo/css/mielo.material.full.css?raw"
-import defaultCss from "@mielo-ui/mielo/css/mielo.full.css?raw"
+import materialCss from "@mielo-ui/mielo/css/mielo.material.css?raw"
+import defaultCss from "@mielo-ui/mielo/css/mielo.css?raw"
 
 function Window() {
   const [cssLoaded, setCssLoaded] = useState(false)
@@ -34,19 +34,18 @@ function Window() {
   }, [uiFont])
 
   useEffect(() => {
-    const _check = () => {
-      const root = getComputedStyle(
-        document.querySelector(":root, [data-theme=\"light\"]"),
-      ).getPropertyValue("--mie-fg")
+    const checkLoaded = () => {
+      const rootElement = document.querySelector(':root, [data-theme="light"]')
+      const prop = getComputedStyle(rootElement).getPropertyValue("--mie-fg")
 
-      if (root) {
+      if (prop) {
         setCssLoaded(true)
       } else {
-        setTimeout(_check, 125)
+        setTimeout(checkLoaded, 125)
       }
     }
 
-    const watchCssLoadId = setTimeout(_check, 125)
+    const watchCssLoadId = setTimeout(checkLoaded, 125)
 
     return () => {
       clearTimeout(watchCssLoadId)

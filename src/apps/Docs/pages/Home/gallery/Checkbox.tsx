@@ -6,7 +6,7 @@ export function Checkbox() {
     <Mie.L.View f fc className="gallery-sample" data-title="Checkbox">
       <Mie.L.Header title="Checkbox & Radio" size="small" mb="small" />
 
-      <Mie.L.View className="card" bg="panel" r="large" p="large" shadow fc f>
+      <Mie.L.View className="card" bg="content" r="large" p="large" shadow fc f>
         <Mie.L.View f fc sbv>
           <Mie.Checkbox name="checkbox" label="Default" />
 
