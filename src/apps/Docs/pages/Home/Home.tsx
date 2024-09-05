@@ -1,9 +1,14 @@
+import { MouseEventHandler, useCallback } from "react"
 import * as Mie from "@mielo-ui/mielo-react"
+
 import { Code } from "../../components/Code"
 import * as Gallery from "./gallery"
 
+import { isDesktop, openExternalLink } from "../../../../desktop"
 import sampleWindowCode from "./SampleWindow.tsx?raw"
 import { SampleWindow } from "./SampleWindow"
+
+const DESKTOP_APP_LINK = "https://github.com/mielo-ui/docs/releases"
 
 const INSTALL = `
 yarn add @mielo-ui/mielo @mielo-ui/mielo-react
@@ -12,6 +17,21 @@ npm install @mielo-ui/mielo @mielo-ui/mielo-react --save-dev
 `.trim()
 
 export function HomePage() {
+  const onClick: MouseEventHandler<HTMLButtonElement> = useCallback((event) => {
+    const detect = isDesktop()
+
+    if (typeof(detect) === "object") {
+      const { isTauri, isElectron } = detect
+
+      if (isTauri || isElectron) {
+        event.preventDefault();
+        event.stopPropagation();
+        
+        openExternalLink(DESKTOP_APP_LINK)
+      }
+    }
+  }, [])
+  
   return (
     <Mie.L.View className="page home" f fc>
       <Mie.L.View
@@ -29,6 +49,19 @@ export function HomePage() {
           size="huge"
           center
         />
+
+        <Mie.L.View fjc="center" f fr>
+          <Mie.L.Button
+            link={DESKTOP_APP_LINK}
+            onClick={onClick}
+
+            label="Download Docs Desktop App"
+            color="green"
+            pv="small"
+            ph="huge"
+            pilled
+          />
+        </Mie.L.View>
 
         <Mie.L.View
           className="header-sample"
@@ -138,6 +171,7 @@ export function HomePage() {
         <Gallery.List />
 
         <Mie.L.View f fc gr="massive" data-group="Tabs+Dialog+Window">
+          <Gallery.Rows />
           <Gallery.Tabs />
           <Gallery.Dialog />
           <Gallery.Window />

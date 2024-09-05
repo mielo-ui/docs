@@ -35,6 +35,7 @@ export function GithubLink({ target }) {
     mh: true,
     r: true,
   } : {
+    accent: true,
     p: "tiny",
     mr: true,
     r: true,

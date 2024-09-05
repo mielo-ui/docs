@@ -599,10 +599,10 @@
     react-tooltip "^5.26.4"
     react-transition-group "^4.4.5"
 
-"@mielo-ui/mielo@1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-1.0.7.tgz#edda2486008ff8c494b4ef2d70fc79f3c495fec9"
-  integrity sha512-k/ncFSYtXmPDT+sk+KFnat2BhLp90tem6RIlxbZbbMok6eSnzVu+4B4m/LRSfQ9X+dHO7c4FPOo4ScuHZiRdRg==
+"@mielo-ui/mielo@1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@mielo-ui/mielo/-/mielo-1.0.8.tgz#4369254997e2aef86bc671ce458a59ccd7c4c1fc"
+  integrity sha512-MrjeZ04jRqTlvfLI4RHP/uhej1w4KgAvkEeUGWCGTlHqPVedOXlwoSc73Ps6K/oVQ1+eUyAmTQ2IDYA7zr8wwQ==
   dependencies:
     reseter.css "^2.0.0"
 

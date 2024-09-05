@@ -2,14 +2,61 @@ import { tsFormatSample } from "../../../../utils"
 import rawTsCode from "./Item.tsx?raw"
 
 //@chunk
+import { useState } from "react"
+
 import * as Icons from "@mielo-ui/adwaita-symbolic-icons-react"
 import * as Mie from "@mielo-ui/mielo-react"
 
 function Item() {
+  const [username, setUsername] = useState("")
+
+  const [time, setTime] = useState<Mie.OptionValue>({
+    title: "Day",
+    value: "day",
+  })
+
+  const options = [
+    {
+      description: "Description text",
+      title: "Title 1",
+      value: "one",
+    },
+    {
+      description: "Description text",
+      title: "Title 2",
+      value: "two",
+    },
+    {
+      description: "Description text",
+      title: "Title 3",
+      value: "three",
+    },
+  ]
+
   return (
     <Mie.L.View f fc f1 pt="massive">
       <Mie.L.Rows r shadow>
-        <Mie.L.Rows.Row rt title="Title" activatable />
+        <Mie.L.Rows.Entry
+          onChange={event => setUsername(event.target.value)}
+          placeholder="Enter Username"
+          label="Username"
+          value={username}
+          name="username"
+          type="text"
+          rt
+        />
+        
+        <Mie.L.Rows.Select
+          onChange={option => setTime(option)}
+          label="Select Title"
+          options={options}
+          value={time}
+          name="time"
+          menuHeight="14.5rem"
+          r="none"
+        />
+
+        <Mie.L.Rows.Row title="Title" activatable />
 
         <Mie.L.Rows.Row
           icon={<Mie.L.Icon mr="small" icon={<Icons.Actions.FolderNew />} />}

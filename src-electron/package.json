@@ -1,6 +1,6 @@
 {
   "name": "mielo-docs-electron",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Desktop app based on tauri with Mielo components",
   "main": "./out/main/index.js",
   "author": {
@@ -30,7 +30,7 @@
     "@fontsource/roboto": "^5.0.14",
     "@fontsource/ubuntu": "^5.0.13",
     "@mielo-ui/adwaita-symbolic-icons-react": "1.0.5",
-    "@mielo-ui/mielo": "1.0.7",
+    "@mielo-ui/mielo": "1.0.8",
     "@mielo-ui/mielo-react": "1.0.7",
     "@mielo-ui/mielo-react-slider": "1.0.5",
     "@reduxjs/toolkit": "^2.2.6",
